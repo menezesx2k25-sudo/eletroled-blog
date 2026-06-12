@@ -54,6 +54,8 @@ function layout({ title, description, canonical, body, schema = [], keywords = [
   <meta property="og:url" content="${escapeHtml(canonical)}">
   <meta property="og:image" content="${escapeHtml(site.defaultImage)}">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="${escapeHtml(site.logo)}">
+  <link rel="apple-touch-icon" href="${escapeHtml(site.logo)}">
   <link rel="alternate" type="application/rss+xml" title="${escapeHtml(site.siteName)}" href="${escapeHtml(absoluteUrl('feed.xml'))}">
   <link rel="stylesheet" href="/styles.css">
   ${schema.map(jsonLd).join('\n  ')}
@@ -61,7 +63,7 @@ function layout({ title, description, canonical, body, schema = [], keywords = [
 <body>
   <header class="site-header">
     <a class="brand" href="/">
-      <span class="brand-mark">EL</span>
+      <img class="brand-logo" src="${escapeHtml(site.logo)}" alt="Logo da EletroLED Assistência Técnica">
       <span>
         <strong>Blog EletroLED</strong>
         <small>TVs e micro-ondas em Santos</small>
@@ -142,6 +144,7 @@ const home = layout({
   body: `<main>
     <section class="hero">
       <div>
+        <img class="hero-logo" src="${escapeHtml(site.logo)}" alt="EletroLED Assistência Técnica">
         <p class="eyebrow">Assistência técnica em Santos</p>
         <h1>Dicas úteis para cuidar da sua TV e do seu micro-ondas</h1>
         <p>Guias simples para identificar defeitos comuns, evitar riscos e saber quando chamar a EletroLED Assistência Técnica no Macuco, em Santos.</p>
@@ -247,17 +250,20 @@ for (const post of sortedPosts) {
   await writeFile(path.join(postDir, 'index.html'), html);
 }
 
+const heroImage = site.defaultImage.replaceAll('"', '%22');
+
 const styles = `:root {
   color-scheme: light;
-  --ink: #17151f;
-  --muted: #625f70;
-  --line: #dedbe8;
+  --ink: #111827;
+  --muted: #626a78;
+  --line: #d9dde7;
   --paper: #ffffff;
-  --soft: #f4f2f8;
-  --brand: #5627e8;
-  --brand-dark: #321390;
-  --accent: #e53131;
-  --green: #0a7a55;
+  --soft: #f3f6fb;
+  --brand: #0b4ea2;
+  --brand-dark: #071a33;
+  --accent: #ef161e;
+  --gold: #f5c542;
+  --green: #09865c;
 }
 
 * {
@@ -266,7 +272,7 @@ const styles = `:root {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background: #f6f7fb;
   color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -283,19 +289,30 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 18px clamp(18px, 4vw, 56px);
-  border-bottom: 1px solid var(--line);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #07111f;
+  border-bottom: 3px solid var(--accent);
+  color: #fff;
+  box-shadow: 0 10px 28px rgba(7, 17, 31, .22);
 }
 
 .site-footer {
-  border-top: 1px solid var(--line);
+  border-top: 4px solid var(--accent);
   border-bottom: 0;
   margin-top: 64px;
   align-items: flex-start;
+  background: #07111f;
+  color: #fff;
 }
 
 .site-footer p {
   margin: 4px 0;
-  color: var(--muted);
+  color: rgba(255, 255, 255, .74);
 }
 
 .brand {
@@ -305,21 +322,18 @@ a {
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  background: var(--ink);
-  color: #fff;
-  font-weight: 800;
-  letter-spacing: 0;
+.brand-logo {
+  width: 72px;
+  height: 54px;
+  object-fit: contain;
+  padding: 4px;
+  background: #fff;
   border-radius: 6px;
 }
 
 .brand small {
   display: block;
-  color: var(--muted);
+  color: rgba(255, 255, 255, .72);
 }
 
 nav {
@@ -328,18 +342,31 @@ nav {
   gap: 16px;
 }
 
-nav a,
+nav a {
+  color: #ff3038;
+  font-weight: 900;
+  letter-spacing: .02em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .text-link,
 .back-link {
-  color: var(--brand-dark);
+  color: var(--brand);
   font-weight: 700;
   text-decoration: none;
 }
 
 .hero {
+  min-height: clamp(520px, 78vh, 760px);
+  display: flex;
+  align-items: center;
   padding: clamp(48px, 8vw, 96px) clamp(18px, 4vw, 56px);
-  background: linear-gradient(135deg, #ffffff 0%, #f3f6fb 55%, #f9eeee 100%);
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, .94) 0%, rgba(7, 17, 31, .82) 44%, rgba(7, 17, 31, .25) 100%),
+    url("${heroImage}") center / cover no-repeat;
   border-bottom: 1px solid var(--line);
+  color: #fff;
 }
 
 .hero > div,
@@ -361,8 +388,25 @@ nav a,
 .hero p,
 .article-header p {
   max-width: 760px;
-  color: var(--muted);
   font-size: 1.18rem;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, .86);
+}
+
+.article-header p {
+  color: var(--muted);
+}
+
+.hero-logo {
+  width: min(210px, 62vw);
+  height: auto;
+  margin-bottom: 22px;
+  padding: 10px;
+  background: rgba(255, 255, 255, .96);
+  border-radius: 8px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, .22);
 }
 
 .eyebrow {
@@ -388,19 +432,22 @@ nav a,
   min-height: 46px;
   padding: 0 18px;
   border-radius: 6px;
-  background: var(--brand);
+  background: var(--accent);
   color: #fff;
   font-weight: 800;
   text-decoration: none;
+  box-shadow: 0 12px 26px rgba(239, 22, 30, .28);
 }
 
 .button-secondary {
-  background: var(--soft);
+  background: #fff;
   color: var(--brand-dark);
+  box-shadow: none;
 }
 
 .posts-section {
   padding: 56px clamp(18px, 4vw, 56px);
+  background: #f6f7fb;
 }
 
 .section-heading {
@@ -427,6 +474,8 @@ nav a,
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
+  border-top: 5px solid var(--accent);
+  box-shadow: 0 14px 32px rgba(17, 24, 39, .08);
 }
 
 .post-card h2 {
@@ -445,11 +494,14 @@ nav a,
 
 .article {
   padding: 48px clamp(18px, 4vw, 56px) 0;
+  background: #fff;
 }
 
 .article-header {
   padding-bottom: 30px;
   border-bottom: 1px solid var(--line);
+  border-left: 6px solid var(--accent);
+  padding-left: clamp(18px, 3vw, 28px);
 }
 
 .article-meta {
@@ -464,7 +516,8 @@ nav a,
 .article-meta span {
   padding: 6px 10px;
   border-radius: 999px;
-  background: var(--soft);
+  background: #eaf1fb;
+  color: var(--brand-dark);
 }
 
 .article-body {
@@ -482,6 +535,7 @@ nav a,
 .cta-panel h2 {
   margin-top: 34px;
   line-height: 1.2;
+  color: var(--brand-dark);
 }
 
 .article-body p {
@@ -495,8 +549,8 @@ nav a,
   gap: 24px;
   margin: 42px 0;
   padding: 24px;
-  border-left: 5px solid var(--green);
-  background: #eefaf4;
+  border-left: 5px solid var(--accent);
+  background: #fff4f4;
 }
 
 .cta-panel h2,
