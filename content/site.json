@@ -1,0 +1,24 @@
+{
+  "siteName": "Blog EletroLED Assistência Técnica",
+  "businessName": "EletroLED Assistência Técnica",
+  "baseUrl": "https://blog.consertoeletroled.com",
+  "mainSiteUrl": "https://consertoeletroled.com",
+  "description": "Dicas práticas sobre conserto de TVs e micro-ondas em Santos, com orientação da EletroLED Assistência Técnica.",
+  "phone": "+5513996816561",
+  "whatsapp": "5513996816561",
+  "email": "contato@consertoeletroled.com",
+  "address": {
+    "streetAddress": "Av. Siqueira Campos, 148 - Macuco",
+    "addressLocality": "Santos",
+    "addressRegion": "SP",
+    "postalCode": "11015-300",
+    "addressCountry": "BR"
+  },
+  "hours": "Segunda a sexta, 09:00 às 17:30. Sábado, 09:00 às 14:00.",
+  "logo": "https://assets.zyrosite.com/cdn-cgi/image/format%3Dauto%2Cw%3D375%2Cfit%3Dcrop%2Cq%3D95/GlokoPcKnA0JWUEo/gemini_generated_image_nr4h3inr4h3inr4h-1-qDlem5LW3X6uPsYo.png",
+  "defaultImage": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/GlokoPcKnA0JWUEo/6facfed3-40d3-48c1-a7bd-be58f1c8797d-uoXy5m861ZtME3x2.png",
+  "sameAs": [
+    "https://www.facebook.com/LEDASSISTENCIATECNICA",
+    "https://www.instagram.com/assistencia_tecnia_eletroled"
+  ]
+}
