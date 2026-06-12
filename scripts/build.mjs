@@ -72,7 +72,6 @@ function layout({ title, description, canonical, body, schema = [], keywords = [
     <nav aria-label="Navegação principal">
       <a href="/">Blog</a>
       <a href="${escapeHtml(site.mainSiteUrl)}">Site</a>
-      <a href="${escapeHtml(site.mainSiteUrl)}/servicos">Serviços</a>
       <a href="${escapeHtml(site.mainSiteUrl)}/contato">Contato</a>
     </nav>
   </header>
