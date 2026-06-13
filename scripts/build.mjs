@@ -82,7 +82,7 @@ function layout({ title, description, canonical, body, schema = [], keywords = [
       <p>${escapeHtml(site.address.streetAddress)}, ${escapeHtml(site.address.addressLocality)} - ${escapeHtml(site.address.addressRegion)}, ${escapeHtml(site.address.postalCode)}</p>
       <p>${escapeHtml(site.hours)}</p>
     </div>
-    <a class="button button-secondary" href="${escapeHtml(whatsappUrl('Olá, vim pelo blog da EletroLED e preciso de assistência técnica.'))}">Chamar no WhatsApp</a>
+    <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl('Olá, vim pelo blog da EletroLED e preciso de assistência técnica.'))}">Chamar no WhatsApp</a>
   </footer>
 </body>
 </html>`;
@@ -166,7 +166,7 @@ function renderArticleSections(post) {
             <strong>Quer evitar tentativa no escuro?</strong>
             <p>Envie marca, modelo e sintoma pelo WhatsApp para receber orientação inicial da EletroLED.</p>
           </div>
-          <a class="button" href="${escapeHtml(whatsappUrl(ctaMessage(post)))}">Enviar aparelho no WhatsApp</a>
+          <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl(ctaMessage(post)))}">Enviar aparelho no WhatsApp</a>
         </div>`;
   }).join('\n');
 }
@@ -234,7 +234,7 @@ const home = layout({
         <h1>Dicas úteis para cuidar da sua TV e do seu micro-ondas</h1>
         <p>Guias simples para identificar defeitos comuns, evitar riscos e saber quando chamar a EletroLED Assistência Técnica no Macuco, em Santos.</p>
         <div class="hero-actions">
-          <a class="button" href="${escapeHtml(whatsappUrl('Olá, vim pelo blog e preciso de ajuda com TV ou micro-ondas.'))}">Chamar no WhatsApp</a>
+          <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl('Olá, vim pelo blog e preciso de ajuda com TV ou micro-ondas.'))}">Chamar no WhatsApp</a>
           <a class="button button-secondary" href="${escapeHtml(site.mainSiteUrl)}">Ver site principal</a>
         </div>
       </div>
@@ -318,7 +318,7 @@ for (const post of sortedPosts) {
           <h2>Precisa de assistência em Santos?</h2>
           <p>Fale com a EletroLED pelo WhatsApp e informe marca, modelo e defeito aparente do aparelho.</p>
         </div>
-        <a class="button" href="${escapeHtml(whatsappUrl(ctaMessage(post)))}">Chamar no WhatsApp</a>
+        <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl(ctaMessage(post)))}">Chamar no WhatsApp</a>
       </aside>
       ${renderRelatedPosts(post)}
       <section class="faq">
@@ -357,6 +357,8 @@ const styles = `:root {
   --accent: #ee171f;
   --accent-soft: #fff1f2;
   --blue-soft: #eaf4ff;
+  --whatsapp: #1fa855;
+  --whatsapp-soft: #eaf8ef;
   --gold: #f5c542;
   --green: #09865c;
 }
@@ -437,11 +439,16 @@ nav {
 }
 
 nav a {
-  color: var(--accent);
-  font-weight: 900;
+  color: var(--brand-dark);
+  font-weight: 800;
   letter-spacing: 0;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--brand);
 }
 
 .text-link,
@@ -452,15 +459,15 @@ nav a {
 }
 
 .hero {
-  min-height: clamp(520px, 78vh, 760px);
+  min-height: clamp(440px, 64vh, 640px);
   display: flex;
   align-items: center;
   padding: clamp(48px, 8vw, 96px) clamp(18px, 4vw, 56px);
   background:
-    linear-gradient(90deg, rgba(13, 43, 72, .48) 0%, rgba(13, 43, 72, .30) 47%, rgba(13, 43, 72, .08) 100%),
+    linear-gradient(90deg, rgba(247, 249, 252, .95) 0%, rgba(247, 249, 252, .82) 48%, rgba(247, 249, 252, .28) 100%),
     url("${heroImage}") center / cover no-repeat;
   border-bottom: 1px solid var(--line);
-  color: #fff;
+  color: var(--brand-dark);
 }
 
 .hero > div,
@@ -480,7 +487,7 @@ nav a {
 }
 
 .hero h1 {
-  text-shadow: 0 3px 18px rgba(6, 23, 41, .34);
+  text-shadow: none;
 }
 
 .hero p,
@@ -490,8 +497,8 @@ nav a {
 }
 
 .hero p {
-  color: rgba(255, 255, 255, .94);
-  text-shadow: 0 2px 12px rgba(6, 23, 41, .32);
+  color: #334155;
+  text-shadow: none;
 }
 
 .article-header p {
@@ -502,12 +509,12 @@ nav a {
   width: min(250px, 62vw);
   height: auto;
   margin-bottom: 22px;
-  filter: drop-shadow(0 8px 16px rgba(6, 23, 41, .24));
+  filter: drop-shadow(0 8px 16px rgba(20, 52, 84, .14));
 }
 
 .eyebrow {
   margin: 0 0 10px;
-  color: var(--accent);
+  color: var(--brand);
   font-size: .82rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -536,9 +543,16 @@ nav a {
 }
 
 .button-secondary {
-  background: var(--accent);
+  border: 1px solid rgba(36, 127, 208, .24);
+  background: rgba(255, 255, 255, .94);
+  color: var(--brand-dark);
+  box-shadow: 0 12px 26px rgba(20, 52, 84, .16);
+}
+
+.button-whatsapp {
+  background: var(--whatsapp);
   color: #fff;
-  box-shadow: 0 12px 26px rgba(238, 23, 31, .22);
+  box-shadow: 0 12px 26px rgba(31, 168, 85, .24);
 }
 
 .posts-section {
@@ -570,7 +584,7 @@ nav a {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
-  box-shadow: 0 12px 28px rgba(20, 52, 84, .06);
+  box-shadow: 0 10px 24px rgba(20, 52, 84, .05);
 }
 
 .post-card > div,
@@ -674,7 +688,7 @@ nav a {
 }
 
 .service-link a {
-  color: var(--accent);
+  color: var(--brand);
 }
 
 .lead {
@@ -701,10 +715,10 @@ nav a {
   gap: 18px;
   margin: 30px 0;
   padding: 20px;
-  border: 1px solid var(--line);
+  border: 1px solid #cfeedd;
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 12px 28px rgba(20, 52, 84, .06);
+  background: var(--whatsapp-soft);
+  box-shadow: 0 12px 28px rgba(31, 168, 85, .08);
 }
 
 .quick-cta p,
@@ -719,8 +733,8 @@ nav a {
   gap: 24px;
   margin: 42px 0;
   padding: 24px;
-  border-left: 5px solid var(--brand);
-  background: var(--blue-soft);
+  border-left: 5px solid var(--whatsapp);
+  background: var(--whatsapp-soft);
 }
 
 .cta-panel h2,
@@ -758,7 +772,7 @@ nav a {
 .related-grid span {
   display: block;
   margin-bottom: 8px;
-  color: var(--accent);
+  color: var(--brand);
   font-size: .78rem;
   font-weight: 800;
   text-transform: uppercase;
