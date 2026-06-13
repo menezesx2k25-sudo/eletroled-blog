@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="orcamento conserto micro-ondas santos">
+  <rect width="1200" height="675" fill="#f9fcfb"/>
+  <circle cx="1000" cy="80" r="170" fill="#bdebd0" opacity=".55"/>
+  <circle cx="120" cy="600" r="210" fill="#bdebd0" opacity=".35"/>
+  <rect x="220" y="155" width="520" height="270" rx="30" fill="#fff" stroke="#1fa855" stroke-width="18"/><rect x="270" y="205" width="280" height="170" rx="18" fill="#bdebd0"/><circle cx="640" cy="245" r="30" fill="#1fa855"/><circle cx="640" cy="335" r="30" fill="#153f2a"/>
+  <text x="86" y="84" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1fa855">EletroLED</text>
+  <text x="86" y="612" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#153f2a">orcamento conserto micro-ondas santos</text>
+  <text x="86" y="648" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#626a78">Dicas técnicas para Santos e região</text>
+</svg>

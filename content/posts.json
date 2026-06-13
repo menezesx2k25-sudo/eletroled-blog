@@ -4,375 +4,946 @@
     "slug": "tv-nao-liga-em-santos",
     "date": "2026-06-12",
     "category": "Conserto de TV",
-    "description": "Entenda por que uma TV pode não ligar, quais cuidados tomar antes de tentar religar o aparelho e quando procurar assistência técnica em Santos.",
+    "description": "Entenda causas comuns para TV que não liga, quais sinais observar com segurança e quando procurar avaliação técnica em Santos.",
     "keywords": [
+      "TV não liga: causas comuns e quando chamar assistência",
+      "conserto de TV",
+      "diagnóstico de TV",
+      "TV em Santos",
       "TV não liga em Santos",
       "conserto de TV em Santos",
       "assistência técnica de TV",
-      "técnico de TV Santos",
-      "TV queimou fonte"
+      "técnico de TV Santos"
     ],
-    "intro": "Quando a TV não liga, o problema pode estar em algo simples, como tomada, cabo ou controle remoto, mas também pode indicar falha na fonte, placa principal ou circuito interno. Para quem está em Santos e precisa de uma avaliação segura, a EletroLED atende TVs de diversas marcas na Av. Siqueira Campos, no Macuco.",
+    "intro": "Quando uma TV não liga, a primeira reação costuma ser testar a tomada várias vezes ou insistir no controle remoto. Isso pode até resolver casos simples, mas também pode mascarar uma falha interna. O sintoma pode vir de cabo, tomada, controle, placa fonte, circuito de standby, placa principal ou proteção ativada depois de oscilação de energia. Para quem está em Santos, o caminho mais seguro é observar alguns sinais sem abrir o aparelho e, se o problema continuar, pedir uma avaliação técnica antes de comprar peça ou trocar a TV.",
     "sections": [
       {
-        "heading": "O que verificar antes de levar para o conserto",
-        "body": "Confirme se a tomada está funcionando, teste outro cabo de energia se possível e observe se há luz de standby. Se a TV faz algum estalo, pisca o LED e apaga, ou fica totalmente morta, evite insistir várias vezes, porque isso pode piorar uma falha elétrica."
+        "heading": "O que observar antes de levar a TV",
+        "body": "Verifique se a tomada funciona com outro aparelho, se o cabo de energia está bem encaixado e se há luz de standby. Observe também se a TV faz estalo, pisca o LED, tenta ligar e apaga ou fica totalmente sem resposta. Esses detalhes ajudam a separar falhas externas de defeitos internos. Se houver cheiro de queimado, aquecimento incomum ou queda de energia recente, pare os testes."
       },
       {
         "heading": "Possíveis causas técnicas",
-        "body": "As causas mais comuns incluem defeito na placa fonte, curto em componentes, falha na placa principal, problema no botão power ou dano causado por oscilação de energia. Em Smart TVs, também pode haver travamento eletrônico, mas isso precisa ser avaliado com cuidado."
+        "body": "TV que não liga pode ter defeito na placa fonte, curto em componentes, falha na placa principal, problema no botão power ou dano causado por oscilação elétrica. Em Smart TVs, também pode existir travamento de sistema, mas isso precisa ser confirmado por teste. O mesmo sintoma pode ter causas diferentes conforme marca, modelo, idade do aparelho e histórico de uso."
       },
       {
-        "heading": "Quando chamar um técnico",
-        "body": "Chame assistência quando a TV não acende nenhum LED, reinicia sozinha, desliga depois de poucos segundos, tem cheiro de queimado ou parou após queda de energia. Abrir o aparelho sem ferramenta adequada pode gerar choque e danificar placas."
+        "heading": "Por que não abrir o aparelho em casa",
+        "body": "Mesmo desligada da tomada, a TV pode ter capacitores carregados e partes sensíveis. Abrir a tampa sem ferramenta adequada aumenta risco de choque, quebra de flat cable, dano ao painel e perda de referência para o diagnóstico. O ideal é fazer apenas verificações externas e levar o aparelho para bancada quando o defeito persistir."
       },
       {
-        "heading": "Atendimento da EletroLED",
-        "body": "A EletroLED realiza diagnóstico e orçamento para conserto de TVs em Santos, incluindo Smart TVs, TVs LED, LCD, OLED e QLED. O atendimento fica na Av. Siqueira Campos, 148, Macuco."
+        "heading": "Quando chamar assistência técnica",
+        "body": "Procure avaliação quando a TV não acende nenhum LED, reinicia sozinha, desliga depois de poucos segundos, parou depois de chuva forte ou queda de energia, ou quando o problema voltou após funcionar por alguns minutos. A avaliação técnica mede fonte, placa principal, conectores e circuitos de proteção antes de indicar qualquer troca de peça."
+      },
+      {
+        "heading": "O que informar no WhatsApp",
+        "body": "Para agilizar o primeiro atendimento, envie marca, modelo, tamanho em polegadas e descreva exatamente o que acontece ao apertar power. Se puder, mande uma foto da etiqueta traseira e um vídeo curto mostrando o LED, som ou qualquer tentativa de ligar. Isso não substitui diagnóstico, mas ajuda a orientar o próximo passo."
+      },
+      {
+        "heading": "Atendimento da EletroLED em Santos",
+        "body": "A EletroLED realiza diagnóstico e orçamento para TVs LED, LCD, Smart TV, OLED e QLED de várias marcas. O atendimento é feito no Macuco, em Santos, com foco em identificar a causa real antes de sugerir reparo. Assim o cliente decide com mais clareza se o conserto compensa."
+      },
+      {
+        "heading": "Como a avaliação técnica evita gasto errado",
+        "body": "Em TV, o mesmo sintoma pode parecer simples e esconder causas diferentes. Tela escura pode ser backlight, fonte, placa, cabo ou painel; falha ao ligar pode ser proteção interna ou curto. A avaliação mede antes de trocar, protegendo o cliente de comprar peça sem resolver o problema."
+      },
+      {
+        "heading": "Decisão com base no estado real da TV",
+        "body": "Depois do diagnóstico, fica mais claro se o reparo compensa. O técnico considera tamanho, tipo de painel, disponibilidade de peças, estado físico e custo final. Assim o cliente escolhe entre consertar ou trocar o aparelho com informação concreta, não apenas pelo susto do defeito."
+      },
+      {
+        "heading": "Histórico do defeito também importa",
+        "body": "Informar se o problema começou depois de queda de energia, transporte, chuva, limpeza ou mudança de cabo ajuda a interpretar o sintoma. Esse histórico não fecha diagnóstico sozinho, mas orienta os testes e reduz tempo perdido com hipóteses pouco prováveis."
       }
     ],
     "faq": [
       {
         "question": "TV que não liga sempre queimou a fonte?",
-        "answer": "Não. A fonte é uma causa comum, mas também pode ser placa principal, curto interno, cabo, tomada ou falha no circuito de standby."
+        "answer": "Não. A fonte é uma causa comum, mas também pode haver falha na placa principal, no circuito de standby, no cabo, na tomada ou em proteção interna."
       },
       {
-        "question": "Vale a pena consertar uma TV que não liga?",
-        "answer": "Na maioria dos casos vale avaliar, principalmente em TVs maiores ou Smart TVs. O diagnóstico mostra se o custo do reparo compensa."
+        "question": "Posso continuar tentando ligar várias vezes?",
+        "answer": "Se o sintoma persiste, não é recomendado insistir. Repetir tentativas pode agravar uma falha elétrica ou danificar outros componentes."
       },
       {
-        "question": "A EletroLED conserta TV que parou depois de queda de energia?",
-        "answer": "Sim. A assistência avalia danos em fonte, placas e circuitos relacionados a oscilação ou queda de energia."
+        "question": "Queda de energia pode queimar TV?",
+        "answer": "Pode. Oscilações e surtos elétricos podem afetar fonte, placa principal e componentes de proteção. A avaliação confirma a extensão do dano."
+      },
+      {
+        "question": "Dá para passar orçamento só por mensagem?",
+        "answer": "Em alguns casos dá para orientar uma faixa, mas o valor correto depende de teste em bancada e disponibilidade de peças."
+      },
+      {
+        "question": "A EletroLED atende TV que não liga em Santos?",
+        "answer": "Sim. A EletroLED avalia esse sintoma em TVs de várias marcas, sempre como serviço técnico independente quando se tratar de marcas comerciais."
       }
-    ]
+    ],
+    "cta": {
+      "quickTitle": "Evite trocar peça no chute",
+      "quickText": "Envie marca, modelo, tamanho e sintoma da TV para orientar o próximo passo com mais segurança.",
+      "title": "Sua TV está com esse sintoma?",
+      "text": "Fale com a EletroLED pelo WhatsApp e explique marca, modelo e defeito observado antes de levar o aparelho.",
+      "button": "Falar sobre minha TV",
+      "whatsappText": "Olá, li sobre tv não liga: causas comuns e quando chamar assistência e preciso avaliar minha TV. Marca/modelo:"
+    },
+    "links": [
+      {
+        "label": "TV com som mas sem imagem",
+        "url": "/tv-com-som-sem-imagem/",
+        "note": "falhas de imagem e backlight"
+      },
+      {
+        "label": "Quanto custa consertar uma TV",
+        "url": "/quanto-custa-consertar-tv-santos/",
+        "note": "orientação de orçamento"
+      },
+      {
+        "label": "Voltar para a home do blog",
+        "url": "/",
+        "note": "mais guias sobre TV e micro-ondas"
+      },
+      {
+        "label": "Site principal da EletroLED",
+        "url": "https://consertoeletroled.com",
+        "note": "central comercial e informações de atendimento"
+      },
+      {
+        "label": "Contato da EletroLED",
+        "url": "https://consertoeletroled.com/contato",
+        "note": "canal para orçamento e orientação"
+      }
+    ],
+    "image": {
+      "url": "/assets/images/seo/bancada-diagnostico-eletronico.svg",
+      "alt": "Bancada de diagnóstico eletrônico",
+      "caption": "Ilustração de bancada técnica para eletrônicos.",
+      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+    },
+    "imageAlt": "Bancada de diagnóstico eletrônico"
   },
   {
     "title": "Micro-ondas não esquenta: o que pode ser e como resolver em Santos",
     "slug": "microondas-nao-esquenta-santos",
     "date": "2026-06-12",
     "category": "Conserto de micro-ondas",
-    "description": "Veja as causas mais comuns para micro-ondas que liga mas não esquenta e saiba quando procurar conserto especializado em Santos.",
+    "description": "Veja possíveis causas para micro-ondas que liga, mas não esquenta, e entenda por que a avaliação técnica é importante antes do reparo.",
     "keywords": [
+      "Micro-ondas não esquenta: o que pode ser e como resolver",
+      "conserto de micro-ondas",
+      "micro-ondas em Santos",
+      "segurança em micro-ondas",
       "micro-ondas não esquenta",
       "conserto de micro-ondas em Santos",
       "assistência técnica de micro-ondas Santos",
-      "magnetron micro-ondas",
-      "micro-ondas liga mas não aquece"
+      "magnetron micro-ondas"
     ],
-    "intro": "Um micro-ondas que liga, acende o painel e gira o prato, mas não esquenta, geralmente precisa de avaliação técnica. O defeito pode envolver magnetron, capacitor, diodo, fusível de alta tensão ou chave de porta.",
+    "intro": "Micro-ondas que acende o painel, gira o prato e não aquece é um dos defeitos que mais confundem o cliente. Como parte do aparelho parece funcionar, muita gente imagina que seja apenas fusível ou configuração. Na prática, o aquecimento depende de componentes de alta tensão, chaveamento da porta, magnetron, capacitor, transformador ou placa. Por segurança, esse tipo de falha não deve ser investigado abrindo o aparelho em casa.",
     "sections": [
       {
-        "heading": "Por que o micro-ondas liga mas não aquece?",
-        "body": "O funcionamento do painel não garante que o sistema de alta tensão esteja trabalhando. O aparelho pode parecer normal por fora e ainda assim não gerar aquecimento por falha em componentes internos."
+        "heading": "Por que ele liga e não esquenta?",
+        "body": "O painel, a lâmpada e o prato podem funcionar mesmo quando o circuito de aquecimento está com problema. Isso acontece porque nem todos os sistemas internos dependem da mesma etapa elétrica. A causa pode estar em peça de alta tensão, sensor, placa, chave da porta ou no próprio magnetron."
       },
       {
-        "heading": "Peças que costumam causar esse defeito",
-        "body": "Entre as peças mais relacionadas ao problema estão magnetron, capacitor, diodo, transformador, fusíveis e microchaves da porta. Como há alta tensão mesmo após desligar da tomada, não é seguro abrir o equipamento sem preparo."
+        "heading": "O risco da alta tensão",
+        "body": "Micro-ondas trabalha com componentes que podem manter carga perigosa mesmo depois de desligados da tomada. Tentar trocar fusível, capacitor ou magnetron sem conhecimento técnico pode causar choque grave e danificar o aparelho. A orientação segura é não abrir a tampa e procurar assistência."
+      },
+      {
+        "heading": "Quando o problema pode ser simples",
+        "body": "Antes da assistência, confira se a potência não foi reduzida, se o tempo foi programado corretamente e se a porta fecha sem folga. Também vale testar outro alimento com água em recipiente adequado. Se o aparelho continua sem aquecer, pare os testes e encaminhe para avaliação."
+      },
+      {
+        "heading": "Peças que costumam ser avaliadas",
+        "body": "O técnico verifica chave de porta, fusíveis internos, placa eletrônica, capacitor, diodo, transformador e magnetron. A troca de qualquer peça só deve ser indicada depois de medição, porque sintomas parecidos podem ter causas diferentes e valores de reparo bem distintos."
       },
       {
         "heading": "Quando o conserto compensa",
-        "body": "O conserto costuma compensar quando o gabinete está conservado, o painel funciona e a peça necessária tem custo razoável. Em aparelhos muito antigos ou oxidados, o orçamento ajuda a decidir com clareza."
+        "body": "A decisão depende da marca, idade do aparelho, estado interno, disponibilidade de peças e valor do reparo. Micro-ondas bem conservado pode compensar, principalmente quando o defeito é localizado. Em aparelhos muito enferrujados ou com vários danos, o orçamento precisa ser avaliado com mais cautela."
       },
       {
-        "heading": "Assistência em Santos",
-        "body": "A EletroLED avalia micro-ondas de marcas como Electrolux, Brastemp, Consul, Panasonic, LG, Samsung, Philco e Midea, com atendimento em Santos."
+        "heading": "Como falar com a EletroLED",
+        "body": "Envie marca, modelo, sintoma principal e informe se o aparelho faz barulho, cheiro de queimado, faísca ou apenas não aquece. Essas informações ajudam a orientar o atendimento, mas o diagnóstico final depende de teste seguro em bancada."
+      },
+      {
+        "heading": "Como a avaliação técnica reduz risco",
+        "body": "A avaliação em bancada verifica segurança elétrica, travas da porta, estado da cavidade, funcionamento da placa e componentes de alta tensão. Esse cuidado evita trocar peça sem necessidade e reduz o risco de devolver ao uso um aparelho que ainda pode apresentar faísca, aquecimento irregular ou falha intermitente."
+      },
+      {
+        "heading": "Decisão segura antes do reparo",
+        "body": "Depois do diagnóstico, o cliente consegue comparar custo, estado do aparelho e expectativa de uso. Em micro-ondas, essa decisão precisa considerar não apenas preço, mas segurança. Se houver ferrugem avançada, dano interno ou peça crítica indisponível, a orientação pode ser diferente de um simples reparo."
       }
     ],
     "faq": [
       {
-        "question": "Posso usar o micro-ondas se ele não está esquentando?",
-        "answer": "Não é recomendado insistir no uso. O defeito pode envolver alta tensão e componentes que precisam de teste técnico."
+        "question": "Micro-ondas que liga e não esquenta tem conserto?",
+        "answer": "Muitos casos têm conserto, mas depende da peça afetada e do estado geral do aparelho."
       },
       {
-        "question": "Micro-ondas que não esquenta tem conserto?",
-        "answer": "Na maioria dos casos sim. O técnico precisa identificar se o defeito está no magnetron, capacitor, diodo, fusível, chave de porta ou outro componente."
+        "question": "Pode ser magnetron?",
+        "answer": "Pode, mas não é a única causa. Chave de porta, placa, capacitor, diodo e fusíveis internos também precisam ser verificados."
       },
       {
-        "question": "A EletroLED atende micro-ondas em Santos?",
-        "answer": "Sim. A EletroLED realiza conserto de micro-ondas em Santos, na Av. Siqueira Campos, 148, Macuco."
+        "question": "Posso trocar o fusível em casa?",
+        "answer": "Não é recomendado. O aparelho envolve alta tensão e pode oferecer risco mesmo desligado."
+      },
+      {
+        "question": "O orçamento depende da peça?",
+        "answer": "Sim. O valor muda conforme a causa real, disponibilidade da peça e tempo de bancada."
+      },
+      {
+        "question": "A EletroLED avalia micro-ondas em Santos?",
+        "answer": "Sim. A EletroLED avalia micro-ondas com falha de aquecimento, faísca, painel e outros sintomas."
       }
-    ]
+    ],
+    "cta": {
+      "quickTitle": "Evite abrir o micro-ondas em casa",
+      "quickText": "Envie marca, modelo e sintoma pelo WhatsApp para orientar o atendimento sem se expor à alta tensão.",
+      "title": "Seu micro-ondas precisa de avaliação?",
+      "text": "Se o aparelho está falhando, pare o uso quando houver risco e fale com a EletroLED para avaliar com segurança.",
+      "button": "Falar sobre meu micro-ondas",
+      "whatsappText": "Olá, li sobre micro-ondas não esquenta: o que pode ser e como resolver e preciso avaliar meu micro-ondas. Marca/modelo:"
+    },
+    "links": [
+      {
+        "label": "Micro-ondas soltando faísca",
+        "url": "/microondas-soltando-faisca/",
+        "note": "cuidados de segurança"
+      },
+      {
+        "label": "Voltar para a home do blog",
+        "url": "/",
+        "note": "mais guias sobre TV e micro-ondas"
+      },
+      {
+        "label": "Site principal da EletroLED",
+        "url": "https://consertoeletroled.com",
+        "note": "central comercial e informações de atendimento"
+      },
+      {
+        "label": "Contato da EletroLED",
+        "url": "https://consertoeletroled.com/contato",
+        "note": "canal para orçamento e orientação"
+      }
+    ],
+    "image": {
+      "url": "/assets/images/seo/microondas-magnetron-santos.svg",
+      "alt": "Micro-ondas em diagnóstico de aquecimento",
+      "caption": "Ilustração de componentes internos de aquecimento.",
+      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+    },
+    "imageAlt": "Micro-ondas em diagnóstico de aquecimento"
   },
   {
     "title": "TV com som mas sem imagem: backlight, placa ou tela?",
     "slug": "tv-com-som-sem-imagem",
     "date": "2026-06-12",
     "category": "Conserto de TV",
-    "description": "Saiba o que pode causar TV com som e sem imagem, como identificar sinais de backlight queimado e quando buscar assistência técnica.",
+    "description": "Entenda causas comuns para TV com som e sem imagem, incluindo backlight, placa e painel, e saiba quando procurar assistência.",
     "keywords": [
+      "TV com som mas sem imagem: backlight, placa ou tela",
+      "conserto de TV",
+      "diagnóstico de TV",
+      "TV em Santos",
       "TV com som mas sem imagem",
       "TV sem imagem em Santos",
       "reparo de backlight de TV",
-      "conserto de TV LED Santos",
-      "TV tela escura"
+      "conserto de TV LED Santos"
     ],
-    "intro": "A TV com som mas sem imagem é um dos defeitos mais comuns em televisores modernos. Em muitos casos, o problema está no backlight, mas também pode envolver placa T-Con, placa principal, fonte ou a própria tela.",
+    "intro": "Quando a TV tem som, responde ao controle e a tela fica escura, o defeito costuma apontar para imagem, iluminação ou alimentação interna. Muita gente chama esse sintoma de “queimou a tela”, mas nem sempre o painel é o problema. Pode ser backlight, placa fonte, placa principal, T-Con, cabo interno ou configuração. A melhor forma de evitar gasto errado é fazer diagnóstico antes de comprar peça.",
     "sections": [
       {
-        "heading": "Como perceber se é backlight",
-        "body": "Se a TV liga, tem som e responde ao controle, mas a tela fica escura, pode haver falha na iluminação interna. Um técnico consegue confirmar o defeito com testes adequados, sem depender de tentativa e erro."
+        "heading": "Por que a TV pode ficar sem imagem?",
+        "body": "A imagem depende de várias etapas: processamento do sinal, alimentação, iluminação do painel e comunicação entre placas. Se uma dessas etapas falha, o som pode continuar funcionando enquanto a tela permanece escura. Por isso, o sintoma precisa ser avaliado com teste técnico."
       },
       {
-        "heading": "Outras causas possíveis",
-        "body": "Além do backlight, falhas em fonte, placa principal, cabo flat, placa T-Con e painel podem deixar a imagem ausente. Por isso, orçamento técnico é importante antes de trocar qualquer peça."
+        "heading": "Quando pode ser backlight",
+        "body": "Em TVs LED, barras de LED desgastadas podem deixar a tela escura, às vezes com imagem bem fraca quando iluminada por fora. Também pode haver piscadas, manchas ou funcionamento intermitente antes de apagar totalmente. A troca de backlight precisa respeitar modelo, tensão e montagem do painel."
       },
       {
-        "heading": "Cuidados importantes",
-        "body": "Evite apertar a tela, bater no painel ou abrir a tampa traseira. TVs possuem áreas sensíveis, cabos delicados e partes energizadas. Uma tentativa caseira pode transformar um reparo simples em prejuízo maior."
+        "heading": "Pode ser placa ou painel?",
+        "body": "Sim. Placa fonte, principal, T-Con, cabos flat e painel também podem causar ausência de imagem. O diagnóstico separa falha de iluminação de falha de processamento. Essa diferença é importante porque o custo e a viabilidade do reparo mudam bastante."
       },
       {
-        "heading": "Conserto em Santos",
-        "body": "A EletroLED atende casos de TV sem imagem, TV com tela escura, TV piscando e falha de iluminação em Santos, com diagnóstico para diferentes marcas."
+        "heading": "O que evitar antes da avaliação",
+        "body": "Evite pressionar a tela, bater na TV, aquecer com secador ou abrir a tampa traseira. Painéis são frágeis e cabos internos podem se romper com facilidade. O ideal é desligar o aparelho, anotar o comportamento e encaminhar para assistência."
+      },
+      {
+        "heading": "Informações úteis para o atendimento",
+        "body": "Informe se há som, se aparece o menu, se a tela pisca, se houve queda de energia e se o problema começou aos poucos. Um vídeo curto em ambiente escuro pode ajudar a mostrar se existe brilho fraco ou ausência total de iluminação."
+      },
+      {
+        "heading": "Quando procurar assistência em Santos",
+        "body": "Se a TV mantém som sem imagem, o reparo pode ser viável, principalmente em aparelhos maiores ou Smart TVs. A EletroLED avalia o defeito em bancada e orienta o cliente antes de qualquer troca de peça."
+      },
+      {
+        "heading": "Como a avaliação técnica evita gasto errado",
+        "body": "Em TV, o mesmo sintoma pode parecer simples e esconder causas diferentes. Tela escura pode ser backlight, fonte, placa, cabo ou painel; falha ao ligar pode ser proteção interna ou curto. A avaliação mede antes de trocar, protegendo o cliente de comprar peça sem resolver o problema."
+      },
+      {
+        "heading": "Decisão com base no estado real da TV",
+        "body": "Depois do diagnóstico, fica mais claro se o reparo compensa. O técnico considera tamanho, tipo de painel, disponibilidade de peças, estado físico e custo final. Assim o cliente escolhe entre consertar ou trocar o aparelho com informação concreta, não apenas pelo susto do defeito."
+      },
+      {
+        "heading": "Histórico do defeito também importa",
+        "body": "Informar se o problema começou depois de queda de energia, transporte, chuva, limpeza ou mudança de cabo ajuda a interpretar o sintoma. Esse histórico não fecha diagnóstico sozinho, mas orienta os testes e reduz tempo perdido com hipóteses pouco prováveis."
       }
     ],
     "faq": [
       {
-        "question": "TV com som e sem imagem é sempre backlight?",
-        "answer": "Não. Backlight é comum, mas placa principal, fonte, T-Con, cabos internos ou painel também podem causar o sintoma."
+        "question": "TV com som e sem imagem tem conserto?",
+        "answer": "Muitos casos têm conserto, principalmente quando o defeito está em backlight, fonte ou placa. O painel precisa ser avaliado."
       },
       {
-        "question": "Vale a pena trocar backlight?",
-        "answer": "Muitas vezes vale, especialmente se o restante da TV está bom. O orçamento depende do modelo e do tamanho da tela."
+        "question": "Troca de barra de LED vale a pena?",
+        "answer": "Pode valer em TVs bem conservadas, mas depende do tamanho, modelo e custo das peças."
       },
       {
-        "question": "A EletroLED faz reparo de TV com tela escura?",
-        "answer": "Sim. A EletroLED avalia TVs com tela escura, sem imagem ou com falha de iluminação em Santos."
+        "question": "Como saber se é backlight?",
+        "answer": "Um técnico consegue testar iluminação, tensão e placas. Testes caseiros não confirmam o diagnóstico com segurança."
+      },
+      {
+        "question": "Pode continuar usando só com som?",
+        "answer": "Não faz sentido insistir, porque a falha pode piorar ou indicar problema elétrico interno."
+      },
+      {
+        "question": "A EletroLED atende esse sintoma?",
+        "answer": "Sim. A EletroLED avalia TVs com tela escura, imagem fraca, som sem imagem e falhas de backlight."
       }
-    ]
+    ],
+    "cta": {
+      "quickTitle": "Evite trocar peça no chute",
+      "quickText": "Envie marca, modelo, tamanho e sintoma da TV para orientar o próximo passo com mais segurança.",
+      "title": "Sua TV está com esse sintoma?",
+      "text": "Fale com a EletroLED pelo WhatsApp e explique marca, modelo e defeito observado antes de levar o aparelho.",
+      "button": "Falar sobre minha TV",
+      "whatsappText": "Olá, li sobre tv com som mas sem imagem: backlight, placa ou tela e preciso avaliar minha TV. Marca/modelo:"
+    },
+    "links": [
+      {
+        "label": "TV não liga em Santos",
+        "url": "/tv-nao-liga-em-santos/",
+        "note": "falhas de energia e placa"
+      },
+      {
+        "label": "Quanto custa consertar uma TV",
+        "url": "/quanto-custa-consertar-tv-santos/",
+        "note": "orientação de orçamento"
+      },
+      {
+        "label": "Voltar para a home do blog",
+        "url": "/",
+        "note": "mais guias sobre TV e micro-ondas"
+      },
+      {
+        "label": "Site principal da EletroLED",
+        "url": "https://consertoeletroled.com",
+        "note": "central comercial e informações de atendimento"
+      },
+      {
+        "label": "Contato da EletroLED",
+        "url": "https://consertoeletroled.com/contato",
+        "note": "canal para orçamento e orientação"
+      }
+    ],
+    "image": {
+      "url": "/assets/images/seo/tv-backlight-santos.svg",
+      "alt": "Painel de TV com falha de iluminação",
+      "caption": "Ilustração de diagnóstico de backlight em TV LED.",
+      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+    },
+    "imageAlt": "Painel de TV com falha de iluminação"
   },
   {
     "title": "Micro-ondas soltando faísca: é perigoso continuar usando?",
     "slug": "microondas-soltando-faisca",
     "date": "2026-06-12",
     "category": "Conserto de micro-ondas",
-    "description": "Entenda por que o micro-ondas solta faísca, quais situações são perigosas e quando buscar assistência técnica em Santos.",
+    "description": "Micro-ondas soltando faísca exige cuidado. Entenda causas comuns, riscos e quando chamar assistência técnica com segurança.",
     "keywords": [
+      "Micro-ondas soltando faísca: é perigoso continuar usando",
+      "conserto de micro-ondas",
+      "micro-ondas em Santos",
+      "segurança em micro-ondas",
       "micro-ondas soltando faísca",
       "conserto de micro-ondas Santos",
       "micro-ondas faiscando",
-      "placa mica micro-ondas",
-      "assistência técnica micro-ondas"
+      "placa mica micro-ondas"
     ],
-    "intro": "Faísca dentro do micro-ondas é sinal de alerta. Pode ser algo simples, como sujeira ou uso de metal, mas também pode indicar placa mica danificada, pintura interna comprometida, guia de onda queimado ou falha em componentes.",
+    "intro": "Faísca dentro do micro-ondas nunca deve ser tratada como algo normal. O problema pode estar em sujeira carbonizada, uso de metal, placa mica danificada, tinta interna desgastada, guia de ondas afetado ou componente interno em falha. Algumas situações são simples de prevenir, mas outras exigem avaliação técnica. O ponto principal é não continuar usando o aparelho até entender a causa.",
     "sections": [
       {
-        "heading": "Primeiro cuidado",
-        "body": "Desligue o aparelho e não continue usando até entender a causa. Faíscas podem danificar o interior do micro-ondas e aumentar o risco de falha elétrica."
+        "heading": "Por que o micro-ondas solta faísca?",
+        "body": "Faíscas podem surgir quando há metal, papel alumínio, recipiente inadequado, restos de alimento queimado ou gordura acumulada. Também podem aparecer quando a placa mica está danificada ou quando há desgaste interno na cavidade. Cada caso exige cuidado diferente."
       },
       {
-        "heading": "Causas comuns",
-        "body": "As causas incluem talheres ou alumínio dentro do aparelho, restos de alimento carbonizados, placa mica queimada, tinta interna descascada, suporte metálico inadequado ou problema no sistema de micro-ondas."
+        "heading": "Quando é perigoso continuar usando",
+        "body": "Se a faísca se repete, vem acompanhada de cheiro de queimado, barulho alto, fumaça ou marca escura na lateral interna, desligue imediatamente. Continuar usando pode ampliar o dano, afetar o guia de ondas e aumentar risco de curto ou queima de componente."
       },
       {
-        "heading": "Quando precisa de assistência",
-        "body": "Procure assistência se a faísca aparece mesmo sem metal, se há cheiro de queimado, barulho incomum, marca escura na lateral interna ou se o aparelho parou de aquecer depois do episódio."
+        "heading": "O que verificar sem abrir o aparelho",
+        "body": "Confira se não havia metal, talher, embalagem metalizada ou prato com detalhe dourado. Espere esfriar e observe a cavidade interna com o aparelho desligado. Não raspe partes internas com objeto metálico e não tente pintar a cavidade sem orientação."
       },
       {
-        "heading": "Atendimento local",
-        "body": "A EletroLED faz avaliação de micro-ondas soltando faísca em Santos e orienta se o reparo compensa de acordo com o estado do aparelho."
+        "heading": "Placa mica e guia de ondas",
+        "body": "A placa mica protege a região por onde a energia chega à cavidade. Quando ela queima, suja ou fura, pode gerar faíscas. A substituição parece simples, mas precisa ser feita com peça adequada e com verificação da região ao redor para evitar reincidência."
+      },
+      {
+        "heading": "Por que não abrir em casa",
+        "body": "Além da alta tensão, o micro-ondas possui componentes sensíveis e risco de descarga elétrica. Abrir para procurar a causa da faísca sem técnica adequada não é seguro. O correto é interromper o uso e levar para avaliação."
+      },
+      {
+        "heading": "Atendimento recomendado",
+        "body": "Envie foto da parte interna, informe se usou algum recipiente diferente e descreva quando a faísca aparece. A EletroLED avalia o aparelho e orienta se o reparo é seguro e economicamente coerente."
+      },
+      {
+        "heading": "Como a avaliação técnica reduz risco",
+        "body": "A avaliação em bancada verifica segurança elétrica, travas da porta, estado da cavidade, funcionamento da placa e componentes de alta tensão. Esse cuidado evita trocar peça sem necessidade e reduz o risco de devolver ao uso um aparelho que ainda pode apresentar faísca, aquecimento irregular ou falha intermitente."
+      },
+      {
+        "heading": "Decisão segura antes do reparo",
+        "body": "Depois do diagnóstico, o cliente consegue comparar custo, estado do aparelho e expectativa de uso. Em micro-ondas, essa decisão precisa considerar não apenas preço, mas segurança. Se houver ferrugem avançada, dano interno ou peça crítica indisponível, a orientação pode ser diferente de um simples reparo."
       }
     ],
     "faq": [
       {
-        "question": "Posso usar o micro-ondas depois que ele soltou faísca?",
-        "answer": "O ideal é parar o uso e verificar a causa. Continuar usando pode aumentar o dano."
+        "question": "Micro-ondas soltando faísca é perigoso?",
+        "answer": "Pode ser. Se a faísca se repete ou vem com cheiro de queimado, pare o uso e procure avaliação."
       },
       {
-        "question": "Placa mica queimada causa faísca?",
-        "answer": "Sim. A placa mica danificada ou suja é uma causa frequente de faíscas no micro-ondas."
+        "question": "Pode ser só sujeira?",
+        "answer": "Pode, mas também pode ser placa mica danificada, metal, tinta desgastada ou falha interna."
       },
       {
-        "question": "A EletroLED conserta micro-ondas faiscando?",
-        "answer": "Sim. A EletroLED avalia micro-ondas soltando faísca em Santos."
+        "question": "Posso trocar a placa mica sozinho?",
+        "answer": "Não é recomendado sem avaliação, porque a região ao redor pode estar danificada."
+      },
+      {
+        "question": "Usar recipiente errado causa faísca?",
+        "answer": "Sim. Metal, papel alumínio e detalhes metalizados podem causar faísca rapidamente."
+      },
+      {
+        "question": "A EletroLED avalia micro-ondas com faísca?",
+        "answer": "Sim. A avaliação verifica segurança, cavidade, mica, guia de ondas e componentes relacionados."
       }
-    ]
+    ],
+    "cta": {
+      "quickTitle": "Evite abrir o micro-ondas em casa",
+      "quickText": "Envie marca, modelo e sintoma pelo WhatsApp para orientar o atendimento sem se expor à alta tensão.",
+      "title": "Seu micro-ondas precisa de avaliação?",
+      "text": "Se o aparelho está falhando, pare o uso quando houver risco e fale com a EletroLED para avaliar com segurança.",
+      "button": "Falar sobre meu micro-ondas",
+      "whatsappText": "Olá, li sobre micro-ondas soltando faísca: é perigoso continuar usando e preciso avaliar meu micro-ondas. Marca/modelo:"
+    },
+    "links": [
+      {
+        "label": "Micro-ondas não esquenta",
+        "url": "/microondas-nao-esquenta-santos/",
+        "note": "guia principal de aquecimento"
+      },
+      {
+        "label": "Voltar para a home do blog",
+        "url": "/",
+        "note": "mais guias sobre TV e micro-ondas"
+      },
+      {
+        "label": "Site principal da EletroLED",
+        "url": "https://consertoeletroled.com",
+        "note": "central comercial e informações de atendimento"
+      },
+      {
+        "label": "Contato da EletroLED",
+        "url": "https://consertoeletroled.com/contato",
+        "note": "canal para orçamento e orientação"
+      }
+    ],
+    "image": {
+      "url": "/assets/images/seo/assistencia-tecnica-microondas-santos.svg",
+      "alt": "Micro-ondas sobre bancada de assistência técnica",
+      "caption": "Ilustração institucional para manutenção de micro-ondas.",
+      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+    },
+    "imageAlt": "Micro-ondas sobre bancada de assistência técnica"
   },
   {
     "title": "Conserto de TV Samsung em Santos: defeitos mais comuns",
     "slug": "conserto-tv-samsung-santos",
     "date": "2026-06-12",
     "category": "Marcas de TV",
-    "description": "Conheça defeitos comuns em TVs Samsung e saiba quando procurar assistência técnica para orçamento em Santos.",
+    "description": "Conheça defeitos comuns em TVs Samsung e saiba como um serviço independente pode avaliar imagem, fonte, sistema e orçamento em Santos.",
     "keywords": [
+      "Conserto de TV Samsung: defeitos mais comuns",
+      "serviço independente de TV",
+      "conserto de TV em Santos",
+      "diagnóstico de TV",
       "conserto TV Samsung Santos",
       "assistência técnica TV Samsung Santos",
       "TV Samsung não liga",
-      "TV Samsung sem imagem",
-      "TV Samsung reiniciando"
+      "TV Samsung sem imagem"
     ],
-    "intro": "TVs Samsung são muito populares em Santos, e aparecem na assistência com sintomas como não ligar, reiniciar sozinha, ficar sem imagem, apresentar linhas na tela ou falhar aplicativos de Smart TV.",
+    "intro": "TVs Samsung podem apresentar sintomas como tela escura, liga e desliga, travamento no logo, falha de Wi-Fi, linhas na imagem ou ausência de som. Esses problemas não significam sempre a mesma peça defeituosa. A EletroLED realiza atendimento técnico independente para TVs Samsung em Santos, com diagnóstico antes de indicar reparo. O conteúdo abaixo é informativo e não representa assistência autorizada oficial da marca.",
     "sections": [
       {
-        "heading": "Defeitos frequentes",
-        "body": "Entre os defeitos mais vistos estão falha de fonte, backlight, placa principal, conectores HDMI e problemas de imagem. Cada modelo tem particularidades, então o diagnóstico evita troca desnecessária de peças."
+        "heading": "Defeitos comuns em TVs Samsung",
+        "body": "Entre os sintomas frequentes estão falha de backlight, placa fonte com instabilidade, travamento de sistema, imagem piscando, tela sem brilho e problemas em entradas HDMI. A causa depende do modelo, tamanho, tipo de painel e histórico de uso."
       },
       {
-        "heading": "Sinais de alerta",
-        "body": "Procure assistência se a TV Samsung desliga sozinha, liga e apaga, fica presa no logo, não reconhece HDMI, perde imagem ou fica com tela azul, preta ou com manchas."
+        "heading": "Tela escura ou sem imagem",
+        "body": "Em muitos casos, a TV mantém som ou responde ao controle, mas não mostra imagem. Isso pode indicar backlight, fonte, placa principal, T-Con ou painel. O teste técnico separa defeito de iluminação de defeito de processamento."
       },
       {
-        "heading": "Cuidados antes do orçamento",
-        "body": "Anote o modelo da TV, descreva o sintoma e informe se houve queda, oscilação de energia ou contato com umidade. Essas informações ajudam no diagnóstico."
+        "heading": "TV ligando e desligando",
+        "body": "Reiniciar sozinho pode ter relação com fonte, placa principal, software, curto em LEDs ou proteção interna. Insistir em ligar pode piorar o defeito. O ideal é anotar o comportamento e pedir avaliação."
       },
       {
-        "heading": "Assistência em Santos",
-        "body": "A EletroLED realiza avaliação e conserto de TVs Samsung em Santos, com atendimento na Av. Siqueira Campos, 148, no Macuco."
+        "heading": "Serviço independente e linguagem correta",
+        "body": "A EletroLED atende TVs Samsung como assistência técnica independente. Isso significa que o serviço não deve ser confundido com garantia oficial, autorizada Samsung ou representante da fabricante. O objetivo é avaliar e reparar quando o conserto for viável."
+      },
+      {
+        "heading": "O que enviar antes do orçamento",
+        "body": "Informe modelo completo, tamanho em polegadas, sintoma, tempo de uso e se houve queda de energia. Foto da etiqueta traseira e vídeo curto ajudam a orientar o primeiro contato pelo WhatsApp."
+      },
+      {
+        "heading": "Quando o reparo compensa",
+        "body": "O conserto pode compensar principalmente em TVs maiores, aparelhos bem conservados e falhas localizadas. Se houver dano em painel ou múltiplas falhas, o orçamento precisa ser avaliado com mais cautela."
+      },
+      {
+        "heading": "Por que o modelo exato importa",
+        "body": "Dentro da mesma marca existem linhas, tamanhos e placas diferentes. O modelo completo ajuda a identificar histórico de falhas, disponibilidade de peças e cuidados de desmontagem. Por isso, a etiqueta traseira é mais útil do que apenas informar a marca comercial da TV."
+      },
+      {
+        "heading": "Critério para não prometer resultado",
+        "body": "Um serviço técnico responsável não promete reparo antes de testar fonte, placas, iluminação e painel. Em TVs de marca conhecida, o valor do aparelho pode justificar diagnóstico, mas o conserto só faz sentido quando a causa é confirmada e o orçamento fica coerente para o cliente."
+      },
+      {
+        "heading": "Cuidados com garantia e peças",
+        "body": "Se o aparelho ainda estiver em garantia de fábrica, o cliente deve verificar as condições oficiais antes de qualquer reparo independente. Fora desse cenário, a avaliação ajuda a identificar se há peça compatível e se o reparo mantém segurança, imagem e funcionamento estável."
       }
     ],
     "faq": [
       {
-        "question": "TV Samsung que reinicia sozinha tem conserto?",
-        "answer": "Sim, em muitos casos. Pode ser fonte, placa principal, software ou falha relacionada a componentes internos."
+        "question": "A EletroLED é autorizada Samsung?",
+        "answer": "O atendimento é técnico independente. Não usamos linguagem de autorizada oficial sem comprovação."
       },
       {
-        "question": "A EletroLED conserta Smart TV Samsung?",
-        "answer": "Sim. A EletroLED avalia Smart TVs Samsung e outras marcas em Santos."
+        "question": "TV Samsung com tela escura tem conserto?",
+        "answer": "Muitos casos têm conserto, mas é necessário confirmar se a falha está em backlight, placa ou painel."
       },
       {
-        "question": "Preciso levar a TV Samsung com controle e cabo?",
-        "answer": "Se possível, leve controle e cabo de energia. Isso ajuda nos testes durante o diagnóstico."
+        "question": "TV Samsung reiniciando pode ser placa?",
+        "answer": "Pode ser placa, fonte, software ou proteção interna. O diagnóstico diferencia essas possibilidades."
+      },
+      {
+        "question": "Dá para saber o valor por mensagem?",
+        "answer": "A mensagem ajuda a orientar, mas orçamento correto depende de avaliação técnica."
+      },
+      {
+        "question": "Onde fica o atendimento?",
+        "answer": "A EletroLED atende no Macuco, em Santos, na Av. Siqueira Campos, 148."
       }
-    ]
+    ],
+    "cta": {
+      "quickTitle": "Evite trocar peça no chute",
+      "quickText": "Envie marca, modelo, tamanho e sintoma da TV para orientar o próximo passo com mais segurança.",
+      "title": "Sua TV está com esse sintoma?",
+      "text": "Fale com a EletroLED pelo WhatsApp e explique marca, modelo e defeito observado antes de levar o aparelho.",
+      "button": "Falar sobre minha TV",
+      "whatsappText": "Olá, li sobre conserto de tv samsung: defeitos mais comuns e preciso avaliar minha TV. Marca/modelo:"
+    },
+    "links": [
+      {
+        "label": "TV com som mas sem imagem",
+        "url": "/tv-com-som-sem-imagem/",
+        "note": "sintoma comum em várias marcas"
+      },
+      {
+        "label": "TV não liga em Santos",
+        "url": "/tv-nao-liga-em-santos/",
+        "note": "diagnóstico de energia e placa"
+      },
+      {
+        "label": "Quanto custa consertar uma TV",
+        "url": "/quanto-custa-consertar-tv-santos/",
+        "note": "decisão de orçamento"
+      },
+      {
+        "label": "Voltar para a home do blog",
+        "url": "/",
+        "note": "mais guias sobre TV e micro-ondas"
+      },
+      {
+        "label": "Site principal da EletroLED",
+        "url": "https://consertoeletroled.com",
+        "note": "central comercial e informações de atendimento"
+      },
+      {
+        "label": "Contato da EletroLED",
+        "url": "https://consertoeletroled.com/contato",
+        "note": "canal para orçamento e orientação"
+      }
+    ],
+    "image": {
+      "url": "/assets/images/seo/tv-marcas-santos.svg",
+      "alt": "Televisor de marca variada em bancada técnica",
+      "caption": "Ilustração institucional para atendimento de TVs.",
+      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+    },
+    "imageAlt": "Televisor de marca variada em bancada técnica"
   },
   {
     "title": "Conserto de TV LG em Santos: tela escura, sem imagem e travamentos",
     "slug": "conserto-tv-lg-santos",
     "date": "2026-06-12",
     "category": "Marcas de TV",
-    "description": "Veja problemas comuns em TVs LG e como a assistência técnica pode avaliar falhas de imagem, fonte, backlight e Smart TV.",
+    "description": "Veja sintomas comuns em TVs LG e como um serviço técnico independente avalia tela escura, fonte, sistema e backlight em Santos.",
     "keywords": [
+      "Conserto de TV LG: tela escura, sem imagem e travamentos",
+      "serviço independente de TV",
+      "conserto de TV em Santos",
+      "diagnóstico de TV",
       "conserto TV LG Santos",
       "assistência técnica TV LG Santos",
       "TV LG tela escura",
-      "TV LG sem imagem",
-      "TV LG não liga"
+      "TV LG sem imagem"
     ],
-    "intro": "TVs LG podem apresentar falhas como tela escura, som sem imagem, travamento no sistema Smart, desligamento repentino ou dificuldade para ligar. Em Santos, a EletroLED realiza diagnóstico para identificar a causa real do defeito.",
+    "intro": "TVs LG podem apresentar tela escura, imagem azulada, travamento de aplicativos, falha de Wi-Fi, desligamento repentino ou ausência de imagem. A causa pode variar bastante conforme o modelo e o histórico do aparelho. A EletroLED atende TVs LG em Santos como serviço técnico independente, sem se apresentar como autorizada oficial. O diagnóstico é o que define se o reparo faz sentido.",
     "sections": [
       {
-        "heading": "Problemas comuns em TVs LG",
-        "body": "Alguns sintomas recorrentes são falha de backlight, defeito na placa fonte, falhas na placa principal, tela com manchas, HDMI sem sinal e lentidão no sistema Smart."
+        "heading": "Sintomas comuns em TVs LG",
+        "body": "Entre os problemas mais relatados estão desgaste de LEDs, tela sem brilho, fonte instável, travamento de Smart TV, falha em HDMI e som sem imagem. O mesmo sintoma pode estar ligado a peças diferentes, por isso a avaliação evita troca desnecessária."
       },
       {
-        "heading": "Quando buscar reparo",
-        "body": "Busque assistência quando a TV LG apresenta imagem apagada, som normal sem imagem, liga e desliga, fica no logo, não responde ao controle ou perde conexão com frequência."
+        "heading": "Imagem azulada ou escura",
+        "body": "Alguns modelos podem apresentar desgaste no conjunto de LEDs, gerando imagem azulada, roxa, fraca ou apagada. Também pode haver problema de fonte, cabo interno ou painel. A análise em bancada confirma a origem antes de sugerir reparo."
       },
       {
-        "heading": "Diagnóstico antes da troca de peças",
-        "body": "O mesmo sintoma pode ter causas diferentes. Uma TV sem imagem pode ter problema de LEDs, fonte, placa ou painel. Por isso, o orçamento técnico é essencial."
+        "heading": "Smart TV travando",
+        "body": "Aplicativos lentos, sistema travado ou TV reiniciando podem ter relação com memória, software, placa principal ou rede. Nem todo travamento é resolvido com reset, e insistir em atualizações sem estabilidade pode piorar a situação."
       },
       {
-        "heading": "EletroLED em Santos",
-        "body": "A EletroLED atende TVs LG e outras marcas em Santos, com foco em diagnóstico, orçamento claro e reparo técnico."
+        "heading": "Serviço independente para LG",
+        "body": "O atendimento da EletroLED é independente. Isso é importante para evitar confusão com garantia oficial ou autorizada LG. O foco é diagnóstico transparente, orçamento e reparo quando tecnicamente viável."
+      },
+      {
+        "heading": "Como preparar o atendimento",
+        "body": "Envie o modelo completo, tamanho, sintoma e informe se aparece som, logo ou menu. Se a imagem muda de cor, pisca ou fica escura depois de alguns minutos, grave um vídeo curto para ajudar na triagem."
+      },
+      {
+        "heading": "Quando vale avaliar o reparo",
+        "body": "TVs LG maiores ou em bom estado geralmente merecem diagnóstico antes de descarte. A decisão depende de peça, painel, tempo de uso e custo final do reparo."
+      },
+      {
+        "heading": "Por que o modelo exato importa",
+        "body": "Dentro da mesma marca existem linhas, tamanhos e placas diferentes. O modelo completo ajuda a identificar histórico de falhas, disponibilidade de peças e cuidados de desmontagem. Por isso, a etiqueta traseira é mais útil do que apenas informar a marca comercial da TV."
+      },
+      {
+        "heading": "Critério para não prometer resultado",
+        "body": "Um serviço técnico responsável não promete reparo antes de testar fonte, placas, iluminação e painel. Em TVs de marca conhecida, o valor do aparelho pode justificar diagnóstico, mas o conserto só faz sentido quando a causa é confirmada e o orçamento fica coerente para o cliente."
+      },
+      {
+        "heading": "Cuidados com garantia e peças",
+        "body": "Se o aparelho ainda estiver em garantia de fábrica, o cliente deve verificar as condições oficiais antes de qualquer reparo independente. Fora desse cenário, a avaliação ajuda a identificar se há peça compatível e se o reparo mantém segurança, imagem e funcionamento estável."
       }
     ],
     "faq": [
       {
-        "question": "TV LG com tela escura pode ser backlight?",
-        "answer": "Sim, mas também pode envolver placa fonte, placa principal, T-Con ou painel. O diagnóstico confirma."
+        "question": "A EletroLED é autorizada LG?",
+        "answer": "Não declaramos atendimento como autorizado oficial. O serviço é independente para avaliação e reparo."
       },
       {
-        "question": "A EletroLED conserta TV LG em Santos?",
-        "answer": "Sim. A EletroLED realiza avaliação e conserto de TVs LG em Santos."
+        "question": "TV LG com imagem azulada tem conserto?",
+        "answer": "Pode ter, especialmente se o defeito estiver no conjunto de LEDs. A avaliação confirma."
       },
       {
-        "question": "TV LG sem imagem mas com som vale consertar?",
-        "answer": "Muitas vezes vale, principalmente em TVs maiores. O orçamento mostra a melhor decisão."
+        "question": "TV LG travada no sistema sempre precisa de placa?",
+        "answer": "Não. Pode ser software, memória, rede ou placa. O diagnóstico define o caminho."
+      },
+      {
+        "question": "Vale a pena consertar TV LG?",
+        "answer": "Depende do tamanho, estado do aparelho e custo das peças. O orçamento técnico ajuda na decisão."
+      },
+      {
+        "question": "A EletroLED atende TVs LG em Santos?",
+        "answer": "Sim. O atendimento é feito em Santos para TVs LG e outras marcas, como serviço independente."
       }
-    ]
+    ],
+    "cta": {
+      "quickTitle": "Evite trocar peça no chute",
+      "quickText": "Envie marca, modelo, tamanho e sintoma da TV para orientar o próximo passo com mais segurança.",
+      "title": "Sua TV está com esse sintoma?",
+      "text": "Fale com a EletroLED pelo WhatsApp e explique marca, modelo e defeito observado antes de levar o aparelho.",
+      "button": "Falar sobre minha TV",
+      "whatsappText": "Olá, li sobre conserto de tv lg: tela escura, sem imagem e travamentos e preciso avaliar minha TV. Marca/modelo:"
+    },
+    "links": [
+      {
+        "label": "TV com som mas sem imagem",
+        "url": "/tv-com-som-sem-imagem/",
+        "note": "sintoma comum em várias marcas"
+      },
+      {
+        "label": "TV não liga em Santos",
+        "url": "/tv-nao-liga-em-santos/",
+        "note": "diagnóstico de energia e placa"
+      },
+      {
+        "label": "Quanto custa consertar uma TV",
+        "url": "/quanto-custa-consertar-tv-santos/",
+        "note": "decisão de orçamento"
+      },
+      {
+        "label": "Voltar para a home do blog",
+        "url": "/",
+        "note": "mais guias sobre TV e micro-ondas"
+      },
+      {
+        "label": "Site principal da EletroLED",
+        "url": "https://consertoeletroled.com",
+        "note": "central comercial e informações de atendimento"
+      },
+      {
+        "label": "Contato da EletroLED",
+        "url": "https://consertoeletroled.com/contato",
+        "note": "canal para orçamento e orientação"
+      }
+    ],
+    "image": {
+      "url": "/assets/images/seo/tv-lg-santos.svg",
+      "alt": "TV LG em serviço independente de diagnóstico",
+      "caption": "Ilustração para conteúdo sobre TVs LG.",
+      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+    },
+    "imageAlt": "TV LG em serviço independente de diagnóstico"
   },
   {
     "title": "Assistência técnica no Macuco: conserto de TVs e micro-ondas perto de você",
     "slug": "assistencia-tecnica-macuco-santos",
     "date": "2026-06-12",
     "category": "SEO local",
-    "description": "Conheça a assistência técnica da EletroLED no Macuco, em Santos, para conserto de TVs e micro-ondas de várias marcas.",
+    "description": "Conheça o atendimento técnico da EletroLED no Macuco, em Santos, para avaliação de TVs e micro-ondas de várias marcas.",
     "keywords": [
+      "Assistência técnica no Macuco: conserto de TVs e micro-ondas perto de você",
       "assistência técnica no Macuco",
-      "conserto de TV Macuco Santos",
-      "conserto de micro-ondas Macuco",
-      "assistência técnica perto de mim",
-      "Av. Siqueira Campos assistência técnica"
+      "atendimento técnico em Santos",
+      "Baixada Santista",
+      "conserto de micro-ondas",
+      "micro-ondas em Santos",
+      "segurança em micro-ondas",
+      "conserto de TV Macuco Santos"
     ],
-    "intro": "Quem procura assistência técnica no Macuco, em Santos, precisa de atendimento próximo, comunicação clara e diagnóstico confiável. A EletroLED fica na Av. Siqueira Campos, 148, e atende conserto de TVs e micro-ondas.",
+    "intro": "Para quem mora no Macuco ou em bairros próximos de Santos, ter uma assistência técnica local facilita a avaliação de TVs e micro-ondas sem depender apenas de tentativa por telefone. A EletroLED atende na Av. Siqueira Campos, 148, com foco em diagnóstico, orçamento e orientação clara antes do reparo. O objetivo é ajudar o cliente a decidir se vale consertar, trocar peça ou substituir o aparelho.",
     "sections": [
       {
-        "heading": "Localização da EletroLED",
-        "body": "A assistência fica na Av. Siqueira Campos, 148, no bairro Macuco, em Santos. A localização facilita o acesso para moradores do Macuco, Embaré, Aparecida, Gonzaga, Ponta da Praia, Vila Mathias e bairros próximos."
+        "heading": "Por que a localização ajuda",
+        "body": "A proximidade facilita levar o aparelho, explicar o defeito e acompanhar o orçamento. Em defeitos de TV e micro-ondas, a avaliação presencial costuma ser mais confiável do que tentar definir a causa apenas por mensagem."
       },
       {
-        "heading": "Serviços atendidos",
-        "body": "A EletroLED trabalha com conserto de TVs, Smart TVs, TVs LED, LCD, OLED e QLED, além de conserto de micro-ondas com falhas de aquecimento, faísca, barulho, prato que não gira e painel apagado."
+        "heading": "Atendimento para TVs",
+        "body": "A EletroLED avalia TVs LED, LCD, Smart TV, OLED e QLED com sintomas como tela escura, sem imagem, não liga, desliga sozinha, travamento no logo, falha de som e problemas em HDMI ou Wi-Fi."
       },
       {
-        "heading": "Por que procurar uma assistência local",
-        "body": "Uma assistência local facilita o contato, o acompanhamento do orçamento e a retirada do equipamento. Também ajuda quem busca conserto de TV perto de mim ou técnico de micro-ondas em Santos."
+        "heading": "Atendimento para micro-ondas",
+        "body": "Também são avaliados micro-ondas que não esquentam, soltam faísca, fazem barulho alto, desarmam disjuntor, têm painel apagado ou apresentam problema de porta. Por envolver alta tensão, não é recomendado abrir o aparelho em casa."
       },
       {
-        "heading": "Como chamar atendimento",
-        "body": "O cliente pode entrar em contato pelo WhatsApp, informar marca, modelo e defeito aparente, e receber orientação sobre os próximos passos."
+        "heading": "Bairros e região atendida",
+        "body": "O foco local é Santos, com referência no Macuco, mas o conteúdo também atende buscas de quem está em regiões próximas como Gonzaga, Boqueirão, Embaré, Aparecida, Ponta da Praia e Vila Mathias."
+      },
+      {
+        "heading": "Como solicitar orientação",
+        "body": "Antes de levar o aparelho, envie pelo WhatsApp marca, modelo, defeito observado e, se possível, foto da etiqueta. Isso ajuda a organizar o atendimento e evita informações incompletas no orçamento."
+      },
+      {
+        "heading": "Diagnóstico antes de promessa",
+        "body": "Nenhum sintoma deve ser tratado como diagnóstico fechado sem teste. A avaliação técnica protege o cliente de troca de peça errada e ajuda a decidir com base no estado real do aparelho."
+      },
+      {
+        "heading": "Atendimento local com informação completa",
+        "body": "Para atendimento em Santos, a descrição do defeito ajuda muito: aparelho, marca, modelo, bairro, quando começou e se houve queda, chuva ou oscilação de energia. Essas informações reduzem idas desnecessárias e tornam o orçamento mais objetivo quando o aparelho chega para avaliação."
+      },
+      {
+        "heading": "Como o blog apoia o site principal",
+        "body": "O blog explica sintomas e cuidados; o site principal concentra contato, endereço e conversão. Essa separação deixa o conteúdo mais útil para quem pesquisa no Google e mantém a página comercial limpa para quem já decidiu falar com a assistência."
+      },
+      {
+        "heading": "Referência local sem exagero de palavra-chave",
+        "body": "O conteúdo menciona Santos, Macuco e bairros próximos quando isso ajuda o leitor a entender localização e atendimento. A intenção é reforçar relevância local de forma natural, sem repetir cidade em cada frase e sem criar páginas vazias apenas para ranquear. Também orienta o cliente a descrever o defeito antes de sair com o aparelho, o que torna o atendimento mais objetivo."
       }
     ],
     "faq": [
       {
         "question": "Onde fica a EletroLED?",
-        "answer": "A EletroLED fica na Av. Siqueira Campos, 148, Macuco, Santos - SP."
+        "answer": "A EletroLED fica na Av. Siqueira Campos, 148, no Macuco, em Santos."
       },
       {
-        "question": "A assistência atende bairros próximos ao Macuco?",
-        "answer": "Sim. A EletroLED atende clientes de Santos e bairros próximos, como Embaré, Aparecida, Gonzaga, Ponta da Praia e Vila Mathias."
+        "question": "A assistência atende TV e micro-ondas?",
+        "answer": "Sim. O atendimento cobre avaliação de TVs e micro-ondas de várias marcas."
       },
       {
-        "question": "Quais aparelhos a EletroLED conserta?",
-        "answer": "A EletroLED é especializada em TVs e micro-ondas."
+        "question": "Preciso levar o aparelho sem avisar?",
+        "answer": "O ideal é chamar no WhatsApp antes, enviar modelo e sintoma, e confirmar a melhor forma de atendimento."
+      },
+      {
+        "question": "Atende somente Macuco?",
+        "answer": "A referência física é no Macuco, mas o conteúdo e atendimento alcançam clientes de outros bairros de Santos."
+      },
+      {
+        "question": "O orçamento é feito antes do conserto?",
+        "answer": "Sim. A avaliação técnica orienta o orçamento antes da decisão de reparo."
       }
-    ]
+    ],
+    "cta": {
+      "quickTitle": "Precisa de atendimento local em Santos?",
+      "quickText": "Envie o bairro, aparelho, marca e sintoma para organizar a avaliação com a EletroLED.",
+      "title": "Fale com a EletroLED no Macuco",
+      "text": "Descreva o defeito e confirme a melhor forma de atendimento para TV ou micro-ondas.",
+      "button": "Chamar atendimento local",
+      "whatsappText": "Olá, estou em Santos e preciso de atendimento para este aparelho:"
+    },
+    "links": [
+      {
+        "label": "Micro-ondas não esquenta",
+        "url": "/microondas-nao-esquenta-santos/",
+        "note": "guia principal de aquecimento"
+      },
+      {
+        "label": "Micro-ondas soltando faísca",
+        "url": "/microondas-soltando-faisca/",
+        "note": "cuidados de segurança"
+      },
+      {
+        "label": "Voltar para a home do blog",
+        "url": "/",
+        "note": "mais guias sobre TV e micro-ondas"
+      },
+      {
+        "label": "Site principal da EletroLED",
+        "url": "https://consertoeletroled.com",
+        "note": "central comercial e informações de atendimento"
+      },
+      {
+        "label": "Contato da EletroLED",
+        "url": "https://consertoeletroled.com/contato",
+        "note": "canal para orçamento e orientação"
+      }
+    ],
+    "image": {
+      "url": "/assets/images/seo/assistencia-tecnica-macuco-santos.svg",
+      "alt": "Atendimento técnico no Macuco em Santos",
+      "caption": "Ilustração institucional de assistência técnica no Macuco.",
+      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+    },
+    "imageAlt": "Atendimento técnico no Macuco em Santos"
   },
   {
     "title": "Quanto custa consertar uma TV em Santos?",
     "slug": "quanto-custa-consertar-tv-santos",
     "date": "2026-06-12",
     "category": "Orçamento",
-    "description": "Entenda o que influencia o valor do conserto de TV em Santos e por que o diagnóstico técnico é essencial antes de decidir.",
+    "description": "Entenda o que influencia o preço do conserto de TV em Santos e por que o orçamento depende de diagnóstico técnico.",
     "keywords": [
+      "Quanto custa consertar uma TV",
+      "orçamento de conserto",
+      "vale a pena consertar",
+      "assistência técnica em Santos",
       "quanto custa consertar TV em Santos",
       "orçamento conserto de TV Santos",
       "conserto de TV preço",
-      "diagnóstico TV Santos",
-      "assistência técnica TV Santos"
+      "diagnóstico TV Santos"
     ],
-    "intro": "O custo para consertar uma TV em Santos depende do defeito, do modelo, do tamanho da tela, da disponibilidade de peças e do estado geral do aparelho. Por isso, prometer preço sem diagnóstico costuma ser pouco confiável.",
+    "intro": "Perguntar quanto custa consertar uma TV é normal, mas a resposta correta depende da causa do defeito. Uma tela escura pode ser backlight, fonte, placa, cabo ou painel; uma TV que não liga pode ter desde falha simples até dano por queda de energia. Por isso, orçamento responsável não deve prometer valor fechado sem avaliação. O diagnóstico mostra se o reparo compensa e evita gasto com peça errada.",
     "sections": [
       {
-        "heading": "O que influencia o preço",
-        "body": "Defeitos em fonte, backlight, placa principal, T-Con, conectores e tela têm custos diferentes. TVs maiores ou modelos mais recentes podem exigir peças específicas."
+        "heading": "O que influencia o valor",
+        "body": "Tamanho da TV, tipo de painel, marca, disponibilidade de peças, complexidade da desmontagem e tempo de bancada influenciam o preço. TVs maiores podem ter peças mais caras, mas também podem justificar melhor o reparo quando estão em bom estado."
       },
       {
-        "heading": "Por que o diagnóstico importa",
-        "body": "Sintomas parecidos podem ter causas diferentes. Uma TV que não liga pode ter falha simples ou um problema mais complexo. O diagnóstico evita orçamento errado."
+        "heading": "Sintoma não é orçamento fechado",
+        "body": "Dois aparelhos com “sem imagem” podem ter causas diferentes. Um pode precisar de troca de LEDs; outro pode ter falha em placa ou painel. Sem medição, qualquer valor informado é apenas orientação inicial, não orçamento definitivo."
       },
       {
         "heading": "Quando o conserto costuma compensar",
-        "body": "Geralmente compensa avaliar TVs maiores, Smart TVs e aparelhos em bom estado físico. Se o painel está quebrado ou a TV é muito antiga, o orçamento ajuda a decidir."
+        "body": "Geralmente vale avaliar TVs maiores, Smart TVs recentes e aparelhos bem conservados. O reparo fica menos interessante quando há painel quebrado, oxidação forte, múltiplas falhas ou custo próximo ao de um aparelho novo."
       },
       {
-        "heading": "Orçamento na EletroLED",
-        "body": "A EletroLED informa diagnóstico gratuito e orçamento transparente para conserto de TVs e micro-ondas em Santos."
+        "heading": "Por que o diagnóstico protege o cliente",
+        "body": "O teste técnico reduz risco de trocar peça sem necessidade. Também ajuda a identificar se o defeito tem origem em energia, impacto, desgaste de backlight, placa principal ou outro componente."
+      },
+      {
+        "heading": "Como pedir orçamento com mais precisão",
+        "body": "Envie marca, modelo, polegadas, sintoma e histórico do problema. Foto da etiqueta traseira e vídeo curto do defeito ajudam. Mesmo assim, o valor final depende da avaliação presencial ou em bancada."
+      },
+      {
+        "heading": "Atendimento em Santos",
+        "body": "A EletroLED avalia TVs em Santos e orienta o cliente antes de qualquer reparo. A decisão final deve considerar valor, estado do aparelho e expectativa de uso."
+      },
+      {
+        "heading": "Como comparar orçamento com troca do aparelho",
+        "body": "A comparação deve considerar preço de uma peça equivalente, idade do aparelho, qualidade da imagem, frequência de uso e garantia do serviço executado. Nem sempre o menor valor imediato é a melhor decisão; o objetivo é entender se o reparo devolve uso confiável por um período razoável."
+      },
+      {
+        "heading": "Por que avaliação evita surpresa",
+        "body": "Quando o orçamento parte de diagnóstico, o cliente entende o que será feito, qual peça está envolvida e quais riscos existem. Isso reduz surpresa depois da aprovação e evita a situação de trocar uma peça simples enquanto o defeito principal continua escondido."
+      },
+      {
+        "heading": "O que muda de um aparelho para outro",
+        "body": "Dois aparelhos com o mesmo sintoma podem ter valores diferentes por causa de tamanho, montagem, acesso às peças e tempo de bancada. Por isso, o orçamento precisa considerar o equipamento real, e não apenas uma tabela genérica de defeitos."
       }
     ],
     "faq": [
       {
-        "question": "Dá para passar preço de conserto de TV pelo WhatsApp?",
-        "answer": "Dá para orientar, mas o valor correto depende de diagnóstico, modelo e defeito real."
+        "question": "Dá para saber o preço sem avaliação?",
+        "answer": "Na maioria dos casos, não com precisão. É possível orientar, mas o orçamento correto depende de diagnóstico."
       },
       {
-        "question": "Conserto de TV sem imagem é caro?",
-        "answer": "Depende se o problema é backlight, placa, cabo interno ou painel. O orçamento técnico define o custo."
+        "question": "Troca de backlight é sempre cara?",
+        "answer": "Depende do tamanho, modelo, tipo de LED e mão de obra necessária para desmontagem segura do painel."
       },
       {
-        "question": "A EletroLED faz orçamento de TV em Santos?",
-        "answer": "Sim. A EletroLED realiza diagnóstico e orçamento para conserto de TVs em Santos."
+        "question": "Quando compensa trocar a TV?",
+        "answer": "Quando o painel está danificado ou o custo do reparo fica muito próximo ao valor de uma TV equivalente em bom estado."
+      },
+      {
+        "question": "A assistência informa o valor antes do reparo?",
+        "answer": "Sim. A avaliação gera orçamento para o cliente decidir antes da execução."
+      },
+      {
+        "question": "O orçamento muda por marca?",
+        "answer": "Pode mudar, porque peças, montagem e disponibilidade variam conforme marca e modelo."
       }
-    ]
+    ],
+    "cta": {
+      "quickTitle": "Quer saber se o reparo compensa?",
+      "quickText": "Envie marca, modelo e defeito observado para receber orientação inicial antes do orçamento técnico.",
+      "title": "Precisa decidir entre consertar ou trocar?",
+      "text": "A EletroLED pode avaliar o aparelho e explicar o que pesa no orçamento antes do reparo.",
+      "button": "Pedir orientação de orçamento",
+      "whatsappText": "Olá, quero entender se o conserto compensa. O aparelho e o defeito são:"
+    },
+    "links": [
+      {
+        "label": "TV não liga em Santos",
+        "url": "/tv-nao-liga-em-santos/",
+        "note": "defeito comum que influencia orçamento"
+      },
+      {
+        "label": "Voltar para a home do blog",
+        "url": "/",
+        "note": "mais guias sobre TV e micro-ondas"
+      },
+      {
+        "label": "Site principal da EletroLED",
+        "url": "https://consertoeletroled.com",
+        "note": "central comercial e informações de atendimento"
+      },
+      {
+        "label": "Contato da EletroLED",
+        "url": "https://consertoeletroled.com/contato",
+        "note": "canal para orçamento e orientação"
+      }
+    ],
+    "image": {
+      "url": "/assets/images/seo/orcamento-assistencia-santos.svg",
+      "alt": "Atendimento técnico para orçamento de eletrônico",
+      "caption": "Ilustração institucional de atendimento e orçamento.",
+      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+    },
+    "imageAlt": "Atendimento técnico para orçamento de eletrônico"
   }
 ]

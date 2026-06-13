@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="assistencia tecnica macuco santos">
+  <rect width="1200" height="675" fill="#f8fbff"/>
+  <circle cx="1000" cy="80" r="170" fill="#ffd1d4" opacity=".55"/>
+  <circle cx="120" cy="600" r="210" fill="#ffd1d4" opacity=".35"/>
+  <path d="M480 118c-92 0-166 74-166 166 0 122 166 280 166 280s166-158 166-280c0-92-74-166-166-166z" fill="#fff" stroke="#ee171f" stroke-width="18"/><circle cx="480" cy="286" r="74" fill="#ffd1d4" stroke="#143454" stroke-width="14"/>
+  <text x="86" y="84" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#ee171f">EletroLED</text>
+  <text x="86" y="612" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#143454">assistencia tecnica macuco santos</text>
+  <text x="86" y="648" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#626a78">Dicas técnicas para Santos e região</text>
+</svg>

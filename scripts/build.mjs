@@ -1,4 +1,4 @@
-import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -9,9 +9,11 @@ const posts = JSON.parse(await readFile(path.join(root, 'content', 'posts.json')
 
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
+await cp(path.join(root, 'assets'), path.join(dist, 'assets'), { recursive: true, force: true }).catch(() => {});
 
 const now = new Date().toISOString();
 const sortedPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title));
+const siteOrigin = new URL(site.baseUrl).origin;
 
 function escapeHtml(value) {
   return String(value)
@@ -28,6 +30,11 @@ function absoluteUrl(pathname = '') {
   return clean ? `${base}/${clean}` : base;
 }
 
+function absoluteAssetUrl(url = '') {
+  if (/^https?:\/\//i.test(url)) return url;
+  return absoluteUrl(url);
+}
+
 function whatsappUrl(text) {
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`;
 }
@@ -39,6 +46,7 @@ function jsonLd(data) {
 function layout({ title, description, canonical, body, schema = [], keywords = [], image = site.defaultImage }) {
   const fullTitle = `${title} | ${site.businessName}`;
   const keywordMeta = keywords.length ? `<meta name="keywords" content="${escapeHtml(keywords.join(', '))}">` : '';
+  const metaImage = absoluteAssetUrl(image);
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -52,8 +60,9 @@ function layout({ title, description, canonical, body, schema = [], keywords = [
   <meta property="og:title" content="${escapeHtml(fullTitle)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${escapeHtml(canonical)}">
-  <meta property="og:image" content="${escapeHtml(image)}">
+  <meta property="og:image" content="${escapeHtml(metaImage)}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${escapeHtml(metaImage)}">
   <link rel="icon" href="${escapeHtml(site.logo)}">
   <link rel="apple-touch-icon" href="${escapeHtml(site.logo)}">
   <link rel="alternate" type="application/rss+xml" title="${escapeHtml(site.siteName)}" href="${escapeHtml(absoluteUrl('feed.xml'))}">
@@ -122,8 +131,20 @@ function mediaImage(key) {
 }
 
 function pickPostImage(post) {
+  if (typeof post.image === 'string' && post.image) {
+    return {
+      url: post.image,
+      alt: post.imageAlt || `Imagem ilustrativa do artigo ${post.title}`,
+      caption: post.imageCaption || 'Imagem ilustrativa de apoio ao artigo.',
+      source: post.imageSource || 'Acervo visual da EletroLED'
+    };
+  }
+
   if (post.image?.url) {
-    return post.image;
+    return {
+      ...post.image,
+      alt: post.imageAlt || post.image.alt || `Imagem ilustrativa do artigo ${post.title}`
+    };
   }
 
   const text = textForPost(post);
@@ -135,7 +156,31 @@ function pickPostImage(post) {
 }
 
 function ctaMessage(post) {
-  return `Olá, li o artigo "${post.title}" e preciso de orientação da EletroLED. Meu aparelho é:`;
+  return post.cta?.whatsappText || `Olá, li o artigo "${post.title}" e preciso de orientação da EletroLED. Meu aparelho é:`;
+}
+
+function internalPathname(url) {
+  if (!url) return '';
+  try {
+    const parsed = new URL(url, site.baseUrl);
+    if (parsed.origin !== siteOrigin) return '';
+    return parsed.pathname.endsWith('/') ? parsed.pathname : `${parsed.pathname}/`;
+  } catch {
+    return '';
+  }
+}
+
+function editorialLinksFor(post) {
+  const links = Array.isArray(post.links) ? post.links : [];
+  const selfPath = `/${post.slug}/`;
+  const seen = new Set();
+
+  return links.filter((link) => {
+    const key = link.url || '';
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return internalPathname(key) !== selfPath;
+  });
 }
 
 function keywordOverlap(a, b) {
@@ -163,12 +208,24 @@ function renderArticleSections(post) {
     return `${sectionHtml}
         <div class="quick-cta">
           <div>
-            <strong>Quer evitar tentativa no escuro?</strong>
-            <p>Envie marca, modelo e sintoma pelo WhatsApp para receber orientação inicial da EletroLED.</p>
+            <strong>${escapeHtml(post.cta?.quickTitle || 'Quer evitar tentativa no escuro?')}</strong>
+            <p>${escapeHtml(post.cta?.quickText || 'Envie marca, modelo e sintoma pelo WhatsApp para receber orientação inicial da EletroLED.')}</p>
           </div>
-          <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl(ctaMessage(post)))}">Enviar aparelho no WhatsApp</a>
+          <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl(ctaMessage(post)))}">${escapeHtml(post.cta?.button || 'Enviar aparelho no WhatsApp')}</a>
         </div>`;
   }).join('\n');
+}
+
+function renderEditorialLinks(post) {
+  const links = editorialLinksFor(post);
+  if (!links.length) return '';
+
+  return `<section class="editorial-links" aria-labelledby="editorial-links-title">
+          <h2 id="editorial-links-title">Leitura e atendimento relacionados</h2>
+          <ul>
+            ${links.slice(0, 5).map((link) => `<li><a href="${escapeHtml(link.url)}">${escapeHtml(link.label)}</a>${link.note ? ` <span>${escapeHtml(link.note)}</span>` : ''}</li>`).join('\n')}
+          </ul>
+        </section>`;
 }
 
 function renderRelatedPosts(post) {
@@ -274,7 +331,7 @@ for (const post of sortedPosts) {
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
-    image: image.url,
+    image: absoluteAssetUrl(image.url),
     datePublished: post.date,
     dateModified: post.date,
     author: {
@@ -312,13 +369,14 @@ for (const post of sortedPosts) {
         <p class="lead">${escapeHtml(post.intro)}</p>
         <p class="service-link">Para atendimento técnico, orçamento e orientação presencial, acesse o site da <a href="${escapeHtml(site.mainSiteUrl)}">EletroLED Assistência Técnica em Santos</a> ou chame direto no WhatsApp.</p>
         ${renderArticleSections(post)}
+        ${renderEditorialLinks(post)}
       </section>
       <aside class="cta-panel">
         <div>
-          <h2>Precisa de assistência em Santos?</h2>
-          <p>Fale com a EletroLED pelo WhatsApp e informe marca, modelo e defeito aparente do aparelho.</p>
+          <h2>${escapeHtml(post.cta?.title || 'Precisa de assistência em Santos?')}</h2>
+          <p>${escapeHtml(post.cta?.text || 'Fale com a EletroLED pelo WhatsApp e informe marca, modelo e defeito aparente do aparelho.')}</p>
         </div>
-        <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl(ctaMessage(post)))}">Chamar no WhatsApp</a>
+        <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl(ctaMessage(post)))}">${escapeHtml(post.cta?.button || 'Chamar no WhatsApp')}</a>
       </aside>
       ${renderRelatedPosts(post)}
       <section class="faq">
@@ -689,6 +747,37 @@ nav a:focus {
 
 .service-link a {
   color: var(--brand);
+}
+
+.editorial-links {
+  margin: 34px 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.editorial-links h2 {
+  margin: 0 0 12px;
+  color: var(--brand-dark);
+  font-size: 1.25rem;
+}
+
+.editorial-links ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.editorial-links a {
+  color: var(--brand);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.editorial-links span {
+  color: var(--muted);
 }
 
 .lead {
