@@ -140,6 +140,159 @@ function postImage(key) {
   return images[key] || images.workbench;
 }
 
+function tvDepthSections(symptom, causes) {
+  return [
+    {
+      heading: 'Checklist rápido antes do orçamento',
+      body: `Antes de levar a TV, anote marca, modelo, tamanho em polegadas, quando o problema começou e se houve queda de energia, chuva forte, queda física ou mudança de tomada. Também vale testar outra tomada e outro cabo quando o modelo permitir. Essas informações ajudam a assistência técnica em Santos a separar defeitos simples de falhas internas ligadas a ${causes}.`
+    },
+    {
+      heading: 'Sinais de que o defeito é interno',
+      body: `Quando a TV apresenta ${symptom} junto com estalos, cheiro de queimado, aquecimento excessivo, LED piscando em sequência, tela escura com som ou desligamento logo após ligar, o mais prudente é parar os testes. Esses sinais normalmente pedem medição em fonte, placa principal, backlight, T-Con ou conectores internos, e não tentativa caseira.`
+    },
+    {
+      heading: 'Como explicar o problema no WhatsApp',
+      body: 'Para acelerar o primeiro atendimento, envie uma mensagem dizendo o modelo da TV, o sintoma principal, se existe som, se aparece logo na tela, se o controle responde e se o defeito é constante ou intermitente. Se puder, envie uma foto da etiqueta traseira e um vídeo curto mostrando o comportamento do aparelho.'
+    },
+    {
+      heading: 'Por que o diagnóstico evita gasto errado',
+      body: 'Em conserto de TV, sintomas parecidos podem ter causas diferentes. Uma tela escura pode ser backlight, fonte, cabo flat ou painel; uma TV que não liga pode ser fonte, placa principal ou proteção interna. O diagnóstico técnico evita comprar peça errada e ajuda o cliente a decidir se o reparo compensa.'
+    },
+    {
+      heading: 'O que costuma influenciar o valor do reparo',
+      body: 'O preço depende do tamanho da TV, tipo de painel, disponibilidade de peças, tempo de bancada e causa real do defeito. Reparos em fonte e conectores costumam ter lógica diferente de falhas em painel ou conjunto de LEDs. Por isso, a melhor resposta vem depois do teste, não apenas pelo sintoma contado por mensagem.'
+    },
+    {
+      heading: 'Próximo passo recomendado',
+      body: 'Se a TV é usada com frequência e ainda está em bom estado físico, vale pedir orientação antes de trocar por outra. Chame a EletroLED, envie modelo e sintoma, e combine a avaliação. Esse caminho evita pressa, reduz risco de compra desnecessária e ajuda a decidir com informação real.'
+    }
+  ];
+}
+
+function microwaveDepthSections(symptom, causes) {
+  return [
+    {
+      heading: 'Checklist seguro antes de levar o aparelho',
+      body: `Anote marca, modelo, capacidade aproximada em litros e descreva quando o micro-ondas começou com ${symptom}. Informe se o defeito apareceu depois de queda de energia, faísca, limpeza interna, uso de metal ou cheiro de queimado. Não abra a tampa: componentes de alta tensão podem manter carga mesmo com o aparelho fora da tomada.`
+    },
+    {
+      heading: 'Sinais de alerta para parar o uso',
+      body: `Pare de usar se houver faísca, fumaça, cheiro forte, barulho anormal, disjuntor desarmando, aquecimento irregular ou falha na porta. Esses sinais podem envolver ${causes}, além de placa, fiação, microchaves e sistema de alta tensão. Continuar usando pode aumentar o dano e tornar o reparo menos vantajoso.`
+    },
+    {
+      heading: 'Como descrever o defeito no WhatsApp',
+      body: 'Uma boa mensagem informa se o painel acende, se o prato gira, se a luz interna liga, se o alimento esquenta, se há faísca e se a porta fecha corretamente. Foto da etiqueta do aparelho e vídeo curto do sintoma ajudam a EletroLED a orientar o próximo passo antes da avaliação presencial.'
+    },
+    {
+      heading: 'Por que micro-ondas exige assistência técnica',
+      body: 'Diferente de aparelhos simples, o micro-ondas combina comando eletrônico, travas de porta e alta tensão. Mesmo defeitos aparentemente pequenos podem envolver segurança. Por isso, a avaliação técnica é importante para decidir se basta trocar peça, corrigir contato, substituir placa mica ou se o custo não compensa.'
+    },
+    {
+      heading: 'O que pesa no orçamento do micro-ondas',
+      body: 'O valor do reparo depende da peça afetada, do acesso ao componente, do estado interno, da oxidação e da segurança da porta. Defeitos em placa de comando, magnetron, capacitor, diodo ou transformador têm custos e riscos diferentes. A avaliação mostra se o aparelho ainda compensa ou se a troca é mais racional.'
+    },
+    {
+      heading: 'Próximo passo recomendado',
+      body: 'Se o aparelho ainda está conservado e o defeito apareceu de repente, vale pedir uma orientação inicial. Informe a marca, o modelo e o comportamento exato pelo WhatsApp da EletroLED. Se houver faísca, cheiro forte ou disjuntor desarmando, não tente novos testes antes da avaliação.'
+    }
+  ];
+}
+
+function brandDepthSections(brand, focus) {
+  return [
+    {
+      heading: `Checklist para levar uma TV ${brand}`,
+      body: `Antes do orçamento, confirme o modelo exato da TV ${brand}, tamanho da tela e ano aproximado de compra. Informe se o problema aparece ao ligar, ao abrir aplicativos, ao usar HDMI ou depois de algum tempo ligada. Esses detalhes ajudam a comparar o sintoma com falhas comuns de ${focus}.`
+    },
+    {
+      heading: 'Diferença entre sintoma e causa real',
+      body: 'O cliente vê o sintoma, mas a causa real só aparece no teste. Uma TV sem imagem pode ter backlight, fonte, T-Con, cabo flat ou painel. Uma TV travada pode ter software, memória, placa principal ou alimentação instável. Essa diferença é o motivo para evitar orçamento definitivo sem diagnóstico.'
+    },
+    {
+      heading: 'Cuidados com transporte até a assistência',
+      body: 'Transporte a TV sempre em pé, protegendo a tela contra pressão e torção. Evite apoiar objetos sobre o painel, não segure pelo display e leve controle e cabo de energia quando possível. Em TVs grandes, o cuidado no transporte pode evitar dano adicional antes do reparo.'
+    },
+    {
+      heading: 'Como a EletroLED orienta a decisão',
+      body: 'A EletroLED avalia o defeito, explica a hipótese técnica e apresenta orçamento para que o cliente compare reparo, idade do aparelho e valor de substituição. A meta é consertar quando faz sentido e orientar com clareza quando o custo não compensa.'
+    },
+    {
+      heading: `Quando uma TV ${brand} costuma merecer orçamento`,
+      body: `Vale avaliar principalmente quando a TV ${brand} tem tela inteira, bom estado físico, tamanho maior e defeito eletrônico provável. Mesmo em modelos antigos, um orçamento pode ser útil para comparar reparo e substituição. O que não vale é comprar peça antes de saber se o problema está em fonte, placa, backlight ou painel.`
+    },
+    {
+      heading: 'Próximo passo recomendado',
+      body: 'Envie uma mensagem com foto da etiqueta traseira, tamanho da tela e descrição do defeito. Se aparecer imagem, envie foto da tela; se não aparece, diga se há som, LED aceso ou resposta ao controle. Com isso, a EletroLED consegue orientar melhor antes da avaliação.'
+    }
+  ];
+}
+
+function localDepthSections(neighborhood, device, isMicro) {
+  return [
+    {
+      heading: `Como moradores do ${neighborhood} podem agilizar o atendimento`,
+      body: `Quem está no ${neighborhood} pode chamar a EletroLED pelo WhatsApp antes de se deslocar. Envie marca, modelo, sintoma e uma foto da etiqueta do aparelho. Isso ajuda a confirmar se o melhor passo é levar o ${device} para avaliação, separar acessórios ou informar algum detalhe antes do orçamento.`
+    },
+    {
+      heading: 'O que levar junto com o aparelho',
+      body: isMicro
+        ? 'No caso de micro-ondas, normalmente basta levar o aparelho limpo e sem utensílios internos. Se o defeito envolve prato que não gira, leve também o prato e o acoplador para teste. Não leve alimentos ou recipientes.'
+        : 'No caso de TV, leve o cabo de energia e o controle remoto quando possível. Se o defeito aparece apenas com HDMI, antena ou fonte externa, informe qual equipamento foi usado para que o diagnóstico considere essa situação.'
+    },
+    {
+      heading: 'Por que o bairro importa para SEO local e para o cliente',
+      body: `Mencionar ${neighborhood} não é enfeite: muita gente procura assistência técnica perto de casa ou do trabalho. Conteúdo local ajuda o cliente a entender que a EletroLED atende Santos de forma prática, sem criar endereço falso ou promessa exagerada para cada bairro.`
+    },
+    {
+      heading: 'Como decidir se vale sair para orçamento',
+      body: 'Vale buscar avaliação quando o aparelho tem bom estado físico, é usado com frequência e o defeito parece reparável. Quando há tela quebrada, ferrugem intensa ou dano físico grave, o orçamento ainda ajuda a tomar uma decisão consciente.'
+    },
+    {
+      heading: `Atendimento local sem promessa artificial no ${neighborhood}`,
+      body: `A EletroLED não precisa fingir ter um endereço em cada bairro para atender bem. O ponto físico fica no Macuco, mas o conteúdo por bairro ajuda quem está no ${neighborhood} a entender distância, sintomas atendidos e como iniciar o contato. Isso é útil para o cliente e coerente para SEO local.`
+    },
+    {
+      heading: 'Próximo passo recomendado',
+      body: `Se você está no ${neighborhood}, envie uma mensagem antes de se deslocar. Diga qual aparelho é, qual defeito aparece e se precisa de orientação para levar até a assistência. Assim o atendimento fica mais rápido e o orçamento começa com informações melhores.`
+    }
+  ];
+}
+
+function guideDepthSections(device, focus, isMicro) {
+  return [
+    {
+      heading: 'Perguntas que ajudam na decisão',
+      body: `Antes de decidir sobre ${focus}, responda: o aparelho é usado todos os dias? O defeito apareceu de repente? Houve queda, faísca, umidade ou queda de energia? O equipamento ainda atende sua rotina? Essas respostas ajudam a comparar reparo, troca e urgência.`
+    },
+    {
+      heading: 'Quando a economia vira risco',
+      body: isMicro
+        ? 'No micro-ondas, tentar economizar abrindo o aparelho pode virar risco de choque, curto ou dano maior. Alta tensão, magnetron, capacitor e microchaves exigem avaliação técnica e ferramentas adequadas.'
+        : 'Na TV, tentar economizar abrindo a tampa, apertando tela ou comprando placa sem diagnóstico pode transformar um defeito simples em prejuízo maior. Placas, cabos flat e painel são sensíveis.'
+    },
+    {
+      heading: 'Como pedir orientação sem perder tempo',
+      body: 'Ao chamar a EletroLED, envie marca, modelo, foto da etiqueta e um resumo objetivo do defeito. Diga o que já foi testado com segurança, como tomada, cabo, controle ou configuração. Isso evita conversa longa e melhora a primeira orientação.'
+    },
+    {
+      heading: 'Critério prático para orçamento',
+      body: `O orçamento tende a fazer sentido quando o ${device} está conservado, a peça existe, o reparo fica proporcional ao valor do aparelho e o uso no dia a dia justifica. Quando esses pontos não fecham, a assistência pode orientar com transparência.`
+    },
+    {
+      heading: 'Como evitar decisão por impulso',
+      body: `Quando o ${device} para de funcionar, é comum pensar em comprar outro imediatamente. Antes disso, vale comparar preço de reposição, idade do aparelho, defeito provável e urgência. Um orçamento técnico não obriga o conserto, mas dá uma base melhor para decidir sem chute.`
+    },
+    {
+      heading: 'Próximo passo recomendado',
+      body: 'Use o WhatsApp para mandar as informações principais e perguntar se vale levar para avaliação. A resposta inicial não substitui diagnóstico, mas ajuda a filtrar casos simples, situações perigosas e reparos que provavelmente merecem orçamento presencial.'
+    },
+    {
+      heading: 'Como esse guia ajuda na prática',
+      body: `A função deste conteúdo é reduzir dúvida antes do contato. Em vez de prometer preço fechado sem ver o ${device}, o guia mostra critérios, riscos e informações necessárias para um orçamento melhor. Isso poupa tempo do cliente, melhora a conversa com o técnico e evita decisões baseadas só em achismo.`
+    }
+  ];
+}
+
 function tvPost([title, slug, symptom, causes]) {
   return {
     title,
@@ -171,7 +324,8 @@ function tvPost([title, slug, symptom, causes]) {
       {
         heading: 'Como a EletroLED avalia em Santos',
         body: 'O diagnóstico considera marca, modelo, histórico do defeito e testes internos de fonte, placas, backlight, cabos e painel. Com isso, o orçamento fica mais claro para decidir se o reparo compensa.'
-      }
+      },
+      ...tvDepthSections(symptom, causes)
     ],
     faq: [
       {
@@ -221,7 +375,8 @@ function microwavePost([title, slug, symptom, causes]) {
       {
         heading: 'Atendimento da EletroLED em Santos',
         body: 'A EletroLED avalia micro-ondas de marcas como Brastemp, Consul, Electrolux, Panasonic, LG, Samsung, Philco e Midea, com orientação clara antes do reparo.'
-      }
+      },
+      ...microwaveDepthSections(symptom, causes)
     ],
     faq: [
       {
@@ -272,7 +427,8 @@ function brandPost([title, slug, brand, focus]) {
       {
         heading: 'Atendimento em Santos',
         body: 'A EletroLED atende TVs de diversas marcas na Av. Siqueira Campos, 148, Macuco, Santos, com orientação pelo WhatsApp antes da avaliação presencial.'
-      }
+      },
+      ...brandDepthSections(brand, focus)
     ],
     faq: [
       {
@@ -325,7 +481,8 @@ function localPost([title, slug, neighborhood, device]) {
       {
         heading: 'EletroLED no Macuco',
         body: `A EletroLED atende clientes do ${neighborhood} e de outros bairros de Santos com foco em TVs e micro-ondas, sempre com diagnóstico antes da decisão de reparo.`
-      }
+      },
+      ...localDepthSections(neighborhood, device, isMicro)
     ],
     faq: [
       {
@@ -378,7 +535,8 @@ function guidePost([title, slug, device, focus]) {
       {
         heading: 'Como a EletroLED pode ajudar',
         body: 'A EletroLED faz orientação inicial pelo WhatsApp e avaliação técnica em Santos para TVs e micro-ondas, com foco em orçamento claro e reparo quando compensa.'
-      }
+      },
+      ...guideDepthSections(device, focus, isMicro)
     ],
     faq: [
       {

@@ -40,6 +40,13 @@ function validateCollection(posts, name) {
     assert(Array.isArray(post.keywords) && post.keywords.length >= 4, `${name}: ${post.slug} precisa de keywords`);
     assert(Array.isArray(post.sections) && post.sections.length >= 4, `${name}: ${post.slug} precisa de 4 seções`);
     assert(Array.isArray(post.faq) && post.faq.length >= 3, `${name}: ${post.slug} precisa de FAQ`);
+    const text = `${post.intro || ''} ${post.sections.map((section) => `${section.heading} ${section.body}`).join(' ')} ${post.faq.map((item) => `${item.question} ${item.answer}`).join(' ')}`;
+    const wordCount = text.split(/\s+/).filter(Boolean).length;
+    const minimumWords = name === 'drafts.json' ? 500 : 200;
+    assert(wordCount >= minimumWords, `${name}: ${post.slug} tem apenas ${wordCount} palavras`);
+    if (name === 'drafts.json') {
+      assert(post.sections.length >= 8, `${name}: ${post.slug} precisa de pelo menos 8 seções`);
+    }
     if (post.image) {
       assert(post.image.url && post.image.alt, `${name}: ${post.slug} tem imagem incompleta`);
     }
