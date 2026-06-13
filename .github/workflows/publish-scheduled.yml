@@ -1,0 +1,52 @@
+name: Publicar artigo agendado
+
+on:
+  schedule:
+    # 08:20 em Santos (America/Sao_Paulo, UTC-3), de segunda a sexta.
+    - cron: '20 11 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Quantidade de artigos para publicar manualmente'
+        required: false
+        default: '1'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Publicar próximo rascunho
+        env:
+          PUBLISH_COUNT: ${{ github.event.inputs.count || '1' }}
+        run: npm run publish:scheduled -- --count="$PUBLISH_COUNT"
+
+      - name: Gerar site estático
+        run: npm run build
+
+      - name: Validar SEO e arquivos gerados
+        run: npm run validate
+
+      - name: Commitar publicação
+        run: |
+          if git diff --quiet; then
+            echo "Nenhuma alteração para publicar."
+            exit 0
+          fi
+
+          git config user.name "EletroLED SEO Bot"
+          git config user.email "actions@github.com"
+          git add content/posts.json content/drafts.json dist scripts package.json
+          git commit -m "Publish scheduled blog post"
+          git push

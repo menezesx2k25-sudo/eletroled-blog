@@ -17,6 +17,38 @@
   "hours": "Segunda a sexta, 09:00 às 17:30. Sábado, 09:00 às 14:00.",
   "logo": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop/GlokoPcKnA0JWUEo/gemini_generated_image_nr4h3inr4h3inr4h-1-qDlem5LW3X6uPsYo.png",
   "defaultImage": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/GlokoPcKnA0JWUEo/6facfed3-40d3-48c1-a7bd-be58f1c8797d-uoXy5m861ZtME3x2.png",
+  "media": {
+    "tv": {
+      "url": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=806,fit=crop/GlokoPcKnA0JWUEo/40481a296b034d07ba71afb70133cdd8-CGsAhxTpQsyFkbJk.webp",
+      "alt": "TV em bancada de assistência técnica da EletroLED em Santos",
+      "caption": "Imagem ilustrativa de atendimento técnico para TVs na EletroLED.",
+      "source": "Mídia própria da EletroLED no CDN do site principal"
+    },
+    "microwave": {
+      "url": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=814,fit=crop/GlokoPcKnA0JWUEo/modern-microwave-oven-png-image-background-UGB1Atikr8uQTKYj.png",
+      "alt": "Micro-ondas usado em conteúdo de assistência técnica da EletroLED",
+      "caption": "Imagem ilustrativa de micro-ondas para orientar diagnóstico e conserto.",
+      "source": "Mídia própria da EletroLED no CDN do site principal"
+    },
+    "workbench": {
+      "url": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/GlokoPcKnA0JWUEo/6facfed3-40d3-48c1-a7bd-be58f1c8797d-uoXy5m861ZtME3x2.png",
+      "alt": "Bancada de assistência técnica da EletroLED para TVs e micro-ondas em Santos",
+      "caption": "Atendimento técnico para TVs e micro-ondas na EletroLED em Santos.",
+      "source": "Mídia própria da EletroLED no CDN do site principal"
+    },
+    "lg": {
+      "url": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=626,fit=crop/GlokoPcKnA0JWUEo/lg-logo-1-1024x451-TkJYl7EVfbEsyjv7.png",
+      "alt": "Logo LG em conteúdo sobre conserto de TV LG em Santos",
+      "caption": "Conteúdo informativo sobre defeitos comuns em TVs LG.",
+      "source": "Logo de marca exibido no site principal da EletroLED"
+    },
+    "samsung": {
+      "url": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=486,fit=crop/GlokoPcKnA0JWUEo/samsung_old_logo_before_year_2015.svg-XqvFxeuhQy8Sm4R1.png",
+      "alt": "Logo Samsung em conteúdo sobre conserto de TV Samsung em Santos",
+      "caption": "Conteúdo informativo sobre defeitos comuns em TVs Samsung.",
+      "source": "Logo de marca exibido no site principal da EletroLED"
+    }
+  },
   "sameAs": [
     "https://www.facebook.com/LEDASSISTENCIATECNICA",
     "https://www.instagram.com/assistencia_tecnia_eletroled"

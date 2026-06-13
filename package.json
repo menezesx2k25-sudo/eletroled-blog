@@ -5,6 +5,8 @@
   "description": "Blog estático da EletroLED Assistência Técnica.",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "publish:scheduled": "node scripts/publish-scheduled.mjs",
+    "validate": "node scripts/validate.mjs",
     "serve": "node scripts/serve.mjs"
   },
   "engines": {

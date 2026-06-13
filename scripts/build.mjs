@@ -36,7 +36,7 @@ function jsonLd(data) {
   return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
 }
 
-function layout({ title, description, canonical, body, schema = [], keywords = [] }) {
+function layout({ title, description, canonical, body, schema = [], keywords = [], image = site.defaultImage }) {
   const fullTitle = `${title} | ${site.businessName}`;
   const keywordMeta = keywords.length ? `<meta name="keywords" content="${escapeHtml(keywords.join(', '))}">` : '';
   return `<!doctype html>
@@ -52,7 +52,7 @@ function layout({ title, description, canonical, body, schema = [], keywords = [
   <meta property="og:title" content="${escapeHtml(fullTitle)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${escapeHtml(canonical)}">
-  <meta property="og:image" content="${escapeHtml(site.defaultImage)}">
+  <meta property="og:image" content="${escapeHtml(image)}">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="${escapeHtml(site.logo)}">
   <link rel="apple-touch-icon" href="${escapeHtml(site.logo)}">
@@ -107,8 +107,94 @@ const organizationSchema = {
   areaServed: ['Santos', 'Macuco', 'Gonzaga', 'Boqueirão', 'Embaré', 'Aparecida', 'Ponta da Praia', 'Vila Mathias']
 };
 
+function textForPost(post) {
+  return `${post.title} ${post.category} ${post.description} ${(post.keywords || []).join(' ')}`.toLowerCase();
+}
+
+function mediaImage(key) {
+  const media = site.media?.[key] || site.media?.workbench || {
+    url: site.defaultImage,
+    alt: 'Assistência técnica da EletroLED em Santos',
+    caption: 'Conteúdo informativo da EletroLED Assistência Técnica.',
+    source: 'Mídia própria da EletroLED'
+  };
+  return media;
+}
+
+function pickPostImage(post) {
+  if (post.image?.url) {
+    return post.image;
+  }
+
+  const text = textForPost(post);
+  if (text.includes('samsung')) return mediaImage('samsung');
+  if (text.includes('lg')) return mediaImage('lg');
+  if (post.category === 'SEO local' || text.includes('bairro') || text.includes('macuco') || text.includes('gonzaga')) return mediaImage('workbench');
+  if (text.includes('micro')) return mediaImage('microwave');
+  return mediaImage('tv');
+}
+
+function ctaMessage(post) {
+  return `Olá, li o artigo "${post.title}" e preciso de orientação da EletroLED. Meu aparelho é:`;
+}
+
+function keywordOverlap(a, b) {
+  const first = new Set((a.keywords || []).map((keyword) => keyword.toLowerCase()));
+  return (b.keywords || []).reduce((score, keyword) => score + (first.has(keyword.toLowerCase()) ? 1 : 0), 0);
+}
+
+function relatedPostsFor(post) {
+  return sortedPosts
+    .filter((candidate) => candidate.slug !== post.slug)
+    .map((candidate) => ({
+      post: candidate,
+      score: (candidate.category === post.category ? 4 : 0) + keywordOverlap(post, candidate)
+    }))
+    .sort((a, b) => b.score - a.score || b.post.date.localeCompare(a.post.date))
+    .slice(0, 3)
+    .map((item) => item.post);
+}
+
+function renderArticleSections(post) {
+  return post.sections.map((section, index) => {
+    const sectionHtml = `<h2>${escapeHtml(section.heading)}</h2>\n<p>${escapeHtml(section.body)}</p>`;
+    if (index !== 1) return sectionHtml;
+
+    return `${sectionHtml}
+        <div class="quick-cta">
+          <div>
+            <strong>Quer evitar tentativa no escuro?</strong>
+            <p>Envie marca, modelo e sintoma pelo WhatsApp para receber orientação inicial da EletroLED.</p>
+          </div>
+          <a class="button" href="${escapeHtml(whatsappUrl(ctaMessage(post)))}">Enviar aparelho no WhatsApp</a>
+        </div>`;
+  }).join('\n');
+}
+
+function renderRelatedPosts(post) {
+  const related = relatedPostsFor(post);
+  if (!related.length) return '';
+
+  return `<section class="related-posts" aria-labelledby="related-title">
+        <div>
+          <p class="eyebrow">Continue lendo</p>
+          <h2 id="related-title">Guias relacionados</h2>
+        </div>
+        <div class="related-grid">
+          ${related.map((item) => `<a href="/${escapeHtml(item.slug)}/">
+            <span>${escapeHtml(item.category)}</span>
+            <strong>${escapeHtml(item.title)}</strong>
+          </a>`).join('\n')}
+        </div>
+      </section>`;
+}
+
 function renderPostCard(post) {
+  const image = pickPostImage(post);
   return `<article class="post-card">
+    <a class="post-thumb" href="/${escapeHtml(post.slug)}/">
+      <img src="${escapeHtml(image.url)}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async">
+    </a>
     <div>
       <p class="eyebrow">${escapeHtml(post.category)}</p>
       <h2><a href="/${escapeHtml(post.slug)}/">${escapeHtml(post.title)}</a></h2>
@@ -169,6 +255,7 @@ await writeFile(path.join(dist, 'index.html'), home);
 
 for (const post of sortedPosts) {
   const postUrl = absoluteUrl(`${post.slug}/`);
+  const image = pickPostImage(post);
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -187,7 +274,7 @@ for (const post of sortedPosts) {
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
-    image: site.defaultImage,
+    image: image.url,
     datePublished: post.date,
     dateModified: post.date,
     author: {
@@ -217,17 +304,23 @@ for (const post of sortedPosts) {
           <span>${escapeHtml(site.address.addressLocality)}, ${escapeHtml(site.address.addressRegion)}</span>
         </div>
       </header>
+      <figure class="article-figure">
+        <img src="${escapeHtml(image.url)}" alt="${escapeHtml(image.alt)}" loading="eager" decoding="async">
+        <figcaption>${escapeHtml(image.caption || image.source || 'Imagem de apoio da EletroLED Assistência Técnica.')}</figcaption>
+      </figure>
       <section class="article-body">
         <p class="lead">${escapeHtml(post.intro)}</p>
-        ${post.sections.map((section) => `<h2>${escapeHtml(section.heading)}</h2>\n<p>${escapeHtml(section.body)}</p>`).join('\n')}
+        <p class="service-link">Para atendimento técnico, orçamento e orientação presencial, acesse o site da <a href="${escapeHtml(site.mainSiteUrl)}">EletroLED Assistência Técnica em Santos</a> ou chame direto no WhatsApp.</p>
+        ${renderArticleSections(post)}
       </section>
       <aside class="cta-panel">
         <div>
           <h2>Precisa de assistência em Santos?</h2>
           <p>Fale com a EletroLED pelo WhatsApp e informe marca, modelo e defeito aparente do aparelho.</p>
         </div>
-        <a class="button" href="${escapeHtml(whatsappUrl(`Olá, li o artigo "${post.title}" e preciso de assistência técnica.`))}">Chamar no WhatsApp</a>
+        <a class="button" href="${escapeHtml(whatsappUrl(ctaMessage(post)))}">Chamar no WhatsApp</a>
       </aside>
+      ${renderRelatedPosts(post)}
       <section class="faq">
         <h2>Perguntas frequentes</h2>
         ${post.faq.map((item) => `<details>\n<summary>${escapeHtml(item.question)}</summary>\n<p>${escapeHtml(item.answer)}</p>\n</details>`).join('\n')}
@@ -241,6 +334,7 @@ for (const post of sortedPosts) {
     canonical: postUrl,
     schema: [organizationSchema, blogPostingSchema, faqSchema],
     keywords: post.keywords,
+    image: image.url,
     body
   });
 
@@ -472,11 +566,39 @@ nav a {
   min-height: 270px;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 12px 28px rgba(20, 52, 84, .06);
+}
+
+.post-card > div,
+.post-card > .text-link {
+  margin: 0 24px;
+}
+
+.post-card > div {
+  padding-top: 22px;
+}
+
+.post-card > .text-link {
+  margin-bottom: 24px;
+}
+
+.post-thumb {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--blue-soft);
+}
+
+.post-thumb img,
+.article-figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .post-card h2 {
@@ -504,6 +626,24 @@ nav a {
   border-top: 4px solid var(--brand);
 }
 
+.article-figure {
+  margin: 28px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.article-figure img {
+  aspect-ratio: 16 / 9;
+}
+
+.article-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
 .article-meta {
   display: flex;
   flex-wrap: wrap;
@@ -525,6 +665,18 @@ nav a {
   padding-top: 28px;
 }
 
+.service-link {
+  padding: 16px 18px;
+  border-left: 4px solid var(--brand);
+  background: var(--blue-soft);
+  color: var(--brand-dark);
+  font-weight: 700;
+}
+
+.service-link a {
+  color: var(--accent);
+}
+
 .lead {
   font-size: 1.2rem;
   color: var(--ink);
@@ -542,6 +694,24 @@ nav a {
   color: #333947;
 }
 
+.quick-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(20, 52, 84, .06);
+}
+
+.quick-cta p,
+.quick-cta strong {
+  margin: 0;
+}
+
 .cta-panel {
   display: flex;
   align-items: center;
@@ -556,6 +726,47 @@ nav a {
 .cta-panel h2,
 .cta-panel p {
   margin: 0;
+}
+
+.related-posts {
+  max-width: 900px;
+  margin: 44px 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.related-posts h2 {
+  margin: 0 0 18px;
+  color: var(--brand-dark);
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.related-grid a {
+  min-height: 132px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  text-decoration: none;
+}
+
+.related-grid span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: .78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.related-grid strong {
+  color: var(--brand-dark);
+  line-height: 1.25;
 }
 
 .faq {
@@ -579,12 +790,14 @@ summary {
 @media (max-width: 760px) {
   .site-header,
   .site-footer,
-  .cta-panel {
+  .cta-panel,
+  .quick-cta {
     align-items: flex-start;
     flex-direction: column;
   }
 
-  .post-grid {
+  .post-grid,
+  .related-grid {
     grid-template-columns: 1fr;
   }
 
