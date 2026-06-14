@@ -10,6 +10,7 @@ const timeZone = 'America/Sao_Paulo';
 const args = new Set(process.argv.slice(2));
 const countArg = process.argv.find((arg) => arg.startsWith('--count='));
 const count = countArg ? Number(countArg.split('=')[1]) : 1;
+const force = args.has('--force');
 const dryRun = args.has('--dry-run');
 
 function localNow() {
@@ -56,23 +57,19 @@ function validatePost(post, source) {
 const now = localNow();
 const { isoDate, weekday } = localDateParts(now);
 
-if (weekday === 'Sat' || weekday === 'Sun') {
+if (!force && (weekday === 'Sat' || weekday === 'Sun')) {
   console.log(`Hoje é ${weekday} em ${timeZone}. Pausa de fim de semana: nenhum artigo publicado.`);
   process.exit(0);
 }
 
-if (!Number.isInteger(count) || count !== 1) {
-  throw new Error('Publicação em lote bloqueada: use --count=1. A EletroLED permite no máximo 1 artigo por execução.');
+if (!Number.isInteger(count) || count < 1 || count > 5) {
+  throw new Error('Use --count com um número inteiro entre 1 e 5.');
 }
 
 const posts = JSON.parse(await readFile(postsPath, 'utf8'));
 const drafts = JSON.parse(await readFile(draftsPath, 'utf8'));
 const slugs = new Set(posts.map((post) => post.slug));
 const published = [];
-
-if (posts.some((post) => post.date === isoDate)) {
-  throw new Error(`Publicação diária bloqueada: já existe artigo publicado em ${isoDate}. Limite operacional: 1 post por dia útil.`);
-}
 
 for (let index = 0; index < count && drafts.length; index += 1) {
   const draft = drafts.shift();
