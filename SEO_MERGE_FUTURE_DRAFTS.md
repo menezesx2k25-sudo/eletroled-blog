@@ -31,3 +31,10 @@ Os novos artigos seguem o mesmo formato usado em content/drafts.json: title, slu
 ## Comando Recomendado Para Merge Futuro
 
 Nao execute agora sem aprovacao humana. Quando aprovado, criar um script curto de merge que apenas anexe future-drafts-200.json ao final de drafts.json e rode os validadores.
+## Status Final Schedule Controlado
+
+- Aprovados movidos para o schedule: 94
+- Bloqueados fora do schedule: 18
+- Total de drafts apos merge: 174
+- content/future-drafts-200.json permanece como backup completo.
+- content/future-drafts-blocked.json concentra os artigos de risco para revisao futura.

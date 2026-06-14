@@ -17,6 +17,15 @@ async function readJson(relativePath) {
   return JSON.parse(await readFile(path.join(root, relativePath), 'utf8'));
 }
 
+async function readJsonIfExists(relativePath, fallback) {
+  try {
+    return await readJson(relativePath);
+  } catch (error) {
+    if (error.code === 'ENOENT') return fallback;
+    throw error;
+  }
+}
+
 function wordCount(post) {
   return [
     post.intro,
@@ -63,7 +72,7 @@ function countTerm(text, term) {
 }
 
 function hasCorruptedEncoding(value) {
-  return /[ÃÂ�]|&(?:[a-zA-Z]+|#\d+);|\?\?|[A-Za-z]\?[A-Za-z]/.test(String(value));
+  return /[\u00c3\u00c2\ufffd]|&(?:[a-zA-Z]+|#\d+);|\?\?|[A-Za-z]\?[A-Za-z]/.test(String(value));
 }
 
 function groupBy(items, keyFn) {
@@ -89,8 +98,13 @@ async function localImageExists(url) {
 const posts = await readJson('content/posts.json');
 const drafts = await readJson('content/drafts.json');
 const future = await readJson('content/future-drafts-200.json');
-const all = [...posts, ...drafts, ...future];
-const current = [...posts, ...drafts];
+const blocked = await readJsonIfExists('content/future-drafts-blocked.json', []);
+const scheduledSlugs = new Set([...posts, ...drafts].map((post) => post.slug));
+const futureSlugSet = new Set(future.map((post) => post.slug));
+const futureOnly = future.filter((post) => !scheduledSlugs.has(post.slug));
+const blockedSlugs = new Set(blocked.map((post) => post.slug));
+const all = [...posts, ...drafts, ...futureOnly];
+const current = [...posts, ...drafts].filter((post) => !futureSlugSet.has(post.slug));
 const allSlugs = new Set(all.map((post) => post.slug));
 const errors = [];
 const warnings = [];
@@ -101,6 +115,15 @@ function reportError(message) {
 
 function reportWarning(message) {
   warnings.push(message);
+}
+
+for (const post of blocked) {
+  if (!futureSlugSet.has(post.slug)) reportError(`Bloqueado ausente do backup futuro: ${post.slug}`);
+  if (scheduledSlugs.has(post.slug)) reportError(`Bloqueado entrou no schedule: ${post.slug}`);
+}
+
+for (const post of futureOnly) {
+  if (!blockedSlugs.has(post.slug)) reportWarning(`${post.slug}: future draft fora do schedule sem registro em future-drafts-blocked.json`);
 }
 
 const slugGroups = groupBy(all, (post) => post.slug);

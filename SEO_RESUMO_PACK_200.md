@@ -74,3 +74,18 @@
 - Nada foi commitado.
 - Nada foi enviado por push.
 - A automacao existente nao foi alterada.
+## Finalizacao Schedule Controlado
+
+- Posts publicados: 8
+- Drafts ativos originais: 80
+- Aprovados adicionados ao schedule: 94
+- Total atual em content/drafts.json: 174
+- Future drafts bloqueados: 18
+- Total planejado: 200
+- Media de palavras dos futuros: 791
+- Imagens unicas no total planejado: 98
+- Uso maximo por imagem: 3
+- Artigos piloto revisados: 10
+- Publicacao imediata: nao houve
+- Novos artigos entram somente pela automacao em dias uteis, a partir de content/drafts.json, com trava de lote manual acima de 1
+- Proximo passo: acompanhar publicacoes graduais e revisar os 18 bloqueados em lote editorial separado.
