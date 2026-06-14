@@ -62,6 +62,10 @@ function countTerm(text, term) {
   return (String(text).toLowerCase().match(new RegExp(term.toLowerCase(), 'g')) || []).length;
 }
 
+function hasCorruptedEncoding(value) {
+  return /[ÃÂ�]|&(?:[a-zA-Z]+|#\d+);|\?\?|[A-Za-z]\?[A-Za-z]/.test(String(value));
+}
+
 function groupBy(items, keyFn) {
   return items.reduce((groups, item) => {
     const key = keyFn(item);
@@ -124,8 +128,10 @@ for (let index = 0; index < future.length; index += 1) {
     ...(post.faq || []).flatMap((item) => [item.question, item.answer])
   ].join(' ');
   const lower = text.toLowerCase();
+  const serializedPost = JSON.stringify(post);
 
   if (!post.title || !post.slug || !post.category) reportError(`${post.slug || index}: title, slug ou category ausente`);
+  if (hasCorruptedEncoding(serializedPost)) reportError(`${post.slug}: texto com possível encoding corrompido ou entidade HTML indevida`);
   if (!post.description || post.description.length < 120) reportError(`${post.slug}: description ausente ou curta`);
   if (!post.intro || post.intro.length < 160) reportError(`${post.slug}: intro ausente ou curta`);
   if (!Array.isArray(post.keywords) || post.keywords.length < 4) reportError(`${post.slug}: keywords insuficientes`);

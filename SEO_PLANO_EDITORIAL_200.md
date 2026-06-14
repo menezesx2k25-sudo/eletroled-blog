@@ -7,7 +7,7 @@
 - Novos artigos criados: 112
 - Total planejado: 200
 - Media de palavras dos novos artigos: 791
-- Imagens unicas no total planejado: 95
+- Imagens unicas no total planejado: 98
 - Uso maximo por imagem: 3
 - Slugs duplicados: 0
 - Titles duplicados: 0
