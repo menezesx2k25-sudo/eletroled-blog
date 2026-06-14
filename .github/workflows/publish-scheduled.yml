@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       count:
-        description: 'Quantidade de artigos para publicar manualmente'
+        description: 'Quantidade de artigos para publicar manualmente. Trava operacional: use sempre 1.'
         required: false
         default: '1'
 
