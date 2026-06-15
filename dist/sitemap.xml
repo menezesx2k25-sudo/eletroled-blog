@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.consertoeletroled.com</loc>
-    <lastmod>2026-06-13T20:11:46.477Z</lastmod>
+    <lastmod>2026-06-15T19:57:14.978Z</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://blog.consertoeletroled.com/tv-led-pisca-e-nao-liga/</loc>
+    <lastmod>2026-06-15T12:00:00-03:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blog.consertoeletroled.com/assistencia-tecnica-macuco-santos/</loc>
