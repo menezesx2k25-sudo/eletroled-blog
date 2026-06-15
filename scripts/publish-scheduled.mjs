@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { appendFile, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -12,6 +12,15 @@ const countArg = process.argv.find((arg) => arg.startsWith('--count='));
 const count = countArg ? Number(countArg.split('=')[1]) : 1;
 const force = args.has('--force');
 const dryRun = args.has('--dry-run');
+const oncePerDay = args.has('--once-per-day');
+
+async function setGithubOutput(name, value) {
+  if (!process.env.GITHUB_OUTPUT) {
+    return;
+  }
+
+  await appendFile(process.env.GITHUB_OUTPUT, `${name}=${String(value)}\n`);
+}
 
 function localNow() {
   if (process.env.PUBLISH_DATE) {
@@ -59,6 +68,7 @@ const { isoDate, weekday } = localDateParts(now);
 
 if (!force && (weekday === 'Sat' || weekday === 'Sun')) {
   console.log(`Hoje é ${weekday} em ${timeZone}. Pausa de fim de semana: nenhum artigo publicado.`);
+  await setGithubOutput('published_count', 0);
   process.exit(0);
 }
 
@@ -70,6 +80,12 @@ const posts = JSON.parse(await readFile(postsPath, 'utf8'));
 const drafts = JSON.parse(await readFile(draftsPath, 'utf8'));
 const slugs = new Set(posts.map((post) => post.slug));
 const published = [];
+
+if (oncePerDay && posts.some((post) => post.date === isoDate)) {
+  console.log(`Ja existe artigo publicado em ${isoDate}. Agendamento nao publicara outro hoje.`);
+  await setGithubOutput('published_count', 0);
+  process.exit(0);
+}
 
 for (let index = 0; index < count && drafts.length; index += 1) {
   const draft = drafts.shift();
@@ -92,6 +108,7 @@ for (let index = 0; index < count && drafts.length; index += 1) {
 
 if (!published.length) {
   console.log('Nenhum rascunho disponível para publicar.');
+  await setGithubOutput('published_count', 0);
   process.exit(0);
 }
 
@@ -100,11 +117,13 @@ if (dryRun) {
   for (const post of published) {
     console.log(`- ${post.slug}`);
   }
+  await setGithubOutput('published_count', 0);
   process.exit(0);
 }
 
 await writeFile(postsPath, `${JSON.stringify(posts, null, 2)}\n`);
 await writeFile(draftsPath, `${JSON.stringify(drafts, null, 2)}\n`);
+await setGithubOutput('published_count', published.length);
 
 console.log(`Publicados ${published.length} artigo(s) em ${isoDate}:`);
 for (const post of published) {

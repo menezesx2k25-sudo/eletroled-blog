@@ -4,6 +4,8 @@ on:
   schedule:
     # 08:20 em Santos (America/Sao_Paulo, UTC-3), de segunda a sexta.
     - cron: '20 11 * * 1-5'
+    # Retentativas no mesmo dia. O script limita o agendamento a 1 publicacao por data.
+    - cron: '37 12-21 * * 1-5'
   workflow_dispatch:
     inputs:
       count:
@@ -13,6 +15,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: publish-scheduled-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   publish:
@@ -28,17 +34,27 @@ jobs:
           node-version: '20'
 
       - name: Publicar próximo rascunho
+        id: publish_draft
         env:
           PUBLISH_COUNT: ${{ github.event.inputs.count || '1' }}
-        run: npm run publish:scheduled -- --count="$PUBLISH_COUNT"
+        run: |
+          EXTRA_ARGS=""
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            EXTRA_ARGS="--once-per-day"
+          fi
+
+          npm run publish:scheduled -- --count="$PUBLISH_COUNT" $EXTRA_ARGS
 
       - name: Gerar site estático
+        if: steps.publish_draft.outputs.published_count != '0'
         run: npm run build
 
       - name: Validar SEO e arquivos gerados
+        if: steps.publish_draft.outputs.published_count != '0'
         run: npm run validate
 
       - name: Commitar publicação
+        if: steps.publish_draft.outputs.published_count != '0'
         run: |
           if git diff --quiet; then
             echo "Nenhuma alteração para publicar."
