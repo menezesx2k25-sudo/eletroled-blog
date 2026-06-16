@@ -43,8 +43,48 @@ function jsonLd(data) {
   return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
 }
 
+function seoTitle(title, suffix = 'EletroLED', maxLength = 65) {
+  const shorteners = [
+    [/^TV não liga em Santos:.+$/i, 'TV não liga em Santos: causas comuns'],
+    [/^Micro-ondas não esquenta:.+$/i, 'Micro-ondas não esquenta: o que pode ser'],
+    [/^TV com som mas sem imagem:.+$/i, 'TV com som mas sem imagem: backlight ou placa'],
+    [/^Micro-ondas soltando faísca:.+$/i, 'Micro-ondas soltando faísca: é perigoso?'],
+    [/^Conserto de TV Samsung em Santos:.+$/i, 'Conserto de TV Samsung em Santos'],
+    [/^Conserto de TV LG em Santos:.+$/i, 'Conserto de TV LG em Santos: tela escura e sem imagem'],
+    [/^Assistência técnica no Macuco:.+$/i, 'Assistência técnica no Macuco em Santos'],
+    [/ em Santos: causas comuns e quando chamar assistência$/i, ' em Santos: causas comuns'],
+    [/: o que pode ser e como resolver em Santos$/i, ': o que pode ser'],
+    [/: tela escura, sem imagem e travamentos$/i, ': tela escura e sem imagem'],
+    [/: conserto de TVs e micro-ondas perto de você$/i, ' em Santos'],
+    [/: defeitos mais comuns$/i, ''],
+    [/: é perigoso continuar usando\?$/i, ': é perigoso?']
+  ];
+
+  let baseTitle = title;
+  for (const [pattern, replacement] of shorteners) {
+    const nextTitle = baseTitle.replace(pattern, replacement);
+    if (nextTitle !== baseTitle) {
+      baseTitle = nextTitle;
+      break;
+    }
+  }
+
+  const maxBaseLength = maxLength - suffix.length - 3;
+  if (`${baseTitle} | ${suffix}`.length > maxLength) {
+    const candidate = baseTitle.slice(0, maxBaseLength - 3).trim();
+    const separators = [': ', ' - ', ', ', ' '];
+    const cutAt = Math.max(...separators.map((separator) => candidate.lastIndexOf(separator)));
+    const truncatedTitle = cutAt >= Math.floor(maxBaseLength * 0.65)
+      ? candidate.slice(0, cutAt).trim()
+      : candidate;
+    baseTitle = `${truncatedTitle}...`;
+  }
+
+  return `${baseTitle} | ${suffix}`;
+}
+
 function layout({ title, description, canonical, body, schema = [], keywords = [], image = site.defaultImage }) {
-  const fullTitle = `${title} | ${site.businessName}`;
+  const fullTitle = seoTitle(title);
   const keywordMeta = keywords.length ? `<meta name="keywords" content="${escapeHtml(keywords.join(', '))}">` : '';
   const metaImage = absoluteAssetUrl(image);
   return `<!doctype html>
@@ -278,7 +318,7 @@ const homeSchema = {
 };
 
 const home = layout({
-  title: 'Dicas sobre conserto de TVs e micro-ondas em Santos',
+  title: 'Dicas de TV e micro-ondas em Santos',
   description: site.description,
   canonical: absoluteUrl(),
   schema: [organizationSchema, homeSchema],
