@@ -1,0 +1,15 @@
+name = "eletroled-blog-publisher-cron"
+main = "src/index.js"
+compatibility_date = "2026-06-16"
+workers_dev = true
+
+[triggers]
+# 08:25 em Santos (America/Sao_Paulo, UTC-3), de segunda a sexta.
+crons = ["25 11 * * mon-fri"]
+
+[vars]
+GITHUB_OWNER = "menezesx2k25-sudo"
+GITHUB_REPO = "eletroled-blog"
+GITHUB_WORKFLOW_ID = "publish-scheduled.yml"
+GITHUB_REF = "main"
+PUBLISH_COUNT = "1"
