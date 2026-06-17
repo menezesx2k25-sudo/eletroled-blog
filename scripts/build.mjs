@@ -114,6 +114,7 @@ ${keywordMeta ? `  ${keywordMeta}\n` : ''}  <link rel="canonical" href="${escape
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="${escapeHtml(site.logo)}">
   <link rel="alternate" type="application/rss+xml" title="${escapeHtml(site.siteName)}" href="${escapeHtml(absoluteUrl('feed.xml'))}">
+  <style id="responsive-sentinel">@media (max-width: 760px){:root{--responsive-sentinel:1}}</style>
   <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="/styles.css"></noscript>
   ${schema.map(jsonLd).join('\n  ')}

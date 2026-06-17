@@ -13,7 +13,9 @@
       "TV não liga em Santos",
       "conserto de TV em Santos",
       "assistência técnica de TV",
-      "técnico de TV Santos"
+      "técnico de TV Santos",
+      "TV nao liga standby piscando",
+      "assistencia tecnica de TV no Macuco"
     ],
     "intro": "Quando uma TV não liga, a primeira reação costuma ser testar a tomada várias vezes ou insistir no controle remoto. Isso pode até resolver casos simples, mas também pode mascarar uma falha interna. O sintoma pode vir de cabo, tomada, controle, placa fonte, circuito de standby, placa principal ou proteção ativada depois de oscilação de energia. Para quem está em Santos, o caminho mais seguro é observar alguns sinais sem abrir o aparelho e, se o problema continuar, pedir uma avaliação técnica antes de comprar peça ou trocar a TV.",
     "sections": [
@@ -52,6 +54,10 @@
       {
         "heading": "Histórico do defeito também importa",
         "body": "Informar se o problema começou depois de queda de energia, transporte, chuva, limpeza ou mudança de cabo ajuda a interpretar o sintoma. Esse histórico não fecha diagnóstico sozinho, mas orienta os testes e reduz tempo perdido com hipóteses pouco prováveis."
+      },
+      {
+        "heading": "Triagem segura antes do or?amento",
+        "body": "Antes de levar a TV para avalia??o, observe se o LED de standby acende, se pisca em sequ?ncia, se houve queda de energia e se o defeito acontece em todas as tomadas. Essas informa??es ajudam a assist?ncia t?cnica em Santos a separar falha simples de cabo ou controle de um poss?vel problema em fonte, placa principal ou prote??o interna."
       }
     ],
     "faq": [
@@ -109,15 +115,25 @@
         "label": "Contato da EletroLED",
         "url": "https://consertoeletroled.com/contato",
         "note": "canal para orçamento e orientação"
+      },
+      {
+        "label": "TV LED pisca e n?o liga",
+        "url": "/tv-led-pisca-e-nao-liga/",
+        "note": "sintoma pr?ximo de standby e prote??o"
+      },
+      {
+        "label": "Conserto de TV Samsung em Santos",
+        "url": "/conserto-tv-samsung-santos/",
+        "note": "exemplo de falhas comuns em marca conhecida"
       }
     ],
     "image": {
       "url": "/assets/images/seo/bancada-diagnostico-eletronico.svg",
-      "alt": "Bancada de diagnóstico eletrônico",
-      "caption": "Ilustração de bancada técnica para eletrônicos.",
-      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+      "alt": "TV em bancada com LED de standby e mult?metro para diagn?stico em Santos",
+      "caption": "Ilustra??o t?cnica de triagem para TV que n?o liga.",
+      "source": "Ilustra??o vetorial pr?pria da EletroLED para conte?do editorial"
     },
-    "imageAlt": "Bancada de diagnóstico eletrônico"
+    "imageAlt": "TV em bancada com LED de standby e mult?metro para diagn?stico em Santos"
   },
   {
     "title": "Micro-ondas não esquenta: o que pode ser e como resolver em Santos",
@@ -133,7 +149,9 @@
       "micro-ondas não esquenta",
       "conserto de micro-ondas em Santos",
       "assistência técnica de micro-ondas Santos",
-      "magnetron micro-ondas"
+      "magnetron micro-ondas",
+      "micro-ondas liga mas nao aquece",
+      "magnetron micro-ondas Santos"
     ],
     "intro": "Micro-ondas que acende o painel, gira o prato e não aquece é um dos defeitos que mais confundem o cliente. Como parte do aparelho parece funcionar, muita gente imagina que seja apenas fusível ou configuração. Na prática, o aquecimento depende de componentes de alta tensão, chaveamento da porta, magnetron, capacitor, transformador ou placa. Por segurança, esse tipo de falha não deve ser investigado abrindo o aparelho em casa.",
     "sections": [
@@ -168,6 +186,10 @@
       {
         "heading": "Decisão segura antes do reparo",
         "body": "Depois do diagnóstico, o cliente consegue comparar custo, estado do aparelho e expectativa de uso. Em micro-ondas, essa decisão precisa considerar não apenas preço, mas segurança. Se houver ferrugem avançada, dano interno ou peça crítica indisponível, a orientação pode ser diferente de um simples reparo."
+      },
+      {
+        "heading": "O que diferencia falta de aquecimento de defeito simples",
+        "body": "Quando o prato gira e a luz acende, mas o alimento continua frio, a parte de comando pode estar funcionando enquanto o circuito de alta tens?o n?o entrega energia ao magnetron. Por isso, a an?lise precisa considerar chaves de porta, fus?vel, capacitor, diodo, placa e magnetron, sempre sem abrir o micro-ondas em casa."
       }
     ],
     "faq": [
@@ -220,15 +242,25 @@
         "label": "Contato da EletroLED",
         "url": "https://consertoeletroled.com/contato",
         "note": "canal para orçamento e orientação"
+      },
+      {
+        "label": "Micro-ondas liga e desliga sozinho",
+        "url": "/microondas-liga-e-desliga-sozinho/",
+        "note": "outro sintoma ligado a seguran?a e alimenta??o"
+      },
+      {
+        "label": "Assist?ncia t?cnica no Macuco",
+        "url": "/assistencia-tecnica-macuco-santos/",
+        "note": "orienta??o local para levar o aparelho"
       }
     ],
     "image": {
       "url": "/assets/images/seo/microondas-magnetron-santos.svg",
-      "alt": "Micro-ondas em diagnóstico de aquecimento",
-      "caption": "Ilustração de componentes internos de aquecimento.",
-      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+      "alt": "Micro-ondas em diagn?stico com indica??o de circuito de aquecimento",
+      "caption": "Ilustra??o t?cnica sobre micro-ondas que liga mas n?o aquece.",
+      "source": "Ilustra??o vetorial pr?pria da EletroLED para conte?do editorial"
     },
-    "imageAlt": "Micro-ondas em diagnóstico de aquecimento"
+    "imageAlt": "Micro-ondas em diagn?stico com indica??o de circuito de aquecimento"
   },
   {
     "title": "TV com som mas sem imagem: backlight, placa ou tela?",
@@ -244,7 +276,9 @@
       "TV com som mas sem imagem",
       "TV sem imagem em Santos",
       "reparo de backlight de TV",
-      "conserto de TV LED Santos"
+      "conserto de TV LED Santos",
+      "backlight TV Santos",
+      "TV tela escura com audio"
     ],
     "intro": "Quando a TV tem som, responde ao controle e a tela fica escura, o defeito costuma apontar para imagem, iluminação ou alimentação interna. Muita gente chama esse sintoma de “queimou a tela”, mas nem sempre o painel é o problema. Pode ser backlight, placa fonte, placa principal, T-Con, cabo interno ou configuração. A melhor forma de evitar gasto errado é fazer diagnóstico antes de comprar peça.",
     "sections": [
@@ -283,6 +317,10 @@
       {
         "heading": "Histórico do defeito também importa",
         "body": "Informar se o problema começou depois de queda de energia, transporte, chuva, limpeza ou mudança de cabo ajuda a interpretar o sintoma. Esse histórico não fecha diagnóstico sozinho, mas orienta os testes e reduz tempo perdido com hipóteses pouco prováveis."
+      },
+      {
+        "heading": "Teste visual sem desmontar a TV",
+        "body": "Em alguns casos, uma luz externa pr?xima da tela ajuda a perceber se existe imagem muito fraca por tr?s do painel escuro. Esse teste n?o confirma o defeito sozinho, mas ajuda a relatar melhor o sintoma. Se houver ?udio, troca de canal e resposta ao controle, o diagn?stico deve diferenciar backlight, fonte, T-Con, placa principal e painel."
       }
     ],
     "faq": [
@@ -340,15 +378,25 @@
         "label": "Contato da EletroLED",
         "url": "https://consertoeletroled.com/contato",
         "note": "canal para orçamento e orientação"
+      },
+      {
+        "label": "TV LED pisca e n?o liga",
+        "url": "/tv-led-pisca-e-nao-liga/",
+        "note": "quando o defeito aparece antes de formar imagem"
+      },
+      {
+        "label": "Conserto de TV LG em Santos",
+        "url": "/conserto-tv-lg-santos/",
+        "note": "marca em que tela escura e imagem azulada aparecem com frequ?ncia"
       }
     ],
     "image": {
       "url": "/assets/images/seo/tv-backlight-santos.svg",
-      "alt": "Painel de TV com falha de iluminação",
-      "caption": "Ilustração de diagnóstico de backlight em TV LED.",
-      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+      "alt": "TV com tela escura e ondas de ?udio em bancada de diagn?stico",
+      "caption": "Ilustra??o t?cnica para TV com som, mas sem imagem.",
+      "source": "Ilustra??o vetorial pr?pria da EletroLED para conte?do editorial"
     },
-    "imageAlt": "Painel de TV com falha de iluminação"
+    "imageAlt": "TV com tela escura e ondas de ?udio em bancada de diagn?stico"
   },
   {
     "title": "Micro-ondas soltando faísca: é perigoso continuar usando?",
@@ -364,7 +412,9 @@
       "micro-ondas soltando faísca",
       "conserto de micro-ondas Santos",
       "micro-ondas faiscando",
-      "placa mica micro-ondas"
+      "placa mica micro-ondas",
+      "micro-ondas faisca placa mica",
+      "assistencia micro-ondas Santos"
     ],
     "intro": "Faísca dentro do micro-ondas nunca deve ser tratada como algo normal. O problema pode estar em sujeira carbonizada, uso de metal, placa mica danificada, tinta interna desgastada, guia de ondas afetado ou componente interno em falha. Algumas situações são simples de prevenir, mas outras exigem avaliação técnica. O ponto principal é não continuar usando o aparelho até entender a causa.",
     "sections": [
@@ -399,6 +449,10 @@
       {
         "heading": "Decisão segura antes do reparo",
         "body": "Depois do diagnóstico, o cliente consegue comparar custo, estado do aparelho e expectativa de uso. Em micro-ondas, essa decisão precisa considerar não apenas preço, mas segurança. Se houver ferrugem avançada, dano interno ou peça crítica indisponível, a orientação pode ser diferente de um simples reparo."
+      },
+      {
+        "heading": "Quando a fa?sca indica risco real",
+        "body": "Se a fa?sca aparece mesmo sem metal, volta depois da limpeza ou vem acompanhada de cheiro de queimado, o uso deve ser interrompido. Placa mica danificada, tinta carbonizada, guia de ondas afetado e falhas internas podem piorar rapidamente. Nesses casos, a avalia??o t?cnica em Santos ? mais segura do que insistir no funcionamento."
       }
     ],
     "faq": [
@@ -451,15 +505,20 @@
         "label": "Contato da EletroLED",
         "url": "https://consertoeletroled.com/contato",
         "note": "canal para orçamento e orientação"
+      },
+      {
+        "label": "Micro-ondas liga e desliga sozinho",
+        "url": "/microondas-liga-e-desliga-sozinho/",
+        "note": "sintoma que tamb?m pede cautela"
       }
     ],
     "image": {
       "url": "/assets/images/seo/assistencia-tecnica-microondas-santos.svg",
-      "alt": "Micro-ondas sobre bancada de assistência técnica",
-      "caption": "Ilustração institucional para manutenção de micro-ondas.",
-      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+      "alt": "Micro-ondas com fa?sca interna e alerta de seguran?a t?cnica",
+      "caption": "Ilustra??o t?cnica sobre fa?sca dentro do micro-ondas.",
+      "source": "Ilustra??o vetorial pr?pria da EletroLED para conte?do editorial"
     },
-    "imageAlt": "Micro-ondas sobre bancada de assistência técnica"
+    "imageAlt": "Micro-ondas com fa?sca interna e alerta de seguran?a t?cnica"
   },
   {
     "title": "Conserto de TV Samsung em Santos: defeitos mais comuns",
@@ -475,7 +534,9 @@
       "conserto TV Samsung Santos",
       "assistência técnica TV Samsung Santos",
       "TV Samsung não liga",
-      "TV Samsung sem imagem"
+      "TV Samsung sem imagem",
+      "Samsung tela escura Santos",
+      "Samsung reiniciando logo"
     ],
     "intro": "TVs Samsung podem apresentar sintomas como tela escura, liga e desliga, travamento no logo, falha de Wi-Fi, linhas na imagem ou ausência de som. Esses problemas não significam sempre a mesma peça defeituosa. A EletroLED realiza atendimento técnico independente para TVs Samsung em Santos, com diagnóstico antes de indicar reparo. O conteúdo abaixo é informativo e não representa assistência autorizada oficial da marca.",
     "sections": [
@@ -514,6 +575,10 @@
       {
         "heading": "Cuidados com garantia e peças",
         "body": "Se o aparelho ainda estiver em garantia de fábrica, o cliente deve verificar as condições oficiais antes de qualquer reparo independente. Fora desse cenário, a avaliação ajuda a identificar se há peça compatível e se o reparo mantém segurança, imagem e funcionamento estável."
+      },
+      {
+        "heading": "Falhas comuns sem diagn?stico por marca apenas",
+        "body": "Mesmo quando o cliente informa que a TV Samsung est? com tela escura, reiniciando no logo ou sem Wi-Fi, o modelo exato continua sendo decisivo. Tamanho, ano, tipo de painel e hist?rico de queda de energia mudam o caminho do diagn?stico. A marca orienta a triagem, mas n?o substitui teste de fonte, LEDs, placa e conex?es."
       }
     ],
     "faq": [
@@ -576,15 +641,25 @@
         "label": "Contato da EletroLED",
         "url": "https://consertoeletroled.com/contato",
         "note": "canal para orçamento e orientação"
+      },
+      {
+        "label": "Conserto de TV LG em Santos",
+        "url": "/conserto-tv-lg-santos/",
+        "note": "compara??o com outro artigo de marca"
+      },
+      {
+        "label": "TV LED pisca e n?o liga",
+        "url": "/tv-led-pisca-e-nao-liga/",
+        "note": "falha comum de energia e prote??o"
       }
     ],
     "image": {
       "url": "/assets/images/seo/tv-marcas-santos.svg",
-      "alt": "Televisor de marca variada em bancada técnica",
-      "caption": "Ilustração institucional para atendimento de TVs.",
-      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+      "alt": "TV Samsung em bancada t?cnica independente para diagn?stico em Santos",
+      "caption": "Ilustra??o editorial para defeitos comuns em TVs Samsung.",
+      "source": "Ilustra??o vetorial pr?pria da EletroLED para conte?do editorial"
     },
-    "imageAlt": "Televisor de marca variada em bancada técnica"
+    "imageAlt": "TV Samsung em bancada t?cnica independente para diagn?stico em Santos"
   },
   {
     "title": "Conserto de TV LG em Santos: tela escura, sem imagem e travamentos",
@@ -600,7 +675,9 @@
       "conserto TV LG Santos",
       "assistência técnica TV LG Santos",
       "TV LG tela escura",
-      "TV LG sem imagem"
+      "TV LG sem imagem",
+      "LG imagem azulada Santos",
+      "LG travando aplicativos"
     ],
     "intro": "TVs LG podem apresentar tela escura, imagem azulada, travamento de aplicativos, falha de Wi-Fi, desligamento repentino ou ausência de imagem. A causa pode variar bastante conforme o modelo e o histórico do aparelho. A EletroLED atende TVs LG em Santos como serviço técnico independente, sem se apresentar como autorizada oficial. O diagnóstico é o que define se o reparo faz sentido.",
     "sections": [
@@ -639,6 +716,10 @@
       {
         "heading": "Cuidados com garantia e peças",
         "body": "Se o aparelho ainda estiver em garantia de fábrica, o cliente deve verificar as condições oficiais antes de qualquer reparo independente. Fora desse cenário, a avaliação ajuda a identificar se há peça compatível e se o reparo mantém segurança, imagem e funcionamento estável."
+      },
+      {
+        "heading": "Imagem azulada, apps travando e tela escura",
+        "body": "Em TVs LG, sintomas como imagem azulada, tela escura, aplicativos travando e rein?cio podem vir de origens diferentes. Backlight envelhecido, mem?ria, placa principal, fonte e atualiza??o de sistema entram na triagem. O atendimento t?cnico independente evita prometer troca de pe?a antes de confirmar a causa."
       }
     ],
     "faq": [
@@ -701,15 +782,20 @@
         "label": "Contato da EletroLED",
         "url": "https://consertoeletroled.com/contato",
         "note": "canal para orçamento e orientação"
+      },
+      {
+        "label": "Conserto de TV Samsung em Santos",
+        "url": "/conserto-tv-samsung-santos/",
+        "note": "compara??o com outro artigo de marca"
       }
     ],
     "image": {
       "url": "/assets/images/seo/tv-lg-santos.svg",
-      "alt": "TV LG em serviço independente de diagnóstico",
-      "caption": "Ilustração para conteúdo sobre TVs LG.",
-      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+      "alt": "TV LG com tela escura e diagn?stico de backlight em Santos",
+      "caption": "Ilustra??o editorial para defeitos comuns em TVs LG.",
+      "source": "Ilustra??o vetorial pr?pria da EletroLED para conte?do editorial"
     },
-    "imageAlt": "TV LG em serviço independente de diagnóstico"
+    "imageAlt": "TV LG com tela escura e diagn?stico de backlight em Santos"
   },
   {
     "title": "Assistência técnica no Macuco: conserto de TVs e micro-ondas perto de você",
@@ -725,7 +811,9 @@
       "conserto de micro-ondas",
       "micro-ondas em Santos",
       "segurança em micro-ondas",
-      "conserto de TV Macuco Santos"
+      "conserto de TV Macuco Santos",
+      "assistencia tecnica Macuco TV",
+      "conserto micro-ondas Macuco"
     ],
     "intro": "Para quem mora no Macuco ou em bairros próximos de Santos, ter uma assistência técnica local facilita a avaliação de TVs e micro-ondas sem depender apenas de tentativa por telefone. A EletroLED atende na Av. Siqueira Campos, 148, com foco em diagnóstico, orçamento e orientação clara antes do reparo. O objetivo é ajudar o cliente a decidir se vale consertar, trocar peça ou substituir o aparelho.",
     "sections": [
@@ -764,6 +852,10 @@
       {
         "heading": "Referência local sem exagero de palavra-chave",
         "body": "O conteúdo menciona Santos, Macuco e bairros próximos quando isso ajuda o leitor a entender localização e atendimento. A intenção é reforçar relevância local de forma natural, sem repetir cidade em cada frase e sem criar páginas vazias apenas para ranquear. Também orienta o cliente a descrever o defeito antes de sair com o aparelho, o que torna o atendimento mais objetivo."
+      },
+      {
+        "heading": "Como chegar com informa??es completas",
+        "body": "Para agilizar o atendimento no Macuco, leve ou envie marca, modelo, foto da etiqueta e um resumo do defeito. Em TV, informe se h? som, imagem, standby ou rein?cio. Em micro-ondas, informe se aquece, se solta fa?sca, se faz barulho ou se desarma o disjuntor. Isso melhora a triagem e evita or?amento incompleto."
       }
     ],
     "faq": [
@@ -821,15 +913,25 @@
         "label": "Contato da EletroLED",
         "url": "https://consertoeletroled.com/contato",
         "note": "canal para orçamento e orientação"
+      },
+      {
+        "label": "TV n?o liga em Santos",
+        "url": "/tv-nao-liga-em-santos/",
+        "note": "triagem comum para TVs"
+      },
+      {
+        "label": "Quanto custa consertar uma TV",
+        "url": "/quanto-custa-consertar-tv-santos/",
+        "note": "crit?rios de or?amento"
       }
     ],
     "image": {
       "url": "/assets/images/seo/assistencia-tecnica-macuco-santos.svg",
-      "alt": "Atendimento técnico no Macuco em Santos",
-      "caption": "Ilustração institucional de assistência técnica no Macuco.",
-      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+      "alt": "Atendimento t?cnico da EletroLED no Macuco para TVs e micro-ondas",
+      "caption": "Ilustra??o de atendimento local no Macuco, em Santos.",
+      "source": "Ilustra??o vetorial pr?pria da EletroLED para conte?do editorial"
     },
-    "imageAlt": "Atendimento técnico no Macuco em Santos"
+    "imageAlt": "Atendimento t?cnico da EletroLED no Macuco para TVs e micro-ondas"
   },
   {
     "title": "Quanto custa consertar uma TV em Santos?",
@@ -845,7 +947,9 @@
       "quanto custa consertar TV em Santos",
       "orçamento conserto de TV Santos",
       "conserto de TV preço",
-      "diagnóstico TV Santos"
+      "diagnóstico TV Santos",
+      "orcamento TV tela escura",
+      "quanto custa trocar backlight"
     ],
     "intro": "Perguntar quanto custa consertar uma TV é normal, mas a resposta correta depende da causa do defeito. Uma tela escura pode ser backlight, fonte, placa, cabo ou painel; uma TV que não liga pode ter desde falha simples até dano por queda de energia. Por isso, orçamento responsável não deve prometer valor fechado sem avaliação. O diagnóstico mostra se o reparo compensa e evita gasto com peça errada.",
     "sections": [
@@ -884,6 +988,10 @@
       {
         "heading": "O que muda de um aparelho para outro",
         "body": "Dois aparelhos com o mesmo sintoma podem ter valores diferentes por causa de tamanho, montagem, acesso às peças e tempo de bancada. Por isso, o orçamento precisa considerar o equipamento real, e não apenas uma tabela genérica de defeitos."
+      },
+      {
+        "heading": "Faixas de pre?o dependem do componente confirmado",
+        "body": "O or?amento muda quando o defeito est? em LEDs, fonte, placa principal, T-Con, conectores ou painel. Por isso, uma faixa gen?rica pode enganar. O cliente deve comparar valor do reparo, idade da TV, qualidade do aparelho e disponibilidade de pe?a antes de decidir entre consertar ou trocar."
       }
     ],
     "faq": [
@@ -936,15 +1044,25 @@
         "label": "Contato da EletroLED",
         "url": "https://consertoeletroled.com/contato",
         "note": "canal para orçamento e orientação"
+      },
+      {
+        "label": "TV com som mas sem imagem",
+        "url": "/tv-com-som-sem-imagem/",
+        "note": "exemplo de sintoma que muda or?amento"
+      },
+      {
+        "label": "TV LED pisca e n?o liga",
+        "url": "/tv-led-pisca-e-nao-liga/",
+        "note": "falha que pode envolver fonte ou prote??o"
       }
     ],
     "image": {
       "url": "/assets/images/seo/orcamento-assistencia-santos.svg",
-      "alt": "Atendimento técnico para orçamento de eletrônico",
-      "caption": "Ilustração institucional de atendimento e orçamento.",
-      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+      "alt": "Or?amento t?cnico de TV com checklist de pe?a e diagn?stico",
+      "caption": "Ilustra??o editorial sobre or?amento t?cnico de TV.",
+      "source": "Ilustra??o vetorial pr?pria da EletroLED para conte?do editorial"
     },
-    "imageAlt": "Atendimento técnico para orçamento de eletrônico"
+    "imageAlt": "Or?amento t?cnico de TV com checklist de pe?a e diagn?stico"
   },
   {
     "title": "TV LED pisca e não liga: o que pode ser?",
@@ -959,13 +1077,15 @@
       "LED de standby piscando TV",
       "conserto de TV em Santos",
       "assistência técnica de TV Santos",
-      "EletroLED Assistência Técnica"
+      "EletroLED Assistência Técnica",
+      "TV LED standby piscando",
+      "TV liga e desliga Santos"
     ],
     "image": {
       "url": "/assets/images/seo/tv-led-pisca-santos.svg",
-      "alt": "Televisor com LED de standby piscando",
-      "caption": "Ilustração de TV com falha de standby.",
-      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+      "alt": "TV LED com standby piscando e indica??o de prote??o interna",
+      "caption": "Ilustra??o t?cnica para TV LED que pisca e n?o liga.",
+      "source": "Ilustra??o vetorial pr?pria da EletroLED para conte?do editorial"
     },
     "intro": "TV LED pisca e não liga: o que pode ser pode ter origem simples ou indicar falha interna em fonte, placa, backlight, painel, conexões ou sistema da Smart TV. Antes de abrir o aparelho ou trocar peças, vale observar os sintomas com segurança e buscar diagnóstico técnico. Essa abordagem evita gasto errado e ajuda a decidir se o reparo compensa.",
     "sections": [
@@ -1012,6 +1132,10 @@
       {
         "heading": "Histórico do defeito também importa",
         "body": "Informar se o problema começou depois de queda de energia, transporte, chuva, limpeza ou mudança de cabo ajuda a interpretar o sintoma. Esse histórico não fecha diagnóstico sozinho, mas orienta os testes e reduz tempo perdido com hipóteses pouco prováveis."
+      },
+      {
+        "heading": "Standby piscando e prote??o interna",
+        "body": "Quando o LED pisca e a TV n?o inicializa, o aparelho pode estar entrando em prote??o para evitar dano maior. A causa pode estar em fonte, barra de LED, placa principal, curto interno ou painel. Contar o padr?o das piscadas e informar se houve queda de energia ajuda a assist?ncia t?cnica a come?ar a an?lise com mais contexto."
       }
     ],
     "faq": [
@@ -1074,9 +1198,14 @@
         "label": "Contato da EletroLED",
         "url": "https://consertoeletroled.com/contato",
         "note": "canal para orçamento e orientação"
+      },
+      {
+        "label": "Conserto de TV Philco em Santos",
+        "url": "/conserto-tv-philco-santos/",
+        "note": "artigo de marca com sintomas parecidos"
       }
     ],
-    "imageAlt": "Televisor com LED de standby piscando",
+    "imageAlt": "TV LED com standby piscando e indica??o de prote??o interna",
     "date": "2026-06-15"
   },
   {
@@ -1092,13 +1221,15 @@
       "micro-ondas liga e desliga sozinho",
       "conserto de micro-ondas em Santos",
       "assistência técnica micro-ondas Santos",
-      "EletroLED Assistência Técnica"
+      "EletroLED Assistência Técnica",
+      "micro-ondas desligando sozinho Santos",
+      "micro-ondas chave de porta defeito"
     ],
     "image": {
       "url": "/assets/images/seo/microondas-alta-tensao-santos.svg",
-      "alt": "Micro-ondas com aviso de alta tensão",
-      "caption": "Ilustração de cuidado técnico com alta tensão.",
-      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+      "alt": "Micro-ondas com ciclo interrompido e diagn?stico de chave de porta",
+      "caption": "Ilustra??o t?cnica sobre micro-ondas que liga e desliga sozinho.",
+      "source": "Ilustra??o vetorial pr?pria da EletroLED para conte?do editorial"
     },
     "intro": "Micro-ondas liga e desliga sozinho: causas comuns é um sintoma que merece cuidado porque micro-ondas trabalha com alta tensão e nem sempre o defeito aparece de forma óbvia. Pode haver falha em chave de porta, placa, fusível interno, magnetron, capacitor, diodo ou componentes mecânicos. A orientação segura é observar sinais externos, evitar abrir o aparelho e procurar avaliação quando o problema se repete.",
     "sections": [
@@ -1141,6 +1272,10 @@
       {
         "heading": "Decisão segura antes do reparo",
         "body": "Depois do diagnóstico, o cliente consegue comparar custo, estado do aparelho e expectativa de uso. Em micro-ondas, essa decisão precisa considerar não apenas preço, mas segurança. Se houver ferrugem avançada, dano interno ou peça crítica indisponível, a orientação pode ser diferente de um simples reparo."
+      },
+      {
+        "heading": "Chave de porta, ventila??o e ciclo interrompido",
+        "body": "Quando o micro-ondas liga e desliga sozinho, a causa pode estar em chave de porta, placa, ventila??o, superaquecimento, mau contato ou componente de alta tens?o. Se o desligamento vem com estalo, cheiro forte ou disjuntor desarmando, o uso deve parar at? a avalia??o t?cnica."
       }
     ],
     "faq": [
@@ -1198,9 +1333,14 @@
         "label": "Contato da EletroLED",
         "url": "https://consertoeletroled.com/contato",
         "note": "canal para orçamento e orientação"
+      },
+      {
+        "label": "Assist?ncia t?cnica no Macuco",
+        "url": "/assistencia-tecnica-macuco-santos/",
+        "note": "orienta??o local para avalia??o"
       }
     ],
-    "imageAlt": "Micro-ondas com aviso de alta tensão",
+    "imageAlt": "Micro-ondas com ciclo interrompido e diagn?stico de chave de porta",
     "date": "2026-06-16"
   },
   {
@@ -1216,13 +1356,15 @@
       "conserto de TV Philco Santos",
       "assistência técnica TV Philco",
       "Philco sem imagem",
-      "Philco não liga"
+      "Philco não liga",
+      "Philco tela escura Santos",
+      "Philco travando logo"
     ],
     "image": {
       "url": "/assets/images/seo/tv-philco-santos.svg",
-      "alt": "TV Philco em avaliação técnica independente",
-      "caption": "Ilustração para conteúdo sobre TVs Philco.",
-      "source": "Ilustração vetorial própria criada para o blog da EletroLED"
+      "alt": "TV Philco em bancada com checklist de fonte, backlight e placa",
+      "caption": "Ilustra??o editorial para defeitos comuns em TVs Philco.",
+      "source": "Ilustra??o vetorial pr?pria da EletroLED para conte?do editorial"
     },
     "intro": "Conserto de TV Philco: defeitos mais comuns exige diagnóstico antes de qualquer troca de peça, porque TVs da mesma marca podem apresentar sintomas parecidos por causas diferentes. A EletroLED atende esse tipo de aparelho em Santos como serviço técnico independente, sem se apresentar como autorizada oficial da fabricante. O objetivo é avaliar fonte, imagem, backlight, placa, conexões e viabilidade do reparo.",
     "sections": [
@@ -1269,6 +1411,10 @@
       {
         "heading": "Cuidados com garantia e peças",
         "body": "Se o aparelho ainda estiver em garantia de fábrica, o cliente deve verificar as condições oficiais antes de qualquer reparo independente. Fora desse cenário, a avaliação ajuda a identificar se há peça compatível e se o reparo mantém segurança, imagem e funcionamento estável."
+      },
+      {
+        "heading": "Defeito comum n?o significa solu??o igual",
+        "body": "TV Philco que n?o liga, trava no logo ou fica com tela escura pode ter causas diferentes mesmo em modelos parecidos. O diagn?stico precisa confirmar alimenta??o, backlight, placa principal, conectores e estado do painel. Essa leitura evita trocar pe?a por tentativa e preserva a decis?o do cliente sobre a viabilidade do reparo."
       }
     ],
     "faq": [
@@ -1331,9 +1477,19 @@
         "label": "Contato da EletroLED",
         "url": "https://consertoeletroled.com/contato",
         "note": "canal para orçamento e orientação"
+      },
+      {
+        "label": "Conserto de TV Samsung em Santos",
+        "url": "/conserto-tv-samsung-santos/",
+        "note": "outro conte?do de marca para comparar sintomas"
+      },
+      {
+        "label": "Conserto de TV LG em Santos",
+        "url": "/conserto-tv-lg-santos/",
+        "note": "falhas de tela escura e travamento"
       }
     ],
-    "imageAlt": "TV Philco em avaliação técnica independente",
+    "imageAlt": "TV Philco em bancada com checklist de fonte, backlight e placa",
     "date": "2026-06-17"
   }
 ]

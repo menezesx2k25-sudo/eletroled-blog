@@ -1,9 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="micro-ondas alta tensao santos">
-  <rect width="1200" height="675" fill="#f9fcfb"/>
-  <circle cx="1000" cy="80" r="170" fill="#bdebd0" opacity=".55"/>
-  <circle cx="120" cy="600" r="210" fill="#bdebd0" opacity=".35"/>
-  <rect x="220" y="155" width="520" height="270" rx="30" fill="#fff" stroke="#1fa855" stroke-width="18"/><rect x="270" y="205" width="280" height="170" rx="18" fill="#bdebd0"/><circle cx="640" cy="245" r="30" fill="#1fa855"/><circle cx="640" cy="335" r="30" fill="#153f2a"/>
-  <text x="86" y="84" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1fa855">EletroLED</text>
-  <text x="86" y="612" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#153f2a">micro-ondas alta tensao santos</text>
-  <text x="86" y="648" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#626a78">Dicas técnicas para Santos e região</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Liga e desliga - Porta, placa e ventilacao">
+  <defs>
+    <linearGradient id="bg-microwaveCycle" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.52" stop-color="#12314a"/>
+      <stop offset="1" stop-color="#eef7ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="62%" cy="34%" r="60%">
+      <stop offset="0" stop-color="#dc2626" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#dc2626" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M38 0H0V38" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020617" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg-microwaveCycle)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <circle cx="820" cy="180" r="320" fill="url(#glow)"/>
+  <circle cx="1080" cy="90" r="120" fill="#0d9488" opacity="0.20"/>
+  <circle cx="95" cy="575" r="190" fill="#dc2626" opacity="0.16"/>
+  <g filter="url(#shadow)">
+    <rect x="238" y="156" width="630" height="316" rx="42" fill="#f8fafc"/>
+    <rect x="286" y="205" width="365" height="218" rx="26" fill="#dbeafe" stroke="#94a3b8" stroke-width="8"/>
+    <rect x="690" y="203" width="126" height="220" rx="24" fill="#e2e8f0"/>
+    <circle cx="753" cy="270" r="32" fill="#dc2626" opacity="0.88"/>
+    <circle cx="753" cy="356" r="44" fill="#ffffff" stroke="#94a3b8" stroke-width="8"/>
+    <path d="M730 356h46M753 333v46" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+    <path d="M340 276c58-48 142-48 202 0M365 318c40-30 102-30 142 0" fill="none" stroke="#0d9488" stroke-width="13" stroke-linecap="round" opacity="0.82"/>
+
+    <path d="M410 246a105 105 0 1 1-42 165" fill="none" stroke="#dc2626" stroke-width="18" stroke-linecap="round"/><path d="M352 408l22 64 50-44" fill="#dc2626"/>
+    <rect x="374" y="473" width="340" height="26" rx="13" fill="#e2e8f0"/>
+  </g>
+  <g transform="translate(788 118)" filter="url(#shadow)">
+    <rect width="238" height="116" rx="24" fill="#ffffff" opacity="0.96"/>
+    <path d="M35 43h98M35 75h154" stroke="#334155" stroke-width="9" stroke-linecap="round" opacity="0.72"/>
+    <circle cx="188" cy="43" r="16" fill="#dc2626"/>
+  </g>
+  <g transform="translate(180 395)">
+    <path d="M0 82h196" stroke="#e2e8f0" stroke-width="18" stroke-linecap="round"/>
+    <path d="M48 74l42-92M132 74l52-72" stroke="#e2e8f0" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(74 68)">
+    <rect width="176" height="48" rx="14" fill="#ffffff" opacity="0.94"/>
+    <circle cx="31" cy="24" r="13" fill="#dc2626"/>
+    <path d="M55 18h88M55 30h66" stroke="#0f172a" stroke-width="7" stroke-linecap="round" opacity="0.88"/>
+  </g>
+  <g transform="translate(74 524)">
+    <text font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800" fill="#ffffff">Liga e desliga</text>
+    <text y="42" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#dbeafe">Porta, placa e ventilacao</text>
+  </g>
+  <g transform="translate(835 515)">
+    <rect width="286" height="72" rx="24" fill="#ffffff" opacity="0.94"/>
+    <text x="32" y="45" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#0f172a">Ciclo interrompido</text>
+  </g>
 </svg>
