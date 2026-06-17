@@ -125,6 +125,7 @@ async function patchHtmlPage(request, url) {
     html = fixServicosTitle(html);
   }
 
+  html = ensureImageDimensions(html);
   html = injectSeoSupport(html, url.pathname);
 
   const headers = new Headers(response.headers);
@@ -196,8 +197,33 @@ function ensureHomeImageAlt(html) {
       return tag.replace(/\salt(?=\s|>)/i, ` alt="${alt}"`);
     }
     if (/\salt\s*=/i.test(tag)) return tag;
-    return tag.replace(/<img\b/i, `<img alt="${alt}"`);
+  return tag.replace(/<img\b/i, `<img alt="${alt}"`);
   });
+}
+
+function ensureImageDimensions(html) {
+  return html.replace(/<img\b[^>]*>/gi, (tag) => {
+    if (tag.includes('block-header-logo__image')) {
+      return addMissingDimensions(tag, 128, 128);
+    }
+
+    if (tag.includes('6facfed3-40d3-48c1-a7bd-be58f1c8797d')) {
+      return addMissingDimensions(tag, 1920, 1080);
+    }
+
+    return tag;
+  });
+}
+
+function addMissingDimensions(tag, width, height) {
+  let nextTag = tag;
+  if (!/\swidth=/i.test(nextTag)) {
+    nextTag = nextTag.replace(/<img\b/i, `<img width="${width}"`);
+  }
+  if (!/\sheight=/i.test(nextTag)) {
+    nextTag = nextTag.replace(/<img\b/i, `<img height="${height}"`);
+  }
+  return nextTag;
 }
 
 function imageAltFor(tag) {
