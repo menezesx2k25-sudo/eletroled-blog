@@ -43,6 +43,15 @@ function jsonLd(data) {
   return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
 }
 
+function minifyCss(css) {
+  return css
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/\s*([{}:;,>])\s*/g, '$1')
+    .replace(/;}/g, '}')
+    .trim();
+}
+
 function seoTitle(title, suffix = 'EletroLED', maxLength = 65) {
   const shorteners = [
     [/^TV não liga em Santos:.+$/i, 'TV não liga em Santos: causas comuns'],
@@ -950,7 +959,28 @@ summary {
   }
 }`;
 
-await writeFile(path.join(dist, 'styles.css'), styles);
+await writeFile(path.join(dist, 'styles.css'), minifyCss(styles));
+
+const llms = `# Blog EletroLED Assistência Técnica
+
+> Conteúdo editorial sobre conserto de TVs e micro-ondas em Santos, mantido pela EletroLED Assistência Técnica.
+
+## Site
+- Blog: ${site.baseUrl}
+- Site principal: ${site.mainSiteUrl}
+- Sitemap: ${absoluteUrl('sitemap.xml')}
+- Feed RSS: ${absoluteUrl('feed.xml')}
+
+## Conteúdos publicados
+${sortedPosts.map((post) => `- [${post.title}](${absoluteUrl(`${post.slug}/`)}): ${post.description}`).join('\n')}
+
+## Contato comercial
+- WhatsApp: https://wa.me/${site.whatsapp}
+- E-mail: ${site.email}
+- Endereço: ${site.address.streetAddress}, ${site.address.addressLocality} - ${site.address.addressRegion}
+`;
+
+await writeFile(path.join(dist, 'llms.txt'), llms);
 
 const robots = `User-agent: *
 Allow: /
