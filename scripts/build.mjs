@@ -103,8 +103,7 @@ function layout({ title, description, canonical, body, schema = [], keywords = [
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(fullTitle)}</title>
   <meta name="description" content="${escapeHtml(description)}">
-  ${keywordMeta}
-  <link rel="canonical" href="${escapeHtml(canonical)}">
+${keywordMeta ? `  ${keywordMeta}\n` : ''}  <link rel="canonical" href="${escapeHtml(canonical)}">
   <meta property="og:type" content="article">
   <meta property="og:title" content="${escapeHtml(fullTitle)}">
   <meta property="og:description" content="${escapeHtml(description)}">
@@ -112,16 +111,17 @@ function layout({ title, description, canonical, body, schema = [], keywords = [
   <meta property="og:image" content="${escapeHtml(metaImage)}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="${escapeHtml(metaImage)}">
-  <link rel="icon" href="${escapeHtml(site.logo)}">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="${escapeHtml(site.logo)}">
   <link rel="alternate" type="application/rss+xml" title="${escapeHtml(site.siteName)}" href="${escapeHtml(absoluteUrl('feed.xml'))}">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/styles.css"></noscript>
   ${schema.map(jsonLd).join('\n  ')}
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="/">
-      <img class="brand-logo" src="${escapeHtml(site.logo)}" alt="Logo da EletroLED Assistência Técnica">
+      <img class="brand-logo" src="${escapeHtml(site.logo)}" alt="Logo da EletroLED Assistência Técnica" width="64" height="64">
       <span>
         <strong>Blog EletroLED</strong>
         <small>TVs e micro-ondas em Santos</small>
@@ -152,8 +152,8 @@ const organizationSchema = {
   '@id': `${site.mainSiteUrl}/#business`,
   name: site.businessName,
   url: site.mainSiteUrl,
-  logo: site.logo,
-  image: site.defaultImage,
+  logo: absoluteAssetUrl(site.logo),
+  image: absoluteAssetUrl(site.defaultImage),
   telephone: site.phone,
   email: site.email,
   priceRange: '$$',
@@ -299,11 +299,11 @@ function renderPostCard(post) {
   const image = pickPostImage(post);
   return `<article class="post-card">
     <a class="post-thumb" href="/${escapeHtml(post.slug)}/">
-      <img src="${escapeHtml(image.url)}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async">
+      <img src="${escapeHtml(image.url)}" alt="${escapeHtml(image.alt)}" width="640" height="360" loading="lazy" decoding="async">
     </a>
     <div>
       <p class="eyebrow">${escapeHtml(post.category)}</p>
-      <h2><a href="/${escapeHtml(post.slug)}/">${escapeHtml(post.title)}</a></h2>
+      <h3><a href="/${escapeHtml(post.slug)}/">${escapeHtml(post.title)}</a></h3>
       <p>${escapeHtml(post.description)}</p>
     </div>
     <a class="text-link" href="/${escapeHtml(post.slug)}/">Ler artigo</a>
@@ -335,7 +335,7 @@ const home = layout({
   body: `<main>
     <section class="hero">
       <div>
-        <img class="hero-logo" src="${escapeHtml(site.logo)}" alt="EletroLED Assistência Técnica">
+        <img class="hero-logo" src="${escapeHtml(site.logo)}" alt="EletroLED Assistência Técnica" width="140" height="140">
         <p class="eyebrow">Assistência técnica em Santos</p>
         <h1>Dicas úteis para cuidar da sua TV e do seu micro-ondas</h1>
         <p>Guias simples para identificar defeitos comuns, evitar riscos e saber quando chamar a EletroLED Assistência Técnica no Macuco, em Santos.</p>
@@ -411,7 +411,7 @@ for (const post of sortedPosts) {
         </div>
       </header>
       <figure class="article-figure">
-        <img src="${escapeHtml(image.url)}" alt="${escapeHtml(image.alt)}" loading="eager" decoding="async">
+        <img src="${escapeHtml(image.url)}" alt="${escapeHtml(image.alt)}" width="1200" height="675" loading="eager" decoding="async">
         <figcaption>${escapeHtml(image.caption || image.source || 'Imagem de apoio da EletroLED Assistência Técnica.')}</figcaption>
       </figure>
       <section class="article-body">
@@ -449,6 +449,28 @@ for (const post of sortedPosts) {
   await mkdir(postDir, { recursive: true });
   await writeFile(path.join(postDir, 'index.html'), html);
 }
+
+const notFound = layout({
+  title: 'Página não encontrada',
+  description: 'A página solicitada não foi encontrada no blog da EletroLED. Acesse os guias de TVs e micro-ondas ou fale com a assistência técnica em Santos.',
+  canonical: absoluteUrl('404.html'),
+  schema: [organizationSchema],
+  body: `<main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Erro 404</p>
+        <h1>Página não encontrada</h1>
+        <p>O endereço acessado pode ter mudado ou sido digitado com erro. Use os links abaixo para continuar no blog da EletroLED ou falar com a assistência técnica em Santos.</p>
+        <div class="hero-actions">
+          <a class="button button-secondary" href="/">Ver artigos do blog</a>
+          <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl('Olá, vim pelo blog e preciso de ajuda com TV ou micro-ondas.'))}">Chamar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>`
+});
+
+await writeFile(path.join(dist, '404.html'), notFound);
 
 const heroImage = site.defaultImage.replaceAll('"', '%22');
 
@@ -722,13 +744,13 @@ nav a:focus {
   object-fit: cover;
 }
 
-.post-card h2 {
+.post-card h3 {
   margin: 0;
   font-size: 1.45rem;
   line-height: 1.2;
 }
 
-.post-card h2 a {
+.post-card h3 a {
   text-decoration: none;
 }
 
@@ -1025,8 +1047,10 @@ ${sortedPosts.map((post) => `    <item>
 await writeFile(path.join(dist, 'feed.xml'), feed);
 
 await writeFile(path.join(dist, '_headers'), `/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
 `);
 
 console.log(`Built ${sortedPosts.length} posts into ${dist}`);

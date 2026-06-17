@@ -3,7 +3,7 @@
   "businessName": "EletroLED Assistência Técnica",
   "baseUrl": "https://blog.consertoeletroled.com",
   "mainSiteUrl": "https://consertoeletroled.com",
-  "description": "Dicas práticas sobre conserto de TVs e micro-ondas em Santos, com orientação da EletroLED Assistência Técnica.",
+  "description": "Dicas práticas sobre conserto de TVs e micro-ondas em Santos, com orientação da EletroLED para identificar defeitos, riscos e quando chamar assistência.",
   "phone": "+5513996816561",
   "whatsapp": "5513996816561",
   "email": "contato@consertoeletroled.com",
@@ -15,8 +15,8 @@
     "addressCountry": "BR"
   },
   "hours": "Segunda a sexta, 09:00 às 17:30. Sábado, 09:00 às 14:00.",
-  "logo": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop/GlokoPcKnA0JWUEo/gemini_generated_image_nr4h3inr4h3inr4h-1-qDlem5LW3X6uPsYo.png",
-  "defaultImage": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/GlokoPcKnA0JWUEo/6facfed3-40d3-48c1-a7bd-be58f1c8797d-uoXy5m861ZtME3x2.png",
+  "logo": "/assets/images/eletroled-logo.webp",
+  "defaultImage": "/assets/images/eletroled-workbench.webp",
   "media": {
     "tv": {
       "url": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=806,fit=crop/GlokoPcKnA0JWUEo/40481a296b034d07ba71afb70133cdd8-CGsAhxTpQsyFkbJk.webp",

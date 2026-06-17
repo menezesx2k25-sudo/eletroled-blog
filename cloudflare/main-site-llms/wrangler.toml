@@ -4,8 +4,5 @@ compatibility_date = "2026-06-16"
 workers_dev = false
 
 routes = [
-  { pattern = "consertoeletroled.com/llms.txt", zone_name = "consertoeletroled.com" },
-  { pattern = "consertoeletroled.com/", zone_name = "consertoeletroled.com" },
-  { pattern = "consertoeletroled.com/dicas-sobre-tvs-e-micro-ondas*", zone_name = "consertoeletroled.com" },
-  { pattern = "consertoeletroled.com/servicos*", zone_name = "consertoeletroled.com" }
+  { pattern = "consertoeletroled.com/*", zone_name = "consertoeletroled.com" }
 ]
