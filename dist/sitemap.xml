@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.consertoeletroled.com</loc>
-    <lastmod>2026-06-22T11:25:26.407Z</lastmod>
+    <lastmod>2026-06-23T11:25:26.652Z</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://blog.consertoeletroled.com/microondas-prato-nao-gira/</loc>
+    <lastmod>2026-06-23T12:00:00-03:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blog.consertoeletroled.com/tv-desliga-sozinha/</loc>
