@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.consertoeletroled.com</loc>
-    <lastmod>2026-06-30T11:26:00.723Z</lastmod>
+    <lastmod>2026-07-01T11:25:30.766Z</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://blog.consertoeletroled.com/conserto-tv-tcl-santos/</loc>
+    <lastmod>2026-07-01T12:00:00-03:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blog.consertoeletroled.com/microondas-painel-apagado/</loc>
