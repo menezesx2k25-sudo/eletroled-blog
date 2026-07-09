@@ -7,9 +7,14 @@
     "build": "node scripts/build.mjs",
     "publish:scheduled": "node scripts/publish-scheduled.mjs",
     "validate": "node scripts/validate.mjs",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "wrangler": "^4.101.0"
   }
 }
