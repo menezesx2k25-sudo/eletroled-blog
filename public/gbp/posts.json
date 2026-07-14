@@ -1,0 +1,17 @@
+{
+  "posts": [
+    {
+      "id": "tv-led-praia-grande-001",
+      "active": true,
+      "published": false,
+      "date": "2026-07-14",
+      "languageCode": "pt-BR",
+      "summary": "Sua TV LED está sem imagem, com linhas na tela, piscando ou sem som? A EletroLED realiza diagnóstico e reparo de televisores em Praia Grande e região, com orientação clara antes do conserto.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://consertoeletroled.com/"
+      },
+      "topicType": "STANDARD"
+    }
+  ]
+}
