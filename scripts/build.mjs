@@ -205,6 +205,79 @@ function pickPostImage(post) {
   return mediaImage('tv');
 }
 
+function normalizeGbpText(value = '') {
+  return String(value).replace(/\s+/g, ' ').trim();
+}
+
+function truncateGbpSummary(value, maxLength = 1200) {
+  const normalized = normalizeGbpText(value);
+  if (normalized.length <= maxLength) return normalized;
+
+  const truncated = normalized.slice(0, maxLength - 3);
+  const lastSpace = truncated.lastIndexOf(' ');
+  return `${truncated.slice(0, lastSpace > 0 ? lastSpace : truncated.length).trimEnd()}...`;
+}
+
+function gbpSummary(post) {
+  if (post.gbp?.summary !== undefined) {
+    return truncateGbpSummary(post.gbp.summary);
+  }
+
+  const title = normalizeGbpText(post.title).replace(/[.!?]+$/, '');
+  const description = normalizeGbpText(post.description).replace(/[.!?]+$/, '');
+  return truncateGbpSummary(
+    `${title}. ${description}. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.`,
+  );
+}
+
+function gbpQueueItem(post) {
+  const image = pickPostImage(post);
+  const imageUrl = absoluteAssetUrl(image?.url || '');
+
+  return {
+    id: `blog:${post.slug}`,
+    source: 'blog',
+    active: true,
+    date: post.date,
+    languageCode: 'pt-BR',
+    summary: gbpSummary(post),
+    callToAction: {
+      actionType: 'LEARN_MORE',
+      url: absoluteUrl(`${post.slug}/`),
+    },
+    topicType: 'STANDARD',
+    ...(imageUrl.startsWith('https://')
+      ? { media: [{ mediaFormat: 'PHOTO', sourceUrl: imageUrl }] }
+      : {}),
+  };
+}
+
+function validateGbpQueueItem(item) {
+  if (!item.id || typeof item.id !== 'string') throw new Error('GBP: id ausente');
+  if (item.source !== 'blog') throw new Error(`GBP: source inválido em ${item.id}`);
+  if (typeof item.active !== 'boolean') throw new Error(`GBP: active inválido em ${item.id}`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(item.date)) throw new Error(`GBP: date inválida em ${item.id}`);
+  if (item.languageCode !== 'pt-BR') throw new Error(`GBP: languageCode inválido em ${item.id}`);
+  if (typeof item.summary !== 'string' || item.summary.length < 40 || item.summary.length > 1200) {
+    throw new Error(`GBP: summary deve ter entre 40 e 1200 caracteres em ${item.id}`);
+  }
+  if (item.topicType !== 'STANDARD') throw new Error(`GBP: topicType inválido em ${item.id}`);
+  if (item.callToAction?.actionType !== 'LEARN_MORE') {
+    throw new Error(`GBP: callToAction.actionType inválido em ${item.id}`);
+  }
+  if (!item.callToAction?.url?.startsWith('https://')) {
+    throw new Error(`GBP: callToAction.url inválida em ${item.id}`);
+  }
+  if (item.media !== undefined && !Array.isArray(item.media)) {
+    throw new Error(`GBP: media deve ser um array em ${item.id}`);
+  }
+  for (const media of item.media || []) {
+    if (media.mediaFormat !== 'PHOTO' || !media.sourceUrl?.startsWith('https://')) {
+      throw new Error(`GBP: media inválida em ${item.id}`);
+    }
+  }
+}
+
 function ctaMessage(post) {
   return post.cta?.whatsappText || `Olá, li o artigo "${post.title}" e preciso de orientação da EletroLED. Meu aparelho é:`;
 }
@@ -1046,6 +1119,16 @@ ${sortedPosts.map((post) => `    <item>
 </rss>
 `;
 await writeFile(path.join(dist, 'feed.xml'), feed);
+
+const gbpPosts = sortedPosts.map(gbpQueueItem);
+for (const post of gbpPosts) validateGbpQueueItem(post);
+
+const gbpDirectory = path.join(dist, 'gbp');
+await mkdir(gbpDirectory, { recursive: true });
+await writeFile(
+  path.join(gbpDirectory, 'posts.json'),
+  `${JSON.stringify({ posts: gbpPosts }, null, 2)}\n`,
+);
 
 await writeFile(path.join(dist, '_headers'), `/*
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload

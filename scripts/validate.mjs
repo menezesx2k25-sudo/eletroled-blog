@@ -96,6 +96,44 @@ const sitemap = await readFile(path.join(dist, 'sitemap.xml'), 'utf8');
 assert(sitemap.includes('<urlset'), 'sitemap.xml não parece ser um sitemap XML');
 assert(!sitemap.toLowerCase().includes('<html'), 'sitemap.xml contém HTML');
 
+const gbpQueue = await readJson('dist/gbp/posts.json');
+assert(gbpQueue && !Array.isArray(gbpQueue), 'gbp/posts.json precisa ser um objeto');
+assert(Array.isArray(gbpQueue.posts), 'gbp/posts.json precisa usar o formato { "posts": [...] }');
+assert(gbpQueue.posts.length === posts.length, 'gbp/posts.json não contém todos os posts publicados');
+
+const postsBySlug = new Map(posts.map((post) => [post.slug, post]));
+const gbpIds = new Set();
+for (const item of gbpQueue.posts) {
+  assert(typeof item.id === 'string' && item.id.startsWith('blog:'), 'GBP: id inválido');
+  assert(!gbpIds.has(item.id), `GBP: id duplicado ${item.id}`);
+  gbpIds.add(item.id);
+
+  const slug = item.id.slice('blog:'.length);
+  const sourcePost = postsBySlug.get(slug);
+  assert(sourcePost, `GBP: post de origem ausente para ${item.id}`);
+  assert(item.id === `blog:${sourcePost.slug}`, `GBP: id instável em ${item.id}`);
+  assert(item.source === 'blog', `GBP: source inválido em ${item.id}`);
+  assert(typeof item.active === 'boolean', `GBP: active inválido em ${item.id}`);
+  assert(/^\d{4}-\d{2}-\d{2}$/.test(item.date), `GBP: date inválida em ${item.id}`);
+  assert(item.date === sourcePost.date, `GBP: date divergente em ${item.id}`);
+  assert(item.languageCode === 'pt-BR', `GBP: languageCode inválido em ${item.id}`);
+  assert(
+    typeof item.summary === 'string' && item.summary.length >= 40 && item.summary.length <= 1200,
+    `GBP: summary inválido em ${item.id}`,
+  );
+  assert(item.topicType === 'STANDARD', `GBP: topicType inválido em ${item.id}`);
+  assert(item.callToAction?.actionType === 'LEARN_MORE', `GBP: CTA inválido em ${item.id}`);
+  assert(
+    item.callToAction?.url === new URL(`${sourcePost.slug}/`, site.baseUrl).toString(),
+    `GBP: URL do artigo inválida em ${item.id}`,
+  );
+  assert(item.media === undefined || Array.isArray(item.media), `GBP: media inválida em ${item.id}`);
+  for (const media of item.media || []) {
+    assert(media.mediaFormat === 'PHOTO', `GBP: mediaFormat inválido em ${item.id}`);
+    assert(media.sourceUrl?.startsWith('https://'), `GBP: sourceUrl inválida em ${item.id}`);
+  }
+}
+
 const files = await htmlFiles(dist);
 let jsonLdCount = 0;
 for (const file of files) {
@@ -120,4 +158,4 @@ for (const file of files) {
 }
 
 assert(jsonLdCount >= posts.length * 2, 'Poucos blocos JSON-LD gerados');
-console.log(`Validação OK: ${posts.length} posts publicados, ${drafts.length} rascunhos, ${jsonLdCount} blocos JSON-LD.`);
+console.log(`Validação OK: ${posts.length} posts publicados, ${drafts.length} rascunhos, ${jsonLdCount} blocos JSON-LD e ${gbpQueue.posts.length} itens GBP.`);
