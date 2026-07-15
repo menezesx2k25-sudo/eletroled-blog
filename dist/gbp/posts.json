@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:conserto-tv-sony-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-07-15",
+      "languageCode": "pt-BR",
+      "summary": "Conserto de TV Sony em Santos: imagem, áudio e placa. Veja sintomas frequentes em TV Sony: imagem, áudio e placa e saiba como um serviço independente pode avaliar o reparo em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/conserto-tv-sony-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/conserto-tv-sony-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:microondas-cheiro-de-queimado",
       "source": "blog",
       "active": true,
