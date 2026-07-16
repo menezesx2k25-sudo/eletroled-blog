@@ -4157,5 +4157,135 @@
     "imageCaption": "Imagem editorial da EletroLED para orientação sobre Conserto de TV Sony em Santos: imagem, áudio e placa.",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-07-15"
+  },
+  {
+    "title": "Orçamento de conserto de TV em Santos: o que informar",
+    "slug": "orcamento-conserto-tv-santos",
+    "category": "Guias e orçamento",
+    "description": "Entenda critérios para decidir sobre orçamento de conserto de tv: o que informar, com foco em diagnóstico, orçamento e segurança antes do reparo.",
+    "keywords": [
+      "Orçamento de conserto de TV: o que informar",
+      "orçamento de conserto",
+      "vale a pena consertar",
+      "assistência técnica em Santos",
+      "orçamento TV",
+      "conserto de TV em Santos",
+      "orçamento TV Santos",
+      "assistência técnica EletroLED"
+    ],
+    "image": {
+      "url": "/assets/images/editorial-canva/orcamento-conserto-tv-santos.jpg",
+      "alt": "Diagnóstico técnico em bancada, imagem de apoio para orçamento e decisão sobre Orçamento de conserto de TV em Santos: o que informar",
+      "caption": "Imagem editorial da EletroLED para orientação sobre Orçamento de conserto de TV em Santos: o que informar.",
+      "source": "Arte editorial EletroLED com imagem licenciada no Canva."
+    },
+    "intro": "Orçamento de conserto de TV: o que informar é uma dúvida comum antes de gastar com reparo. A resposta depende de marca, modelo, idade do aparelho, estado físico, disponibilidade de peças e causa real do defeito. Um orçamento responsável começa pelo diagnóstico, não por promessa de preço fechado apenas pelo sintoma.",
+    "sections": [
+      {
+        "heading": "Por que orçamento depende de diagnóstico",
+        "body": "Sintomas parecidos podem ter causas e valores diferentes. Uma TV sem imagem pode precisar de LEDs, placa ou painel; um micro-ondas sem aquecer pode envolver alta tensão ou chave de porta."
+      },
+      {
+        "heading": "Informações que ajudam no primeiro contato",
+        "body": "Marca, modelo, tamanho, idade aproximada, sintoma e histórico do defeito ajudam a orientar a triagem. Foto da etiqueta e vídeo curto reduzem dúvidas antes da avaliação."
+      },
+      {
+        "heading": "Quando o conserto costuma compensar",
+        "body": "O reparo tende a fazer mais sentido em aparelhos bem conservados, com peça disponível e custo distante do valor de substituição. O estado físico pesa tanto quanto o defeito."
+      },
+      {
+        "heading": "Quando trocar pode ser melhor",
+        "body": "Painel quebrado, ferrugem avançada, múltiplas falhas ou ausência de peça podem tornar o conserto menos interessante. A assistência deve explicar esses pontos com clareza."
+      },
+      {
+        "heading": "Cuidados antes de levar o aparelho",
+        "body": "Evite abrir, desmontar ou tentar adaptar peças. Em TVs, proteja a tela no transporte. Em micro-ondas, não continue usando se houver faísca, cheiro de queimado ou disjuntor desarmando."
+      },
+      {
+        "heading": "Como a EletroLED orienta o cliente",
+        "body": "O atendimento busca entender o sintoma, fazer avaliação técnica e apresentar orçamento antes do reparo. O foco é decisão informada, não promessa genérica."
+      },
+      {
+        "heading": "Links úteis para comparar sintomas",
+        "body": "Antes de pedir orçamento, vale ler guias sobre TV que não liga, TV sem imagem, micro-ondas sem aquecer e faísca. Isso ajuda a descrever melhor o problema."
+      },
+      {
+        "heading": "Próximo passo recomendado",
+        "body": "Envie as informações pelo WhatsApp e aguarde orientação sobre avaliação. O valor correto depende do diagnóstico e da peça necessária."
+      },
+      {
+        "heading": "Como comparar orçamento com troca do aparelho",
+        "body": "A comparação deve considerar preço de uma peça equivalente, idade do aparelho, qualidade da imagem, frequência de uso e garantia do serviço executado. Nem sempre o menor valor imediato é a melhor decisão; o objetivo é entender se o reparo devolve uso confiável por um período razoável."
+      },
+      {
+        "heading": "Por que avaliação evita surpresa",
+        "body": "Quando o orçamento parte de diagnóstico, o cliente entende o que será feito, qual peça está envolvida e quais riscos existem. Isso reduz surpresa depois da aprovação e evita a situação de trocar uma peça simples enquanto o defeito principal continua escondido."
+      },
+      {
+        "heading": "O que muda de um aparelho para outro",
+        "body": "Dois aparelhos com o mesmo sintoma podem ter valores diferentes por causa de tamanho, montagem, acesso às peças e tempo de bancada. Por isso, o orçamento precisa considerar o equipamento real, e não apenas uma tabela genérica de defeitos."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Dá para saber o preço por mensagem?",
+        "answer": "Dá para orientar, mas preço correto depende de avaliação técnica e peça necessária."
+      },
+      {
+        "question": "O orçamento depende da marca?",
+        "answer": "Sim. Peças, montagem e disponibilidade variam conforme marca e modelo."
+      },
+      {
+        "question": "Quando o reparo não compensa?",
+        "answer": "Quando há painel quebrado, oxidação grave, várias falhas ou custo muito próximo ao de substituição."
+      },
+      {
+        "question": "A assistência informa antes de consertar?",
+        "answer": "Sim. O cliente deve aprovar o orçamento antes do reparo."
+      },
+      {
+        "question": "O que enviar para agilizar?",
+        "answer": "Marca, modelo, sintoma, foto da etiqueta e vídeo curto do defeito."
+      }
+    ],
+    "cta": {
+      "quickTitle": "Quer saber se o reparo compensa?",
+      "quickText": "Envie marca, modelo e defeito observado para receber orientação inicial antes do orçamento técnico.",
+      "title": "Precisa decidir entre consertar ou trocar?",
+      "text": "A EletroLED pode avaliar o aparelho e explicar o que pesa no orçamento antes do reparo.",
+      "button": "Pedir orientação de orçamento",
+      "whatsappText": "Olá, quero entender se o conserto compensa. O aparelho e o defeito são:"
+    },
+    "links": [
+      {
+        "label": "Quanto custa consertar uma TV",
+        "url": "/quanto-custa-consertar-tv-santos/",
+        "note": "referência de orçamento"
+      },
+      {
+        "label": "TV não liga em Santos",
+        "url": "/tv-nao-liga-em-santos/",
+        "note": "defeito comum que influencia orçamento"
+      },
+      {
+        "label": "Voltar para a home do blog",
+        "url": "/",
+        "note": "mais guias sobre TV e micro-ondas"
+      },
+      {
+        "label": "Site principal da EletroLED",
+        "url": "https://consertoeletroled.com",
+        "note": "central comercial e informações de atendimento"
+      },
+      {
+        "label": "Contato da EletroLED",
+        "url": "https://consertoeletroled.com/contato",
+        "note": "canal para orçamento e orientação"
+      }
+    ],
+    "imageAlt": "Diagnóstico técnico em bancada, imagem de apoio para orçamento e decisão sobre Orçamento de conserto de TV em Santos: o que informar",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Orçamento de conserto de TV em Santos: o que informar.",
+    "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
+    "date": "2026-07-16"
   }
 ]

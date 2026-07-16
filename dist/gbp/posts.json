@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:orcamento-conserto-tv-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-07-16",
+      "languageCode": "pt-BR",
+      "summary": "Orçamento de conserto de TV em Santos: o que informar. Entenda critérios para decidir sobre orçamento de conserto de tv: o que informar, com foco em diagnóstico, orçamento e segurança antes do reparo. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/orcamento-conserto-tv-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/orcamento-conserto-tv-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-tv-sony-santos",
       "source": "blog",
       "active": true,
