@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:conserto-tv-ponta-da-praia",
+      "source": "blog",
+      "active": true,
+      "date": "2026-07-17",
+      "languageCode": "pt-BR",
+      "summary": "Conserto de TV na Ponta da Praia: atendimento em Santos. Veja como organizar atendimento técnico para conserto de tv na ponta da praia: atendimento, com orientação para clientes de Santos e bairros próximos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/conserto-tv-ponta-da-praia/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/conserto-tv-ponta-da-praia.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:orcamento-conserto-tv-santos",
       "source": "blog",
       "active": true,
