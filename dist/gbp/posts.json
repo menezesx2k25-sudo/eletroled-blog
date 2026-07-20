@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-com-manchas-escuras",
+      "source": "blog",
+      "active": true,
+      "date": "2026-07-20",
+      "languageCode": "pt-BR",
+      "summary": "TV com manchas escuras na imagem: o que observar. Entenda possíveis causas para tv com manchas escuras na imagem: o que observar, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-com-manchas-escuras/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-com-manchas-escuras.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-tv-ponta-da-praia",
       "source": "blog",
       "active": true,
