@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:microondas-porta-nao-fecha",
+      "source": "blog",
+      "active": true,
+      "date": "2026-07-21",
+      "languageCode": "pt-BR",
+      "summary": "Porta do micro-ondas não fecha direito: risco e reparo. Entenda possíveis causas para porta do micro-ondas não fecha direito: risco e reparo em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/microondas-porta-nao-fecha/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/microondas-porta-nao-fecha.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tv-com-manchas-escuras",
       "source": "blog",
       "active": true,
