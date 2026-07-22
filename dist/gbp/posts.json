@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:conserto-tv-philips-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-07-22",
+      "languageCode": "pt-BR",
+      "summary": "Conserto de TV Philips em Santos: sintomas frequentes. Veja sintomas frequentes em TV Philips: sintomas frequentes e saiba como um serviço independente pode avaliar o reparo em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/conserto-tv-philips-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/conserto-tv-philips-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:microondas-porta-nao-fecha",
       "source": "blog",
       "active": true,
