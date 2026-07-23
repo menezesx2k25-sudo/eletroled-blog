@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:orcamento-conserto-microondas-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-07-23",
+      "languageCode": "pt-BR",
+      "summary": "Orçamento de conserto de micro-ondas em Santos: como agilizar. Entenda critérios para decidir sobre orçamento de conserto de micro-ondas: como agilizar, com foco em diagnóstico, orçamento e segurança antes do reparo. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/orcamento-conserto-microondas-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/orcamento-conserto-microondas-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-tv-philips-santos",
       "source": "blog",
       "active": true,
