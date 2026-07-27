@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-imagem-azulada-ou-roxa",
+      "source": "blog",
+      "active": true,
+      "date": "2026-07-27",
+      "languageCode": "pt-BR",
+      "summary": "TV com imagem azulada ou roxa: possível desgaste de LEDs. Entenda possíveis causas para tv com imagem azulada ou roxa: possível desgaste de leds, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-imagem-azulada-ou-roxa/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-imagem-azulada-ou-roxa.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-tv-vila-mathias",
       "source": "blog",
       "active": true,
