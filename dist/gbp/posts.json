@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:teclas-microondas-nao-funcionam",
+      "source": "blog",
+      "active": true,
+      "date": "2026-07-28",
+      "languageCode": "pt-BR",
+      "summary": "Teclas do micro-ondas não funcionam: painel ou membrana. Entenda possíveis causas para teclas do micro-ondas não funcionam: painel ou membrana em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/teclas-microondas-nao-funcionam/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/teclas-microondas-nao-funcionam.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tv-imagem-azulada-ou-roxa",
       "source": "blog",
       "active": true,
