@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:conserto-tv-semp-toshiba-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-07-29",
+      "languageCode": "pt-BR",
+      "summary": "Conserto de TV Semp Toshiba em Santos: vale avaliar. Veja sintomas frequentes em TV Semp Toshiba: vale avaliar e saiba como um serviço independente pode avaliar o reparo em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/conserto-tv-semp-toshiba-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/conserto-tv-semp-toshiba-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:teclas-microondas-nao-funcionam",
       "source": "blog",
       "active": true,
