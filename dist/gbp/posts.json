@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:assistencia-tecnica-perto-de-mim-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-07-30",
+      "languageCode": "pt-BR",
+      "summary": "Assistência técnica perto de mim em Santos: como escolher. Entenda critérios para decidir sobre assistência técnica perto de mim: como escolher, com foco em diagnóstico, orçamento e segurança antes do reparo. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/assistencia-tecnica-perto-de-mim-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/assistencia-tecnica-perto-de-mim-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-tv-semp-toshiba-santos",
       "source": "blog",
       "active": true,
