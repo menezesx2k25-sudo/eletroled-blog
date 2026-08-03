@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-queimou-queda-de-energia",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-03",
+      "languageCode": "pt-BR",
+      "summary": "TV queimou depois de queda de energia: primeiros cuidados. Entenda possíveis causas para tv queimou depois de queda de energia: primeiros cuidados, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-queimou-queda-de-energia/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-queimou-queda-de-energia.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-microondas-gonzaga-santos",
       "source": "blog",
       "active": true,
