@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:microondas-desarma-disjuntor",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-04",
+      "languageCode": "pt-BR",
+      "summary": "Micro-ondas desarma o disjuntor: possível curto interno. Entenda possíveis causas para micro-ondas desarma o disjuntor: possível curto interno em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/microondas-desarma-disjuntor/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/microondas-desarma-disjuntor.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tv-queimou-queda-de-energia",
       "source": "blog",
       "active": true,
