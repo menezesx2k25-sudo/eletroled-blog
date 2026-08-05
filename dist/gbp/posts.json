@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:conserto-tv-cce-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-05",
+      "languageCode": "pt-BR",
+      "summary": "Conserto de TV CCE em Santos: cuidados antes do reparo. Veja sintomas frequentes em TV CCE: cuidados antes do reparo e saiba como um serviço independente pode avaliar o reparo em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/conserto-tv-cce-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/conserto-tv-cce-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:microondas-desarma-disjuntor",
       "source": "blog",
       "active": true,
