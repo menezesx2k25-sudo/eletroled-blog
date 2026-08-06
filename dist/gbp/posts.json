@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tecnico-tv-santos-como-escolher",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-06",
+      "languageCode": "pt-BR",
+      "summary": "Técnico de TV em Santos: sinais de atendimento confiável. Entenda critérios para decidir sobre técnico de tv: sinais de atendimento confiável, com foco em diagnóstico, orçamento e segurança antes do reparo. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tecnico-tv-santos-como-escolher/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tecnico-tv-santos-como-escolher.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-tv-cce-santos",
       "source": "blog",
       "active": true,
