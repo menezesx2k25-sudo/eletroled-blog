@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:conserto-microondas-boqueirao-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-07",
+      "languageCode": "pt-BR",
+      "summary": "Conserto de micro-ondas no Boqueirão, Santos. Veja como organizar atendimento técnico para conserto de micro-ondas no boqueirão, santos, com orientação para clientes de Santos e bairros próximos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/conserto-microondas-boqueirao-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/conserto-microondas-boqueirao-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tecnico-tv-santos-como-escolher",
       "source": "blog",
       "active": true,
