@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.consertoeletroled.com</loc>
-    <lastmod>2026-08-07T11:25:54.434Z</lastmod>
+    <lastmod>2026-08-10T11:25:53.930Z</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://blog.consertoeletroled.com/tv-nao-responde-controle-remoto/</loc>
+    <lastmod>2026-08-10T12:00:00-03:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blog.consertoeletroled.com/conserto-microondas-boqueirao-santos/</loc>

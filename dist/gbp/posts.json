@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-nao-responde-controle-remoto",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-10",
+      "languageCode": "pt-BR",
+      "summary": "TV não responde ao controle remoto: defeito no controle ou sensor. Entenda possíveis causas para tv não responde ao controle remoto: defeito no controle ou sensor, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-nao-responde-controle-remoto/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-nao-responde-controle-remoto.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-microondas-boqueirao-santos",
       "source": "blog",
       "active": true,
