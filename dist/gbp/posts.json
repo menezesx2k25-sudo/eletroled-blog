@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:microondas-enferrujado-por-dentro",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-11",
+      "languageCode": "pt-BR",
+      "summary": "Micro-ondas enferrujado por dentro: ainda dá para usar. Entenda possíveis causas para micro-ondas enferrujado por dentro: ainda dá para usar em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/microondas-enferrujado-por-dentro/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/microondas-enferrujado-por-dentro.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tv-nao-responde-controle-remoto",
       "source": "blog",
       "active": true,
