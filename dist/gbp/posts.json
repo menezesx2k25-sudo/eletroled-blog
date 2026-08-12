@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:conserto-smart-tv-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-12",
+      "languageCode": "pt-BR",
+      "summary": "Conserto de Smart TV em Santos: internet, apps e imagem. Veja sintomas frequentes em Smart TV: internet, apps e imagem e saiba como um serviço independente pode avaliar o reparo em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/conserto-smart-tv-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/conserto-smart-tv-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:microondas-enferrujado-por-dentro",
       "source": "blog",
       "active": true,
