@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:manutencao-preventiva-tv",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-13",
+      "languageCode": "pt-BR",
+      "summary": "Manutenção preventiva de TV: cuidados simples em casa. Entenda critérios para decidir sobre manutenção preventiva de tv: cuidados simples em casa, com foco em diagnóstico, orçamento e segurança antes do reparo. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/manutencao-preventiva-tv/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/manutencao-preventiva-tv.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-smart-tv-santos",
       "source": "blog",
       "active": true,
