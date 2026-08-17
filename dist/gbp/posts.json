@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:smart-tv-sem-internet",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-17",
+      "languageCode": "pt-BR",
+      "summary": "Smart TV sem internet: rede, sistema ou placa Wi-Fi. Entenda possíveis causas para smart tv sem internet: rede, sistema ou placa wi-fi, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/smart-tv-sem-internet/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/smart-tv-sem-internet.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-microondas-embare-santos",
       "source": "blog",
       "active": true,
