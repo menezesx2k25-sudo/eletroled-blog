@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:microondas-luz-acesa-nao-funciona",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-18",
+      "languageCode": "pt-BR",
+      "summary": "Micro-ondas acende a luz mas não funciona. Entenda possíveis causas para micro-ondas acende a luz mas não funciona em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/microondas-luz-acesa-nao-funciona/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/microondas-luz-acesa-nao-funciona.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:smart-tv-sem-internet",
       "source": "blog",
       "active": true,
