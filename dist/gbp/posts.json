@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:manutencao-preventiva-microondas",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-20",
+      "languageCode": "pt-BR",
+      "summary": "Manutenção preventiva de micro-ondas: limpeza e segurança. Entenda critérios para decidir sobre manutenção preventiva de micro-ondas: limpeza e segurança, com foco em diagnóstico, orçamento e segurança antes do reparo. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/manutencao-preventiva-microondas/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/manutencao-preventiva-microondas.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-tv-50-polegadas-santos",
       "source": "blog",
       "active": true,
