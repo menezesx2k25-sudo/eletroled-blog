@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:smart-tv-lenta-travando-apps",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-24",
+      "languageCode": "pt-BR",
+      "summary": "Smart TV lenta e travando aplicativos: o que fazer. Entenda possíveis causas para smart tv lenta e travando aplicativos: o que fazer, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/smart-tv-lenta-travando-apps/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/smart-tv-lenta-travando-apps.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-microondas-aparecida-santos",
       "source": "blog",
       "active": true,
