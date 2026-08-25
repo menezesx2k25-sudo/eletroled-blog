@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:microondas-esquentando-pouco",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-25",
+      "languageCode": "pt-BR",
+      "summary": "Micro-ondas esquentando pouco: o que pode ser. Entenda possíveis causas para micro-ondas esquentando pouco: o que pode ser em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/microondas-esquentando-pouco/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/microondas-esquentando-pouco.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:smart-tv-lenta-travando-apps",
       "source": "blog",
       "active": true,
