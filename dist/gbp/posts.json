@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-com-tela-piscando",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-27",
+      "languageCode": "pt-BR",
+      "summary": "TV com tela piscando: sinais de backlight ou fonte. Entenda possíveis causas para tv com tela piscando: sinais de backlight ou fonte, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-com-tela-piscando/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-com-tela-piscando.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-tv-55-polegadas-santos",
       "source": "blog",
       "active": true,
