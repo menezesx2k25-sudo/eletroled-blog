@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:conserto-tv-65-polegadas-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-08-31",
+      "languageCode": "pt-BR",
+      "summary": "Conserto de TV 65 polegadas em Santos: avaliação técnica. Veja sintomas frequentes em TV 65 polegadas: avaliação técnica e saiba como um serviço independente pode avaliar o reparo em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/conserto-tv-65-polegadas-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/conserto-tv-65-polegadas-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:microondas-queimando-fusivel",
       "source": "blog",
       "active": true,
