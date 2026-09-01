@@ -56,8 +56,8 @@
         "body": "Informar se o problema começou depois de queda de energia, transporte, chuva, limpeza ou mudança de cabo ajuda a interpretar o sintoma. Esse histórico não fecha diagnóstico sozinho, mas orienta os testes e reduz tempo perdido com hipóteses pouco prováveis."
       },
       {
-        "heading": "Triagem segura antes do or?amento",
-        "body": "Antes de levar a TV para avalia??o, observe se o LED de standby acende, se pisca em sequ?ncia, se houve queda de energia e se o defeito acontece em todas as tomadas. Essas informa??es ajudam a assist?ncia t?cnica em Santos a separar falha simples de cabo ou controle de um poss?vel problema em fonte, placa principal ou prote??o interna."
+        "heading": "Triagem segura antes do orçamento",
+        "body": "Antes de levar a TV para avaliação, observe se o LED de standby acende, se pisca em sequência, se houve queda de energia e se o defeito acontece em todas as tomadas. Essas informações ajudam a assistência técnica em Santos a separar falha simples de cabo ou controle de um possível problema em fonte, placa principal ou proteção interna."
       }
     ],
     "faq": [
@@ -117,9 +117,9 @@
         "note": "canal para orçamento e orientação"
       },
       {
-        "label": "TV LED pisca e n?o liga",
+        "label": "TV LED pisca e não liga",
         "url": "/tv-led-pisca-e-nao-liga/",
-        "note": "sintoma pr?ximo de standby e prote??o"
+        "note": "sintoma próximo de standby e proteção"
       },
       {
         "label": "Conserto de TV Samsung em Santos",
@@ -191,7 +191,7 @@
       },
       {
         "heading": "O que diferencia falta de aquecimento de defeito simples",
-        "body": "Quando o prato gira e a luz acende, mas o alimento continua frio, a parte de comando pode estar funcionando enquanto o circuito de alta tens?o n?o entrega energia ao magnetron. Por isso, a an?lise precisa considerar chaves de porta, fus?vel, capacitor, diodo, placa e magnetron, sempre sem abrir o micro-ondas em casa."
+        "body": "Quando o prato gira e a luz acende, mas o alimento continua frio, a parte de comando pode estar funcionando enquanto o circuito de alta tensão não entrega energia ao magnetron. Por isso, a análise precisa considerar chaves de porta, fusível, capacitor, diodo, placa e magnetron, sempre sem abrir o micro-ondas em casa."
       }
     ],
     "faq": [
@@ -248,12 +248,12 @@
       {
         "label": "Micro-ondas liga e desliga sozinho",
         "url": "/microondas-liga-e-desliga-sozinho/",
-        "note": "outro sintoma ligado a seguran?a e alimenta??o"
+        "note": "outro sintoma ligado a segurança e alimentação"
       },
       {
-        "label": "Assist?ncia t?cnica no Macuco",
+        "label": "Assistência técnica no Macuco",
         "url": "/assistencia-tecnica-macuco-santos/",
-        "note": "orienta??o local para levar o aparelho"
+        "note": "orientação local para levar o aparelho"
       }
     ],
     "image": {
@@ -324,7 +324,7 @@
       },
       {
         "heading": "Teste visual sem desmontar a TV",
-        "body": "Em alguns casos, uma luz externa pr?xima da tela ajuda a perceber se existe imagem muito fraca por tr?s do painel escuro. Esse teste n?o confirma o defeito sozinho, mas ajuda a relatar melhor o sintoma. Se houver ?udio, troca de canal e resposta ao controle, o diagn?stico deve diferenciar backlight, fonte, T-Con, placa principal e painel."
+        "body": "Em alguns casos, uma luz externa próxima da tela ajuda a perceber se existe imagem muito fraca por trás do painel escuro. Esse teste não confirma o defeito sozinho, mas ajuda a relatar melhor o sintoma. Se houver áudio, troca de canal e resposta ao controle, o diagnóstico deve diferenciar backlight, fonte, T-Con, placa principal e painel."
       }
     ],
     "faq": [
@@ -359,6 +359,11 @@
     },
     "links": [
       {
+        "label": "Troca de barramento LED de TV em Santos",
+        "url": "/troca-barramento-led-tv-santos/",
+        "note": "serviço para sintomas de backlight, tela escura e imagem apagando"
+      },
+      {
         "label": "TV não liga em Santos",
         "url": "/tv-nao-liga-em-santos/",
         "note": "falhas de energia e placa"
@@ -384,24 +389,24 @@
         "note": "canal para orçamento e orientação"
       },
       {
-        "label": "TV LED pisca e n?o liga",
+        "label": "TV LED pisca e não liga",
         "url": "/tv-led-pisca-e-nao-liga/",
         "note": "quando o defeito aparece antes de formar imagem"
       },
       {
         "label": "Conserto de TV LG em Santos",
         "url": "/conserto-tv-lg-santos/",
-        "note": "marca em que tela escura e imagem azulada aparecem com frequ?ncia"
+        "note": "marca em que tela escura e imagem azulada aparecem com frequência"
       }
     ],
     "image": {
       "url": "/assets/images/editorial-canva/tv-com-som-sem-imagem.jpg",
       "alt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para TV com som mas sem imagem: backlight, placa ou tela?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre TV com som mas sem imagem: backlight, placa ou tela?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre TV com som mas sem imagem: backlight, placa ou tela?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "imageAlt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para TV com som mas sem imagem: backlight, placa ou tela?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre TV com som mas sem imagem: backlight, placa ou tela?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre TV com som mas sem imagem: backlight, placa ou tela?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva."
   },
   {
@@ -457,8 +462,8 @@
         "body": "Depois do diagnóstico, o cliente consegue comparar custo, estado do aparelho e expectativa de uso. Em micro-ondas, essa decisão precisa considerar não apenas preço, mas segurança. Se houver ferrugem avançada, dano interno ou peça crítica indisponível, a orientação pode ser diferente de um simples reparo."
       },
       {
-        "heading": "Quando a fa?sca indica risco real",
-        "body": "Se a fa?sca aparece mesmo sem metal, volta depois da limpeza ou vem acompanhada de cheiro de queimado, o uso deve ser interrompido. Placa mica danificada, tinta carbonizada, guia de ondas afetado e falhas internas podem piorar rapidamente. Nesses casos, a avalia??o t?cnica em Santos ? mais segura do que insistir no funcionamento."
+        "heading": "Quando a faísca indica risco real",
+        "body": "Se a faísca aparece mesmo sem metal, volta depois da limpeza ou vem acompanhada de cheiro de queimado, o uso deve ser interrompido. Placa mica danificada, tinta carbonizada, guia de ondas afetado e falhas internas podem piorar rapidamente. Nesses casos, a avaliação técnica em Santos é mais segura do que insistir no funcionamento."
       }
     ],
     "faq": [
@@ -515,17 +520,17 @@
       {
         "label": "Micro-ondas liga e desliga sozinho",
         "url": "/microondas-liga-e-desliga-sozinho/",
-        "note": "sintoma que tamb?m pede cautela"
+        "note": "sintoma que também pede cautela"
       }
     ],
     "image": {
       "url": "/assets/images/editorial-canva/microondas-soltando-faisca.jpg",
       "alt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas soltando faísca: é perigoso continuar usando?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas soltando faísca: é perigoso continuar usando?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas soltando faísca: é perigoso continuar usando?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "imageAlt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas soltando faísca: é perigoso continuar usando?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas soltando faísca: é perigoso continuar usando?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas soltando faísca: é perigoso continuar usando?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva."
   },
   {
@@ -585,8 +590,8 @@
         "body": "Se o aparelho ainda estiver em garantia de fábrica, o cliente deve verificar as condições oficiais antes de qualquer reparo independente. Fora desse cenário, a avaliação ajuda a identificar se há peça compatível e se o reparo mantém segurança, imagem e funcionamento estável."
       },
       {
-        "heading": "Falhas comuns sem diagn?stico por marca apenas",
-        "body": "Mesmo quando o cliente informa que a TV Samsung est? com tela escura, reiniciando no logo ou sem Wi-Fi, o modelo exato continua sendo decisivo. Tamanho, ano, tipo de painel e hist?rico de queda de energia mudam o caminho do diagn?stico. A marca orienta a triagem, mas n?o substitui teste de fonte, LEDs, placa e conex?es."
+        "heading": "Falhas comuns sem diagnóstico por marca apenas",
+        "body": "Mesmo quando o cliente informa que a TV Samsung está com tela escura, reiniciando no logo ou sem Wi-Fi, o modelo exato continua sendo decisivo. Tamanho, ano, tipo de painel e histórico de queda de energia mudam o caminho do diagnóstico. A marca orienta a triagem, mas não substitui teste de fonte, LEDs, placa e conexões."
       }
     ],
     "faq": [
@@ -653,12 +658,12 @@
       {
         "label": "Conserto de TV LG em Santos",
         "url": "/conserto-tv-lg-santos/",
-        "note": "compara??o com outro artigo de marca"
+        "note": "comparação com outro artigo de marca"
       },
       {
-        "label": "TV LED pisca e n?o liga",
+        "label": "TV LED pisca e não liga",
         "url": "/tv-led-pisca-e-nao-liga/",
-        "note": "falha comum de energia e prote??o"
+        "note": "falha comum de energia e proteção"
       }
     ],
     "image": {
@@ -729,7 +734,7 @@
       },
       {
         "heading": "Imagem azulada, apps travando e tela escura",
-        "body": "Em TVs LG, sintomas como imagem azulada, tela escura, aplicativos travando e rein?cio podem vir de origens diferentes. Backlight envelhecido, mem?ria, placa principal, fonte e atualiza??o de sistema entram na triagem. O atendimento t?cnico independente evita prometer troca de pe?a antes de confirmar a causa."
+        "body": "Em TVs LG, sintomas como imagem azulada, tela escura, aplicativos travando e reinício podem vir de origens diferentes. Backlight envelhecido, memória, placa principal, fonte e atualização de sistema entram na triagem. O atendimento técnico independente evita prometer troca de peça antes de confirmar a causa."
       }
     ],
     "faq": [
@@ -764,6 +769,11 @@
     },
     "links": [
       {
+        "label": "Troca de barramento LED de TV em Santos",
+        "url": "/troca-barramento-led-tv-santos/",
+        "note": "serviço para sintomas de backlight, tela escura e imagem apagando"
+      },
+      {
         "label": "TV com som mas sem imagem",
         "url": "/tv-com-som-sem-imagem/",
         "note": "sintoma comum em várias marcas"
@@ -796,7 +806,7 @@
       {
         "label": "Conserto de TV Samsung em Santos",
         "url": "/conserto-tv-samsung-santos/",
-        "note": "compara??o com outro artigo de marca"
+        "note": "comparação com outro artigo de marca"
       }
     ],
     "image": {
@@ -866,8 +876,8 @@
         "body": "O conteúdo menciona Santos, Macuco e bairros próximos quando isso ajuda o leitor a entender localização e atendimento. A intenção é reforçar relevância local de forma natural, sem repetir cidade em cada frase e sem criar páginas vazias apenas para ranquear. Também orienta o cliente a descrever o defeito antes de sair com o aparelho, o que torna o atendimento mais objetivo."
       },
       {
-        "heading": "Como chegar com informa??es completas",
-        "body": "Para agilizar o atendimento no Macuco, leve ou envie marca, modelo, foto da etiqueta e um resumo do defeito. Em TV, informe se h? som, imagem, standby ou rein?cio. Em micro-ondas, informe se aquece, se solta fa?sca, se faz barulho ou se desarma o disjuntor. Isso melhora a triagem e evita or?amento incompleto."
+        "heading": "Como chegar com informações completas",
+        "body": "Para agilizar o atendimento no Macuco, leve ou envie marca, modelo, foto da etiqueta e um resumo do defeito. Em TV, informe se há som, imagem, standby ou reinício. Em micro-ondas, informe se aquece, se solta faísca, se faz barulho ou se desarma o disjuntor. Isso melhora a triagem e evita orçamento incompleto."
       }
     ],
     "faq": [
@@ -927,14 +937,14 @@
         "note": "canal para orçamento e orientação"
       },
       {
-        "label": "TV n?o liga em Santos",
+        "label": "TV não liga em Santos",
         "url": "/tv-nao-liga-em-santos/",
         "note": "triagem comum para TVs"
       },
       {
         "label": "Quanto custa consertar uma TV",
         "url": "/quanto-custa-consertar-tv-santos/",
-        "note": "crit?rios de or?amento"
+        "note": "critérios de orçamento"
       }
     ],
     "image": {
@@ -1004,8 +1014,8 @@
         "body": "Dois aparelhos com o mesmo sintoma podem ter valores diferentes por causa de tamanho, montagem, acesso às peças e tempo de bancada. Por isso, o orçamento precisa considerar o equipamento real, e não apenas uma tabela genérica de defeitos."
       },
       {
-        "heading": "Faixas de pre?o dependem do componente confirmado",
-        "body": "O or?amento muda quando o defeito est? em LEDs, fonte, placa principal, T-Con, conectores ou painel. Por isso, uma faixa gen?rica pode enganar. O cliente deve comparar valor do reparo, idade da TV, qualidade do aparelho e disponibilidade de pe?a antes de decidir entre consertar ou trocar."
+        "heading": "Faixas de preço dependem do componente confirmado",
+        "body": "O orçamento muda quando o defeito está em LEDs, fonte, placa principal, T-Con, conectores ou painel. Por isso, uma faixa genérica pode enganar. O cliente deve comparar valor do reparo, idade da TV, qualidade do aparelho e disponibilidade de peça antes de decidir entre consertar ou trocar."
       }
     ],
     "faq": [
@@ -1062,22 +1072,22 @@
       {
         "label": "TV com som mas sem imagem",
         "url": "/tv-com-som-sem-imagem/",
-        "note": "exemplo de sintoma que muda or?amento"
+        "note": "exemplo de sintoma que muda orçamento"
       },
       {
-        "label": "TV LED pisca e n?o liga",
+        "label": "TV LED pisca e não liga",
         "url": "/tv-led-pisca-e-nao-liga/",
-        "note": "falha que pode envolver fonte ou prote??o"
+        "note": "falha que pode envolver fonte ou proteção"
       }
     ],
     "image": {
       "url": "/assets/images/editorial-canva/quanto-custa-consertar-tv-santos.jpg",
       "alt": "Diagnóstico técnico em bancada, imagem de apoio para orçamento e decisão sobre Quanto custa consertar uma TV em Santos?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre Quanto custa consertar uma TV em Santos?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre Quanto custa consertar uma TV em Santos?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "imageAlt": "Diagnóstico técnico em bancada, imagem de apoio para orçamento e decisão sobre Quanto custa consertar uma TV em Santos?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Quanto custa consertar uma TV em Santos?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Quanto custa consertar uma TV em Santos?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva."
   },
   {
@@ -1100,7 +1110,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/tv-led-pisca-e-nao-liga.jpg",
       "alt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para TV LED pisca e não liga: o que pode ser?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre TV LED pisca e não liga: o que pode ser?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre TV LED pisca e não liga: o que pode ser?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "TV LED pisca e não liga: o que pode ser pode ter origem simples ou indicar falha interna em fonte, placa, backlight, painel, conexões ou sistema da Smart TV. Antes de abrir o aparelho ou trocar peças, vale observar os sintomas com segurança e buscar diagnóstico técnico. Essa abordagem evita gasto errado e ajuda a decidir se o reparo compensa.",
@@ -1150,13 +1160,13 @@
         "body": "Informar se o problema começou depois de queda de energia, transporte, chuva, limpeza ou mudança de cabo ajuda a interpretar o sintoma. Esse histórico não fecha diagnóstico sozinho, mas orienta os testes e reduz tempo perdido com hipóteses pouco prováveis."
       },
       {
-        "heading": "Standby piscando e prote??o interna",
-        "body": "Quando o LED pisca e a TV n?o inicializa, o aparelho pode estar entrando em prote??o para evitar dano maior. A causa pode estar em fonte, barra de LED, placa principal, curto interno ou painel. Contar o padr?o das piscadas e informar se houve queda de energia ajuda a assist?ncia t?cnica a come?ar a an?lise com mais contexto."
+        "heading": "Standby piscando e proteção interna",
+        "body": "Quando o LED pisca e a TV não inicializa, o aparelho pode estar entrando em proteção para evitar dano maior. A causa pode estar em fonte, barra de LED, placa principal, curto interno ou painel. Contar o padrão das piscadas e informar se houve queda de energia ajuda a assistência técnica a começar a análise com mais contexto."
       }
     ],
     "faq": [
       {
-        "question": "TV com tv led pisca e não liga: o que pode ser tem conserto?",
+        "question": "TV LED pisca e não liga costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico."
       },
       {
@@ -1185,6 +1195,11 @@
       "whatsappText": "Olá, li sobre tv led pisca e não liga: o que pode ser e preciso avaliar minha TV. Marca/modelo:"
     },
     "links": [
+      {
+        "label": "Troca de barramento LED de TV em Santos",
+        "url": "/troca-barramento-led-tv-santos/",
+        "note": "serviço para sintomas de backlight, tela escura e imagem apagando"
+      },
       {
         "label": "TV não liga em Santos",
         "url": "/tv-nao-liga-em-santos/",
@@ -1223,7 +1238,7 @@
     ],
     "imageAlt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para TV LED pisca e não liga: o que pode ser?",
     "date": "2026-06-15",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre TV LED pisca e não liga: o que pode ser?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre TV LED pisca e não liga: o que pode ser?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva."
   },
   {
@@ -1292,13 +1307,13 @@
         "body": "Depois do diagnóstico, o cliente consegue comparar custo, estado do aparelho e expectativa de uso. Em micro-ondas, essa decisão precisa considerar não apenas preço, mas segurança. Se houver ferrugem avançada, dano interno ou peça crítica indisponível, a orientação pode ser diferente de um simples reparo."
       },
       {
-        "heading": "Chave de porta, ventila??o e ciclo interrompido",
-        "body": "Quando o micro-ondas liga e desliga sozinho, a causa pode estar em chave de porta, placa, ventila??o, superaquecimento, mau contato ou componente de alta tens?o. Se o desligamento vem com estalo, cheiro forte ou disjuntor desarmando, o uso deve parar at? a avalia??o t?cnica."
+        "heading": "Chave de porta, ventilação e ciclo interrompido",
+        "body": "Quando o micro-ondas liga e desliga sozinho, a causa pode estar em chave de porta, placa, ventilação, superaquecimento, mau contato ou componente de alta tensão. Se o desligamento vem com estalo, cheiro forte ou disjuntor desarmando, o uso deve parar até a avaliação técnica."
       }
     ],
     "faq": [
       {
-        "question": "Micro-ondas com micro-ondas liga e desliga sozinho: causas comuns tem conserto?",
+        "question": "Micro-ondas liga e desliga sozinho costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes."
       },
       {
@@ -1353,9 +1368,9 @@
         "note": "canal para orçamento e orientação"
       },
       {
-        "label": "Assist?ncia t?cnica no Macuco",
+        "label": "Assistência técnica no Macuco",
         "url": "/assistencia-tecnica-macuco-santos/",
-        "note": "orienta??o local para avalia??o"
+        "note": "orientação local para avaliação"
       }
     ],
     "imageAlt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas liga e desliga sozinho: causas comuns",
@@ -1433,8 +1448,8 @@
         "body": "Se o aparelho ainda estiver em garantia de fábrica, o cliente deve verificar as condições oficiais antes de qualquer reparo independente. Fora desse cenário, a avaliação ajuda a identificar se há peça compatível e se o reparo mantém segurança, imagem e funcionamento estável."
       },
       {
-        "heading": "Defeito comum n?o significa solu??o igual",
-        "body": "TV Philco que n?o liga, trava no logo ou fica com tela escura pode ter causas diferentes mesmo em modelos parecidos. O diagn?stico precisa confirmar alimenta??o, backlight, placa principal, conectores e estado do painel. Essa leitura evita trocar pe?a por tentativa e preserva a decis?o do cliente sobre a viabilidade do reparo."
+        "heading": "Defeito comum não significa solução igual",
+        "body": "TV Philco que não liga, trava no logo ou fica com tela escura pode ter causas diferentes mesmo em modelos parecidos. O diagnóstico precisa confirmar alimentação, backlight, placa principal, conectores e estado do painel. Essa leitura evita trocar peça por tentativa e preserva a decisão do cliente sobre a viabilidade do reparo."
       }
     ],
     "faq": [
@@ -1443,7 +1458,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de tv philco: defeitos mais comuns costuma ter conserto?",
+        "question": "TV Philco com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -1501,7 +1516,7 @@
       {
         "label": "Conserto de TV Samsung em Santos",
         "url": "/conserto-tv-samsung-santos/",
-        "note": "outro conte?do de marca para comparar sintomas"
+        "note": "outro conteúdo de marca para comparar sintomas"
       },
       {
         "label": "Conserto de TV LG em Santos",
@@ -1849,7 +1864,7 @@
     ],
     "faq": [
       {
-        "question": "TV com tv desliga sozinha depois de alguns minutos tem conserto?",
+        "question": "TV desliga sozinha depois de alguns minutos costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico."
       },
       {
@@ -1932,7 +1947,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/microondas-prato-nao-gira.jpg",
       "alt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas com prato que não gira: motor ou acoplador?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas com prato que não gira: motor ou acoplador?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas com prato que não gira: motor ou acoplador?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "Micro-ondas com prato que não gira: motor ou acoplador é um sintoma que merece cuidado porque micro-ondas trabalha com alta tensão e nem sempre o defeito aparece de forma óbvia. Pode haver falha em chave de porta, placa, fusível interno, magnetron, capacitor, diodo ou componentes mecânicos. A orientação segura é observar sinais externos, evitar abrir o aparelho e procurar avaliação quando o problema se repete.",
@@ -1980,7 +1995,7 @@
     ],
     "faq": [
       {
-        "question": "Micro-ondas com micro-ondas com prato que não gira: motor ou acoplador tem conserto?",
+        "question": "Micro-ondas com prato que não gira costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes."
       },
       {
@@ -2036,7 +2051,7 @@
       }
     ],
     "imageAlt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas com prato que não gira: motor ou acoplador?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas com prato que não gira: motor ou acoplador?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas com prato que não gira: motor ou acoplador?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-06-23"
   },
@@ -2114,7 +2129,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de tv aoc: sem imagem, fonte e tela costuma ter conserto?",
+        "question": "TV AOC com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -2641,7 +2656,7 @@
     ],
     "faq": [
       {
-        "question": "Micro-ondas com micro-ondas com painel apagado: o que verificar tem conserto?",
+        "question": "Micro-ondas com painel apagado costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes."
       },
       {
@@ -2775,7 +2790,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de tv tcl: smart tv travando ou sem imagem costuma ter conserto?",
+        "question": "Smart TV com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -3119,7 +3134,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/tv-sem-sinal-hdmi.jpg",
       "alt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para TV sem sinal HDMI: entrada queimada ou configuração?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre TV sem sinal HDMI: entrada queimada ou configuração?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre TV sem sinal HDMI: entrada queimada ou configuração?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "TV sem sinal HDMI: entrada queimada ou configuração pode ter origem simples ou indicar falha interna em fonte, placa, backlight, painel, conexões ou sistema da Smart TV. Antes de abrir o aparelho ou trocar peças, vale observar os sintomas com segurança e buscar diagnóstico técnico. Essa abordagem evita gasto errado e ajuda a decidir se o reparo compensa.",
@@ -3171,7 +3186,7 @@
     ],
     "faq": [
       {
-        "question": "TV com tv sem sinal hdmi: entrada queimada ou configuração tem conserto?",
+        "question": "TV sem sinal HDMI costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico."
       },
       {
@@ -3232,7 +3247,7 @@
       }
     ],
     "imageAlt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para TV sem sinal HDMI: entrada queimada ou configuração?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre TV sem sinal HDMI: entrada queimada ou configuração?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre TV sem sinal HDMI: entrada queimada ou configuração?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-07-06"
   },
@@ -3254,7 +3269,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/microondas-fazendo-barulho-alto.jpg",
       "alt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas fazendo barulho alto: é normal?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas fazendo barulho alto: é normal?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas fazendo barulho alto: é normal?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "Micro-ondas fazendo barulho alto: é normal é um sintoma que merece cuidado porque micro-ondas trabalha com alta tensão e nem sempre o defeito aparece de forma óbvia. Pode haver falha em chave de porta, placa, fusível interno, magnetron, capacitor, diodo ou componentes mecânicos. A orientação segura é observar sinais externos, evitar abrir o aparelho e procurar avaliação quando o problema se repete.",
@@ -3302,7 +3317,7 @@
     ],
     "faq": [
       {
-        "question": "Micro-ondas com micro-ondas fazendo barulho alto: é normal tem conserto?",
+        "question": "Micro-ondas fazendo barulho alto costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes."
       },
       {
@@ -3358,7 +3373,7 @@
       }
     ],
     "imageAlt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas fazendo barulho alto: é normal?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas fazendo barulho alto: é normal?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas fazendo barulho alto: é normal?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-07-07"
   },
@@ -3436,7 +3451,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de tv panasonic: diagnóstico técnico costuma ter conserto?",
+        "question": "TV Panasonic com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -3832,7 +3847,7 @@
     ],
     "faq": [
       {
-        "question": "TV com tv com linhas na tela: quando é placa e quando é painel tem conserto?",
+        "question": "TV com linhas na tela costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico."
       },
       {
@@ -3963,7 +3978,7 @@
     ],
     "faq": [
       {
-        "question": "Micro-ondas com micro-ondas com cheiro de queimado: quando parar de usar tem conserto?",
+        "question": "Micro-ondas com cheiro de queimado costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes."
       },
       {
@@ -4097,7 +4112,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de tv sony: imagem, áudio e placa costuma ter conserto?",
+        "question": "TV Sony com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -4493,7 +4508,7 @@
     ],
     "faq": [
       {
-        "question": "TV com tv com manchas escuras na imagem: o que observar tem conserto?",
+        "question": "TV com manchas escuras na imagem costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico."
       },
       {
@@ -4758,7 +4773,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de tv philips: sintomas frequentes costuma ter conserto?",
+        "question": "TV Philips com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -5154,7 +5169,7 @@
     ],
     "faq": [
       {
-        "question": "TV com tv com imagem azulada ou roxa: possível desgaste de leds tem conserto?",
+        "question": "TV com imagem azulada ou roxa costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico."
       },
       {
@@ -5237,7 +5252,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/teclas-microondas-nao-funcionam.jpg",
       "alt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Teclas do micro-ondas não funcionam: painel ou membrana?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre Teclas do micro-ondas não funcionam: painel ou membrana?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre Teclas do micro-ondas não funcionam: painel ou membrana?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "Teclas do micro-ondas não funcionam: painel ou membrana é um sintoma que merece cuidado porque micro-ondas trabalha com alta tensão e nem sempre o defeito aparece de forma óbvia. Pode haver falha em chave de porta, placa, fusível interno, magnetron, capacitor, diodo ou componentes mecânicos. A orientação segura é observar sinais externos, evitar abrir o aparelho e procurar avaliação quando o problema se repete.",
@@ -5341,7 +5356,7 @@
       }
     ],
     "imageAlt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Teclas do micro-ondas não funcionam: painel ou membrana?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Teclas do micro-ondas não funcionam: painel ou membrana?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Teclas do micro-ondas não funcionam: painel ou membrana?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-07-28"
   },
@@ -5363,7 +5378,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/conserto-tv-semp-toshiba-santos.jpg",
       "alt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para Conserto de TV Semp Toshiba em Santos: vale avaliar?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre Conserto de TV Semp Toshiba em Santos: vale avaliar?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre Conserto de TV Semp Toshiba em Santos: vale avaliar?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "Conserto de TV Semp Toshiba: vale avaliar exige diagnóstico antes de qualquer troca de peça, porque TVs da mesma marca podem apresentar sintomas parecidos por causas diferentes. A EletroLED atende esse tipo de aparelho em Santos como serviço técnico independente, sem se apresentar como autorizada oficial da fabricante. O objetivo é avaliar fonte, imagem, backlight, placa, conexões e viabilidade do reparo.",
@@ -5419,7 +5434,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de tv semp toshiba: vale avaliar costuma ter conserto?",
+        "question": "TV Semp Toshiba com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -5476,7 +5491,7 @@
       }
     ],
     "imageAlt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para Conserto de TV Semp Toshiba em Santos: vale avaliar?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Conserto de TV Semp Toshiba em Santos: vale avaliar?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Conserto de TV Semp Toshiba em Santos: vale avaliar?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-07-29"
   },
@@ -5815,7 +5830,7 @@
     ],
     "faq": [
       {
-        "question": "TV com tv queimou depois de queda de energia: primeiros cuidados tem conserto?",
+        "question": "TV queimou depois de queda de energia costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico."
       },
       {
@@ -5946,7 +5961,7 @@
     ],
     "faq": [
       {
-        "question": "Micro-ondas com micro-ondas desarma o disjuntor: possível curto interno tem conserto?",
+        "question": "Micro-ondas desarma o disjuntor costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes."
       },
       {
@@ -6080,7 +6095,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de tv cce: cuidados antes do reparo costuma ter conserto?",
+        "question": "TV CCE com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -6424,7 +6439,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/tv-nao-responde-controle-remoto.jpg",
       "alt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para TV não responde ao controle remoto: defeito no controle ou sensor?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre TV não responde ao controle remoto: defeito no controle ou sensor?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre TV não responde ao controle remoto: defeito no controle ou sensor?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "TV não responde ao controle remoto: defeito no controle ou sensor pode ter origem simples ou indicar falha interna em fonte, placa, backlight, painel, conexões ou sistema da Smart TV. Antes de abrir o aparelho ou trocar peças, vale observar os sintomas com segurança e buscar diagnóstico técnico. Essa abordagem evita gasto errado e ajuda a decidir se o reparo compensa.",
@@ -6476,7 +6491,7 @@
     ],
     "faq": [
       {
-        "question": "TV com tv não responde ao controle remoto: defeito no controle ou sensor tem conserto?",
+        "question": "TV não responde ao controle remoto costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico."
       },
       {
@@ -6537,7 +6552,7 @@
       }
     ],
     "imageAlt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para TV não responde ao controle remoto: defeito no controle ou sensor?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre TV não responde ao controle remoto: defeito no controle ou sensor?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre TV não responde ao controle remoto: defeito no controle ou sensor?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-08-10"
   },
@@ -6559,7 +6574,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/microondas-enferrujado-por-dentro.jpg",
       "alt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas enferrujado por dentro: ainda dá para usar?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas enferrujado por dentro: ainda dá para usar?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas enferrujado por dentro: ainda dá para usar?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "Micro-ondas enferrujado por dentro: ainda dá para usar é um sintoma que merece cuidado porque micro-ondas trabalha com alta tensão e nem sempre o defeito aparece de forma óbvia. Pode haver falha em chave de porta, placa, fusível interno, magnetron, capacitor, diodo ou componentes mecânicos. A orientação segura é observar sinais externos, evitar abrir o aparelho e procurar avaliação quando o problema se repete.",
@@ -6607,7 +6622,7 @@
     ],
     "faq": [
       {
-        "question": "Micro-ondas com micro-ondas enferrujado por dentro: ainda dá para usar tem conserto?",
+        "question": "Micro-ondas enferrujado por dentro costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes."
       },
       {
@@ -6663,7 +6678,7 @@
       }
     ],
     "imageAlt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas enferrujado por dentro: ainda dá para usar?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas enferrujado por dentro: ainda dá para usar?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas enferrujado por dentro: ainda dá para usar?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-08-11"
   },
@@ -6741,7 +6756,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de smart tv: internet, apps e imagem costuma ter conserto?",
+        "question": "Smart TV com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -7085,7 +7100,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/smart-tv-sem-internet.jpg",
       "alt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para Smart TV sem internet: rede, sistema ou placa Wi-Fi?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre Smart TV sem internet: rede, sistema ou placa Wi-Fi?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre Smart TV sem internet: rede, sistema ou placa Wi-Fi?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "Smart TV sem internet: rede, sistema ou placa Wi-Fi pode ter origem simples ou indicar falha interna em fonte, placa, backlight, painel, conexões ou sistema da Smart TV. Antes de abrir o aparelho ou trocar peças, vale observar os sintomas com segurança e buscar diagnóstico técnico. Essa abordagem evita gasto errado e ajuda a decidir se o reparo compensa.",
@@ -7198,7 +7213,7 @@
       }
     ],
     "imageAlt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para Smart TV sem internet: rede, sistema ou placa Wi-Fi?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Smart TV sem internet: rede, sistema ou placa Wi-Fi?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Smart TV sem internet: rede, sistema ou placa Wi-Fi?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-08-17"
   },
@@ -7268,7 +7283,7 @@
     ],
     "faq": [
       {
-        "question": "Micro-ondas com micro-ondas acende a luz mas não funciona tem conserto?",
+        "question": "Micro-ondas acende a luz mas não funciona costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes."
       },
       {
@@ -7402,7 +7417,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de tv 50 polegadas: quando compensa costuma ter conserto?",
+        "question": "TV 50 polegadas com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -7881,7 +7896,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/microondas-esquentando-pouco.jpg",
       "alt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas esquentando pouco: o que pode ser?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas esquentando pouco: o que pode ser?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas esquentando pouco: o que pode ser?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "Micro-ondas esquentando pouco: o que pode ser é um sintoma que merece cuidado porque micro-ondas trabalha com alta tensão e nem sempre o defeito aparece de forma óbvia. Pode haver falha em chave de porta, placa, fusível interno, magnetron, capacitor, diodo ou componentes mecânicos. A orientação segura é observar sinais externos, evitar abrir o aparelho e procurar avaliação quando o problema se repete.",
@@ -7929,7 +7944,7 @@
     ],
     "faq": [
       {
-        "question": "Micro-ondas com micro-ondas esquentando pouco: o que pode ser tem conserto?",
+        "question": "Micro-ondas esquentando pouco costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes."
       },
       {
@@ -7985,7 +8000,7 @@
       }
     ],
     "imageAlt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas esquentando pouco: o que pode ser?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas esquentando pouco: o que pode ser?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas esquentando pouco: o que pode ser?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-08-25"
   },
@@ -8063,7 +8078,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de tv 55 polegadas: cuidados no transporte costuma ter conserto?",
+        "question": "TV 55 polegadas com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -8194,7 +8209,7 @@
     ],
     "faq": [
       {
-        "question": "TV com tv com tela piscando: sinais de backlight ou fonte tem conserto?",
+        "question": "TV com tela piscando costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico."
       },
       {
@@ -8223,6 +8238,11 @@
       "whatsappText": "Olá, li sobre tv com tela piscando: sinais de backlight ou fonte e preciso avaliar minha TV. Marca/modelo:"
     },
     "links": [
+      {
+        "label": "Troca de barramento LED de TV em Santos",
+        "url": "/troca-barramento-led-tv-santos/",
+        "note": "serviço para sintomas de backlight, tela escura e imagem apagando"
+      },
       {
         "label": "TV não liga em Santos",
         "url": "/tv-nao-liga-em-santos/",
@@ -8277,7 +8297,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/microondas-queimando-fusivel.jpg",
       "alt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas queimando fusível: por que acontece?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas queimando fusível: por que acontece?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas queimando fusível: por que acontece?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "Micro-ondas queimando fusível: por que acontece é um sintoma que merece cuidado porque micro-ondas trabalha com alta tensão e nem sempre o defeito aparece de forma óbvia. Pode haver falha em chave de porta, placa, fusível interno, magnetron, capacitor, diodo ou componentes mecânicos. A orientação segura é observar sinais externos, evitar abrir o aparelho e procurar avaliação quando o problema se repete.",
@@ -8325,7 +8345,7 @@
     ],
     "faq": [
       {
-        "question": "Micro-ondas com micro-ondas queimando fusível: por que acontece tem conserto?",
+        "question": "Micro-ondas queimando fusível costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes."
       },
       {
@@ -8381,7 +8401,7 @@
       }
     ],
     "imageAlt": "Técnico avaliando micro-ondas em bancada, imagem de apoio para Micro-ondas queimando fusível: por que acontece?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas queimando fusível: por que acontece?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre Micro-ondas queimando fusível: por que acontece?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-08-28"
   },
@@ -8459,7 +8479,7 @@
         "answer": "O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado."
       },
       {
-        "question": "conserto de tv 65 polegadas: avaliação técnica costuma ter conserto?",
+        "question": "TV 65 polegadas com esse tipo de defeito costuma ter conserto?",
         "answer": "Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças."
       },
       {
@@ -8538,7 +8558,7 @@
     "image": {
       "url": "/assets/images/editorial-canva/tv-faz-estalo-e-apaga.jpg",
       "alt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para TV faz estalo e apaga: é perigoso insistir?",
-      "caption": "Imagem editorial da EletroLED para orientação sobre TV faz estalo e apaga: é perigoso insistir?.",
+      "caption": "Imagem editorial da EletroLED para orientação sobre TV faz estalo e apaga: é perigoso insistir?",
       "source": "Arte editorial EletroLED com imagem licenciada no Canva."
     },
     "intro": "TV faz estalo e apaga: é perigoso insistir pode ter origem simples ou indicar falha interna em fonte, placa, backlight, painel, conexões ou sistema da Smart TV. Antes de abrir o aparelho ou trocar peças, vale observar os sintomas com segurança e buscar diagnóstico técnico. Essa abordagem evita gasto errado e ajuda a decidir se o reparo compensa.",
@@ -8590,7 +8610,7 @@
     ],
     "faq": [
       {
-        "question": "TV com tv faz estalo e apaga: é perigoso insistir tem conserto?",
+        "question": "TV faz estalo e apaga costuma ter conserto?",
         "answer": "Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico."
       },
       {
@@ -8651,7 +8671,7 @@
       }
     ],
     "imageAlt": "Técnico avaliando TV e placa eletrônica, imagem de apoio para TV faz estalo e apaga: é perigoso insistir?",
-    "imageCaption": "Imagem editorial da EletroLED para orientação sobre TV faz estalo e apaga: é perigoso insistir?.",
+    "imageCaption": "Imagem editorial da EletroLED para orientação sobre TV faz estalo e apaga: é perigoso insistir?",
     "imageSource": "Arte editorial EletroLED com imagem licenciada no Canva.",
     "date": "2026-09-01"
   }

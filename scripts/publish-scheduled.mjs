@@ -1,10 +1,14 @@
 import { appendFile, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { publicationDecision, structuralSignature } from './content-quality.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const postsPath = path.join(root, 'content', 'posts.json');
 const draftsPath = path.join(root, 'content', 'drafts.json');
+const futureDraftsPath = path.join(root, 'content', 'future-drafts-200.json');
+const blockedDraftsPath = path.join(root, 'content', 'future-drafts-blocked.json');
+const approvalsPath = path.join(root, 'content', 'publishing-approvals.json');
 const timeZone = 'America/Sao_Paulo';
 
 const args = new Set(process.argv.slice(2));
@@ -72,12 +76,23 @@ if (!force && (weekday === 'Sat' || weekday === 'Sun')) {
   process.exit(0);
 }
 
-if (!Number.isInteger(count) || count < 1 || count > 5) {
-  throw new Error('Use --count com um número inteiro entre 1 e 5.');
+if (count !== 1) {
+  throw new Error('A automação editorial permite exatamente 1 artigo por execução. Use --count=1.');
 }
 
 const posts = JSON.parse(await readFile(postsPath, 'utf8'));
 const drafts = JSON.parse(await readFile(draftsPath, 'utf8'));
+const futureDrafts = JSON.parse(await readFile(futureDraftsPath, 'utf8'));
+const blockedDrafts = JSON.parse(await readFile(blockedDraftsPath, 'utf8'));
+const approvals = JSON.parse(await readFile(approvalsPath, 'utf8'));
+const futureSlugs = new Set(futureDrafts.map((post) => post.slug));
+const blockedSlugs = new Set(blockedDrafts.map((post) => post.slug));
+const approvedFutureSlugs = new Set(approvals.approvedFutureSlugs || []);
+const structuralSignatureCounts = new Map();
+for (const draft of drafts) {
+  const signature = structuralSignature(draft);
+  structuralSignatureCounts.set(signature, (structuralSignatureCounts.get(signature) || 0) + 1);
+}
 const slugs = new Set(posts.map((post) => post.slug));
 const published = [];
 
@@ -88,9 +103,22 @@ if (oncePerDay && posts.some((post) => post.date === isoDate)) {
 }
 
 for (let index = 0; index < count && drafts.length; index += 1) {
-  const draft = drafts.shift();
+  const draft = drafts[0];
   validatePost(draft, 'drafts.json');
 
+  const decision = publicationDecision(draft, {
+    futureSlugs,
+    approvedFutureSlugs,
+    blockedSlugs,
+    structuralSignatureCounts,
+  });
+  if (!decision.allowed) {
+    console.log(`Publicação bloqueada pelo gate editorial: ${decision.reason}`);
+    await setGithubOutput('published_count', 0);
+    process.exit(0);
+  }
+
+  drafts.shift();
   if (slugs.has(draft.slug)) {
     throw new Error(`Slug duplicado: ${draft.slug}`);
   }
