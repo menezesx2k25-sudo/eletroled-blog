@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-faz-estalo-e-apaga",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-01",
+      "languageCode": "pt-BR",
+      "summary": "TV faz estalo e apaga: é perigoso insistir. Entenda possíveis causas para tv faz estalo e apaga: é perigoso insistir, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-faz-estalo-e-apaga/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-faz-estalo-e-apaga.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-tv-65-polegadas-santos",
       "source": "blog",
       "active": true,
