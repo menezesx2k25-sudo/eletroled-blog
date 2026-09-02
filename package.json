@@ -7,7 +7,10 @@
     "build": "node scripts/build.mjs",
     "publish:scheduled": "node scripts/publish-scheduled.mjs",
     "validate": "node scripts/validate.mjs",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "test": "node --test --test-concurrency=1 tests/seo-hardening.test.mjs tests/generated-seo.test.mjs tests/generated-audit.test.mjs",
+    "check": "npm test && npm run build && npm run validate && npm run audit:generated",
+    "audit:generated": "node scripts/audit-generated.mjs"
   },
   "engines": {
     "node": ">=18"

@@ -1,6 +1,7 @@
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { repairQuestionForPost } from './content-quality.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -329,7 +330,7 @@ function tvPost([title, slug, symptom, causes]) {
     ],
     faq: [
       {
-        question: `TV com ${symptom} sempre tem conserto?`,
+        question: repairQuestionForPost({ title, category: 'Conserto de TV' }),
         answer: 'Muitos casos têm conserto, mas depende do modelo, da peça afetada e do estado do painel. O diagnóstico é o que confirma.'
       },
       {
@@ -380,7 +381,7 @@ function microwavePost([title, slug, symptom, causes]) {
     ],
     faq: [
       {
-        question: `Micro-ondas com ${symptom} é perigoso?`,
+        question: repairQuestionForPost({ title, category: 'Conserto de micro-ondas' }),
         answer: 'Pode ser, principalmente se houver faísca, cheiro de queimado, barulho alto ou falha de alta tensão. O ideal é interromper o uso e avaliar.'
       },
       {

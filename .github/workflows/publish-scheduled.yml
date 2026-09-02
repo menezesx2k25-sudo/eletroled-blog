@@ -6,7 +6,13 @@ on:
       - main
     paths:
       - '.github/workflows/publish-scheduled.yml'
+      - 'package.json'
       - 'scripts/publish-scheduled.mjs'
+      - 'scripts/content-quality.mjs'
+      - 'scripts/validate.mjs'
+      - 'scripts/audit-generated.mjs'
+      - 'tests/**'
+      - 'content/publishing-approvals.json'
   schedule:
     # 08:20 em Santos (America/Sao_Paulo, UTC-3), de segunda a sexta.
     - cron: '20 11 * * 1-5'
@@ -17,7 +23,7 @@ on:
         required: false
         default: '1'
       once_per_day:
-        description: 'Impedir segunda publicacao na mesma data'
+        description: 'Impedir segunda publicação na mesma data'
         required: false
         default: 'false'
 
@@ -40,6 +46,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      - name: Executar preflight editorial e SEO
+        run: npm run check
 
       - name: Publicar próximo rascunho
         id: publish_draft
@@ -65,6 +74,14 @@ jobs:
       - name: Validar SEO e arquivos gerados
         if: steps.publish_draft.outputs.published_count != '0'
         run: npm run validate
+
+      - name: Auditar HTML gerado
+        if: steps.publish_draft.outputs.published_count != '0'
+        run: npm run audit:generated
+
+      - name: Verificar integridade do diff
+        if: steps.publish_draft.outputs.published_count != '0'
+        run: git diff --check
 
       - name: Commitar publicação
         if: steps.publish_draft.outputs.published_count != '0'

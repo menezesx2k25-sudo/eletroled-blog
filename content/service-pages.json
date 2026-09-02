@@ -1,0 +1,87 @@
+[
+  {
+    "title": "Troca de barramento LED de TV em Santos",
+    "slug": "troca-barramento-led-tv-santos",
+    "serviceType": "Avaliação e reparo de barramento LED e backlight de TV",
+    "dateModified": "2026-09-01",
+    "description": "TV com som e tela escura, imagem que pisca ou apaga? Entenda quando o barramento LED ou backlight pode estar envolvido e solicite avaliação técnica da EletroLED em Santos.",
+    "keywords": [
+      "troca barramento LED TV Santos",
+      "backlight TV Santos",
+      "TV com som sem imagem Santos",
+      "conserto TV tela escura Santos",
+      "EletroLED Santos"
+    ],
+    "image": {
+      "url": "/assets/images/editorial-canva/backlight-queimado-tv-led-santos.jpg",
+      "alt": "Avaliação técnica de iluminação LED e backlight de TV em bancada",
+      "caption": "Imagem editorial de apoio para diagnóstico de falhas de iluminação em TVs LED.",
+      "source": "Arte editorial EletroLED com imagem licenciada no Canva."
+    },
+    "intro": "Quando a TV continua com som, responde ao controle e parece ligada, mas a tela fica escura, o sistema de iluminação do painel entra entre as hipóteses importantes. Barramento LED e backlight não devem ser condenados apenas pelo sintoma: fonte, conexões, circuito de acionamento e o próprio painel também precisam ser considerados antes de autorizar qualquer troca.",
+    "sections": [
+      {
+        "heading": "Sinais que combinam com falha de backlight",
+        "body": "Tela que acende por alguns segundos e apaga, imagem extremamente escura, regiões com iluminação desigual ou TV com áudio normal e painel aparentemente preto são sinais compatíveis com falha na iluminação. Eles ajudam a direcionar a triagem, mas não substituem medição e inspeção porque defeitos de alimentação e controle podem produzir sintomas parecidos."
+      },
+      {
+        "heading": "Por que não vale comprar barras LED no chute",
+        "body": "O mesmo modelo comercial pode ter revisões de painel e conjuntos de iluminação diferentes. Comprar um kit apenas pelo nome da TV pode resultar em peça incompatível ou em gasto desnecessário quando a origem está no driver, na fonte ou em outra etapa do circuito. A identificação correta começa pelo modelo completo e pelo diagnóstico do aparelho real."
+      },
+      {
+        "heading": "O que é verificado antes de indicar a troca",
+        "body": "A avaliação separa a falha de iluminação de problemas de fonte, placa principal, conexões e painel. Também observa se há escurecimento localizado, LEDs degradados, sinais de aquecimento ou comportamento intermitente. A proposta é confirmar a causa antes de transformar uma hipótese comum em orçamento definitivo."
+      },
+      {
+        "heading": "Trocar um LED ou o conjunto inteiro?",
+        "body": "A decisão depende do estado do conjunto, do padrão de desgaste e da disponibilidade de componentes compatíveis. Substituir apenas um ponto pode não ser a melhor escolha quando outras unidades do mesmo conjunto já estão degradadas. O critério técnico precisa considerar durabilidade esperada, custo e condição geral da iluminação, não apenas fazer a tela voltar a acender no teste inicial."
+      },
+      {
+        "heading": "Cuidados com o painel durante o reparo",
+        "body": "Para acessar o sistema de iluminação é necessário trabalhar próximo ao painel e às camadas ópticas da TV, componentes frágeis e sensíveis a pressão, flexão, poeira e montagem incorreta. Por isso, abrir a tela em casa para procurar LEDs queimados pode transformar um defeito reparável em dano de painel muito mais caro."
+      },
+      {
+        "heading": "Quando vale pedir uma avaliação",
+        "body": "Se a TV tem som, responde aos comandos e o defeito principal está na iluminação, uma avaliação costuma ser mais informativa do que descartar o aparelho sem diagnóstico. Tamanho, idade, estado do painel, disponibilidade do conjunto correto e custo final entram na decisão sobre reparar ou substituir a TV."
+      },
+      {
+        "heading": "O que enviar para agilizar o atendimento",
+        "body": "Envie pelo WhatsApp a marca, o modelo completo da etiqueta traseira, as polegadas e um vídeo curto mostrando o momento em que a TV liga. Informe se existe som, se a tela chega a clarear, se o defeito começou de repente ou foi piorando e se houve queda de energia, transporte ou tentativa de reparo anterior."
+      },
+      {
+        "heading": "Atendimento da EletroLED em Santos",
+        "body": "A EletroLED recebe TVs para avaliação técnica no Macuco, em Santos. O objetivo desta página é ajudar o cliente a reconhecer um cenário compatível com falha de iluminação e chegar ao atendimento com informações úteis; a confirmação da peça envolvida e da viabilidade do reparo depende do aparelho em bancada."
+      }
+    ],
+    "faq": [
+      {
+        "question": "TV com som e sem imagem é sempre barramento LED?",
+        "answer": "Não. Backlight é uma hipótese importante, mas fonte, circuito de acionamento, conexões, placa e painel também podem causar tela escura. O diagnóstico separa essas possibilidades."
+      },
+      {
+        "question": "Dá para saber o preço da troca só pelo modelo?",
+        "answer": "O modelo ajuda a identificar o aparelho e a disponibilidade de peças, mas o orçamento depende de confirmar a causa e o conjunto realmente usado naquela TV."
+      },
+      {
+        "question": "Posso continuar usando a TV com a tela piscando ou apagando?",
+        "answer": "Se o defeito está piorando, há estalos, cheiro, aquecimento incomum ou desligamentos, interrompa o uso e procure avaliação. Insistir em ciclos repetidos pode agravar uma falha elétrica."
+      },
+      {
+        "question": "Preciso levar a TV para confirmar o defeito?",
+        "answer": "Vídeo, marca e modelo ajudam na triagem, mas a confirmação de barramento, fonte ou outro componente depende de teste técnico no aparelho."
+      }
+    ],
+    "cta": {
+      "title": "Sua TV está com som e tela escura?",
+      "text": "Envie marca, modelo, polegadas e um vídeo curto do defeito para a EletroLED orientar o próximo passo antes do orçamento.",
+      "button": "Enviar dados da TV no WhatsApp",
+      "whatsappText": "Olá, encontrei a página sobre barramento LED. Minha TV está com problema de iluminação. Marca/modelo/polegadas:"
+    },
+    "links": [
+      { "label": "TV com som mas sem imagem", "url": "/tv-com-som-sem-imagem/" },
+      { "label": "TV LED pisca e não liga", "url": "/tv-led-pisca-e-nao-liga/" },
+      { "label": "Quanto custa consertar uma TV", "url": "/quanto-custa-consertar-tv-santos/" },
+      { "label": "Site principal da EletroLED", "url": "https://consertoeletroled.com" }
+    ]
+  }
+]

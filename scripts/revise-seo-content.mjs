@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { repairQuestionForPost } from './content-quality.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const postsPath = path.join(root, 'content', 'posts.json');
@@ -529,10 +530,9 @@ function depthSectionsFor(post) {
 
 function faqForDraft(post) {
   const kind = kindOf(post);
-  const problem = problemFromTitle(post.title).toLowerCase();
   if (kind === 'micro') {
     return faq([
-      [`Micro-ondas com ${problem} tem conserto?`, 'Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes.'],
+      [repairQuestionForPost(post), 'Muitos casos têm conserto, mas depende da peça afetada, segurança interna e disponibilidade de componentes.'],
       ['É seguro abrir o micro-ondas em casa?', 'Não. O aparelho trabalha com alta tensão e pode manter carga mesmo desligado.'],
       ['Dá para saber o valor sem avaliação?', 'A mensagem ajuda a orientar, mas o orçamento correto depende de diagnóstico.'],
       ['Quando devo parar de usar?', 'Pare se houver faísca, cheiro de queimado, barulho alto, disjuntor desarmando ou falha recorrente.'],
@@ -542,7 +542,7 @@ function faqForDraft(post) {
   if (kind === 'brand') {
     return faq([
       ['A EletroLED é autorizada oficial da marca?', 'O atendimento é serviço técnico independente, sem uso de linguagem de autorizada oficial quando isso não é comprovado.'],
-      [`${problem} costuma ter conserto?`, 'Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças.'],
+      [repairQuestionForPost(post), 'Pode ter, mas depende do diagnóstico, do estado do painel e da disponibilidade de peças.'],
       ['Dá para avaliar só por foto?', 'Foto e vídeo ajudam na triagem, mas não substituem teste técnico.'],
       ['O orçamento é aprovado antes do reparo?', 'Sim. A avaliação orienta o valor antes da execução do serviço.'],
       ['Quais informações devo enviar?', 'Marca, modelo completo, polegadas, sintoma e histórico do defeito.']
@@ -567,7 +567,7 @@ function faqForDraft(post) {
     ]);
   }
   return faq([
-    [`TV com ${problem} tem conserto?`, 'Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico.'],
+    [repairQuestionForPost(post), 'Muitos casos têm conserto, mas a causa precisa ser confirmada por diagnóstico técnico.'],
     ['Pode ser placa fonte?', 'Pode, mas também pode envolver placa principal, backlight, painel, conectores ou sistema.'],
     ['É seguro abrir a TV em casa?', 'Não é recomendado. Há risco elétrico e risco de danificar painel, cabos e placas.'],
     ['Dá para passar orçamento sem ver?', 'A mensagem ajuda a orientar, mas o valor correto depende de avaliação.'],

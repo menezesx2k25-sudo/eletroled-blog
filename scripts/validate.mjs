@@ -1,6 +1,7 @@
 import { access, readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { findSuspiciousTokens, publicationDecision, structuralSignature, visibleHtmlText } from './content-quality.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -70,6 +71,26 @@ function validateCollection(posts, name, baseUrl) {
   }
 }
 
+function validateServicePages(pages, baseUrl) {
+  const slugs = new Set();
+  for (const page of pages) {
+    assert(page.title && page.slug && page.description && page.serviceType, `service-pages.json: título, slug, descrição ou serviceType ausente`);
+    assert(!slugs.has(page.slug), `service-pages.json: slug duplicado ${page.slug}`);
+    slugs.add(page.slug);
+    assert(/^\d{4}-\d{2}-\d{2}$/.test(page.dateModified || ''), `service-pages.json: ${page.slug} precisa de dateModified`);
+    assert(Array.isArray(page.keywords) && page.keywords.length >= 4, `service-pages.json: ${page.slug} precisa de keywords`);
+    assert(page.image?.url && page.image?.alt, `service-pages.json: ${page.slug} precisa de imagem com url e alt`);
+    assert(Array.isArray(page.sections) && page.sections.length >= 6, `service-pages.json: ${page.slug} precisa de pelo menos 6 seções`);
+    assert(Array.isArray(page.faq) && page.faq.length >= 3, `service-pages.json: ${page.slug} precisa de FAQ`);
+    assert(page.cta?.text && page.cta?.button && page.cta?.whatsappText, `service-pages.json: ${page.slug} precisa de CTA`);
+    assert(Array.isArray(page.links) && page.links.length >= 3, `service-pages.json: ${page.slug} precisa de links contextuais`);
+    const text = `${page.intro || ''} ${page.sections.map((section) => `${section.heading} ${section.body}`).join(' ')} ${page.faq.map((item) => `${item.question} ${item.answer}`).join(' ')}`;
+    assert(text.split(/\s+/).filter(Boolean).length >= 350, `service-pages.json: ${page.slug} precisa de conteúdo comercial aprofundado`);
+    const selfLinks = page.links.filter((link) => internalPathname(link.url, baseUrl) === `/${page.slug}/`);
+    assert(!selfLinks.length, `service-pages.json: ${page.slug} tem self-link`);
+  }
+}
+
 async function validateLocalImage(url, file) {
   if (!url.startsWith('/')) return;
   const localPath = path.join(dist, url.replace(/^\//, ''));
@@ -83,12 +104,47 @@ async function validateLocalImage(url, file) {
 const site = await readJson('content/site.json');
 const posts = await readJson('content/posts.json');
 const drafts = await readJson('content/drafts.json');
+const servicePages = await readJson('content/service-pages.json');
+const futureDrafts = await readJson('content/future-drafts-200.json');
+const blockedDrafts = await readJson('content/future-drafts-blocked.json');
+const publishingApprovals = await readJson('content/publishing-approvals.json');
+
+for (const [name, collection] of [['posts.json', posts], ['drafts.json', drafts], ['service-pages.json', servicePages], ['future-drafts-200.json', futureDrafts]]) {
+  const suspiciousTokens = findSuspiciousTokens(JSON.stringify(collection));
+  assert(!suspiciousTokens.length, `${name}: texto possivelmente corrompido: ${[...new Set(suspiciousTokens)].join(', ')}`);
+}
+
+assert(Array.isArray(publishingApprovals.approvedFutureSlugs), 'publishing-approvals.json: approvedFutureSlugs precisa ser array');
+const futureSlugs = new Set(futureDrafts.map((post) => post.slug));
+const blockedSlugs = new Set(blockedDrafts.map((post) => post.slug));
+const approvedFutureSlugs = new Set(publishingApprovals.approvedFutureSlugs);
+const queuedBySlug = new Map(drafts.map((post) => [post.slug, post]));
+const structuralSignatureCounts = new Map();
+for (const post of drafts) {
+  const signature = structuralSignature(post);
+  structuralSignatureCounts.set(signature, (structuralSignatureCounts.get(signature) || 0) + 1);
+}
+for (const slug of approvedFutureSlugs) {
+  assert(futureSlugs.has(slug), `publishing-approvals.json: slug não existe em future-drafts-200.json: ${slug}`);
+  const queuedDraft = queuedBySlug.get(slug);
+  assert(queuedDraft, `publishing-approvals.json: slug aprovado não está na fila de publicação: ${slug}`);
+  const decision = publicationDecision(queuedDraft, {
+    futureSlugs,
+    approvedFutureSlugs,
+    blockedSlugs,
+    structuralSignatureCounts,
+  });
+  assert(decision.allowed, `publishing-approvals.json: ${decision.reason}`);
+}
+
+
 validateCollection(posts, 'posts.json', site.baseUrl);
 validateCollection(drafts, 'drafts.json', site.baseUrl);
+validateServicePages(servicePages, site.baseUrl);
 
 const allSlugs = new Set();
-for (const post of [...posts, ...drafts]) {
-  assert(!allSlugs.has(post.slug), `Slug repetido entre publicados e rascunhos: ${post.slug}`);
+for (const post of [...posts, ...drafts, ...servicePages]) {
+  assert(!allSlugs.has(post.slug), `Slug repetido entre conteúdo público e fila editorial: ${post.slug}`);
   allSlugs.add(post.slug);
 }
 
@@ -138,6 +194,8 @@ const files = await htmlFiles(dist);
 let jsonLdCount = 0;
 for (const file of files) {
   const html = await readFile(file, 'utf8');
+  const suspiciousTokens = findSuspiciousTokens(visibleHtmlText(html));
+  assert(!suspiciousTokens.length, `${file}: texto HTML possivelmente corrompido: ${[...new Set(suspiciousTokens)].join(', ')}`);
   assert(!html.includes('consertoeletroled.com/servicos'), `${file}: link removido para /servicos voltou`);
   assert(html.includes('rel="canonical"'), `${file}: canonical ausente`);
   assert(html.includes('property="og:image"'), `${file}: og:image ausente`);

@@ -6,13 +6,17 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
 const site = JSON.parse(await readFile(path.join(root, 'content', 'site.json'), 'utf8'));
 const posts = JSON.parse(await readFile(path.join(root, 'content', 'posts.json'), 'utf8'));
+const servicePages = JSON.parse(await readFile(path.join(root, 'content', 'service-pages.json'), 'utf8'));
 
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
 await cp(path.join(root, 'assets'), path.join(dist, 'assets'), { recursive: true, force: true }).catch(() => {});
 
-const now = new Date().toISOString();
 const sortedPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title));
+const latestContentDate = [...posts.map((post) => post.date), ...servicePages.map((page) => page.dateModified)]
+  .filter(Boolean)
+  .sort()
+  .at(-1);
 const siteOrigin = new URL(site.baseUrl).origin;
 
 function escapeHtml(value) {
@@ -92,7 +96,7 @@ function seoTitle(title, suffix = 'EletroLED', maxLength = 65) {
   return `${baseTitle} | ${suffix}`;
 }
 
-function layout({ title, description, canonical, body, schema = [], keywords = [], image = site.defaultImage }) {
+function layout({ title, description, canonical, body, schema = [], keywords = [], image = site.defaultImage, ogType = 'website' }) {
   const fullTitle = seoTitle(title);
   const keywordMeta = keywords.length ? `<meta name="keywords" content="${escapeHtml(keywords.join(', '))}">` : '';
   const metaImage = absoluteAssetUrl(image);
@@ -104,14 +108,14 @@ function layout({ title, description, canonical, body, schema = [], keywords = [
   <title>${escapeHtml(fullTitle)}</title>
   <meta name="description" content="${escapeHtml(description)}">
 ${keywordMeta ? `  ${keywordMeta}\n` : ''}  <link rel="canonical" href="${escapeHtml(canonical)}">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="${escapeHtml(ogType)}">
   <meta property="og:title" content="${escapeHtml(fullTitle)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${escapeHtml(canonical)}">
   <meta property="og:image" content="${escapeHtml(metaImage)}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="${escapeHtml(metaImage)}">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="apple-touch-icon" href="${escapeHtml(site.logo)}">
   <link rel="alternate" type="application/rss+xml" title="${escapeHtml(site.siteName)}" href="${escapeHtml(absoluteUrl('feed.xml'))}">
   <style id="responsive-sentinel">@media (max-width: 760px){:root{--responsive-sentinel:1}}</style>
@@ -130,6 +134,7 @@ ${keywordMeta ? `  ${keywordMeta}\n` : ''}  <link rel="canonical" href="${escape
     </a>
     <nav aria-label="Navegação principal">
       <a href="/">Blog</a>
+      <a href="/troca-barramento-led-tv-santos/">Barramento LED</a>
       <a href="${escapeHtml(site.mainSiteUrl)}">Site</a>
       <a href="${escapeHtml(site.mainSiteUrl)}/contato">Contato</a>
     </nav>
@@ -157,14 +162,56 @@ const organizationSchema = {
   image: absoluteAssetUrl(site.defaultImage),
   telephone: site.phone,
   email: site.email,
-  priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
     ...site.address
   },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: site.phone,
+    contactType: 'customer service',
+    availableLanguage: ['pt-BR']
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '17:30'
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Saturday',
+      opens: '09:00',
+      closes: '14:00'
+    }
+  ],
   sameAs: site.sameAs,
   areaServed: ['Santos', 'Macuco', 'Gonzaga', 'Boqueirão', 'Embaré', 'Aparecida', 'Ponta da Praia', 'Vila Mathias']
 };
+
+const webSiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${site.baseUrl}/#website`,
+  url: site.baseUrl,
+  name: site.siteName,
+  inLanguage: 'pt-BR',
+  publisher: { '@id': `${site.mainSiteUrl}/#business` }
+};
+
+function breadcrumbSchema(items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url
+    }))
+  };
+}
 
 function textForPost(post) {
   return `${post.title} ${post.category} ${post.description} ${(post.keywords || []).join(' ')}`.toLowerCase();
@@ -404,7 +451,7 @@ const home = layout({
   title: 'Dicas de TV e micro-ondas em Santos',
   description: site.description,
   canonical: absoluteUrl(),
-  schema: [organizationSchema, homeSchema],
+  schema: [organizationSchema, webSiteSchema, homeSchema],
   keywords: ['conserto de TV em Santos', 'conserto de micro-ondas em Santos', 'assistência técnica em Santos'],
   body: `<main>
     <section class="hero">
@@ -415,6 +462,7 @@ const home = layout({
         <p>Guias simples para identificar defeitos comuns, evitar riscos e saber quando chamar a EletroLED Assistência Técnica no Macuco, em Santos.</p>
         <div class="hero-actions">
           <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl('Olá, vim pelo blog e preciso de ajuda com TV ou micro-ondas.'))}">Chamar no WhatsApp</a>
+          <a class="button button-secondary" href="/troca-barramento-led-tv-santos/">TV com tela escura</a>
           <a class="button button-secondary" href="${escapeHtml(site.mainSiteUrl)}">Ver site principal</a>
         </div>
       </div>
@@ -513,15 +561,102 @@ for (const post of sortedPosts) {
     title: post.title,
     description: post.description,
     canonical: postUrl,
-    schema: [organizationSchema, blogPostingSchema, faqSchema],
+    schema: [
+      organizationSchema,
+      blogPostingSchema,
+      faqSchema,
+      breadcrumbSchema([
+        { name: 'Blog EletroLED', url: absoluteUrl() },
+        { name: post.title, url: postUrl }
+      ])
+    ],
     keywords: post.keywords,
     image: image.url,
+    ogType: 'article',
     body
   });
 
   const postDir = path.join(dist, post.slug);
   await mkdir(postDir, { recursive: true });
   await writeFile(path.join(postDir, 'index.html'), html);
+}
+
+for (const page of servicePages) {
+  const pageUrl = absoluteUrl(`${page.slug}/`);
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${pageUrl}#service`,
+    name: page.title,
+    serviceType: page.serviceType,
+    description: page.description,
+    url: pageUrl,
+    provider: { '@id': `${site.mainSiteUrl}/#business` },
+    areaServed: { '@type': 'City', name: 'Santos' }
+  };
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: page.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer }
+    }))
+  };
+  const body = `<main>
+    <article class="article service-page">
+      <header class="article-header">
+        <a class="back-link" href="/">Voltar ao blog</a>
+        <p class="eyebrow">Serviço técnico em Santos</p>
+        <h1>${escapeHtml(page.title)}</h1>
+        <p>${escapeHtml(page.description)}</p>
+        <div class="article-meta">
+          <span>Conteúdo revisado em ${new Intl.DateTimeFormat('pt-BR', { dateStyle: 'long', timeZone: 'America/Sao_Paulo' }).format(new Date(`${page.dateModified}T12:00:00-03:00`))}</span>
+          <span>Macuco, Santos - SP</span>
+        </div>
+      </header>
+      <figure class="article-figure">
+        <img src="${escapeHtml(page.image.url)}" alt="${escapeHtml(page.image.alt)}" width="1200" height="675" loading="eager" decoding="async">
+        <figcaption>${escapeHtml(page.image.caption)}</figcaption>
+      </figure>
+      <section class="article-body">
+        <p class="lead">${escapeHtml(page.intro)}</p>
+        ${page.sections.map((section) => `<h2>${escapeHtml(section.heading)}</h2>\n<p>${escapeHtml(section.body)}</p>`).join('\n')}
+        <section class="editorial-links" aria-labelledby="service-links-title">
+          <h2 id="service-links-title">Guias relacionados</h2>
+          <ul>${page.links.map((link) => `<li><a href="${escapeHtml(link.url)}">${escapeHtml(link.label)}</a></li>`).join('\n')}</ul>
+        </section>
+      </section>
+      <aside class="cta-panel">
+        <div><h2>${escapeHtml(page.cta.title)}</h2><p>${escapeHtml(page.cta.text)}</p></div>
+        <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl(page.cta.whatsappText))}">${escapeHtml(page.cta.button)}</a>
+      </aside>
+      <section class="faq">
+        <h2>Perguntas frequentes</h2>
+        ${page.faq.map((item) => `<details>\n<summary>${escapeHtml(item.question)}</summary>\n<p>${escapeHtml(item.answer)}</p>\n</details>`).join('\n')}
+      </section>
+    </article>
+  </main>`;
+  const html = layout({
+    title: page.title,
+    description: page.description,
+    canonical: pageUrl,
+    schema: [
+      organizationSchema,
+      serviceSchema,
+      faqSchema,
+      breadcrumbSchema([
+        { name: 'Blog EletroLED', url: absoluteUrl() },
+        { name: page.title, url: pageUrl }
+      ])
+    ],
+    keywords: page.keywords,
+    image: page.image.url,
+    body
+  });
+  const pageDir = path.join(dist, page.slug);
+  await mkdir(pageDir, { recursive: true });
+  await writeFile(path.join(pageDir, 'index.html'), html);
 }
 
 const notFound = layout({
@@ -1086,7 +1221,8 @@ Sitemap: ${absoluteUrl('sitemap.xml')}
 await writeFile(path.join(dist, 'robots.txt'), robots);
 
 const urls = [
-  { loc: absoluteUrl(), priority: '1.0', lastmod: now },
+  { loc: absoluteUrl(), priority: '1.0', lastmod: `${latestContentDate}T12:00:00-03:00` },
+  ...servicePages.map((page) => ({ loc: absoluteUrl(`${page.slug}/`), priority: '0.9', lastmod: `${page.dateModified}T12:00:00-03:00` })),
   ...sortedPosts.map((post) => ({ loc: absoluteUrl(`${post.slug}/`), priority: '0.8', lastmod: `${post.date}T12:00:00-03:00` }))
 ];
 
