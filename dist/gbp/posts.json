@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:transformador-microondas-defeito",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-02",
+      "languageCode": "pt-BR",
+      "summary": "Transformador de micro-ondas com defeito: sintomas. Entenda possíveis causas para transformador de micro-ondas com defeito: sintomas em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/transformador-microondas-defeito/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/transformador-microondas-defeito.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tv-faz-estalo-e-apaga",
       "source": "blog",
       "active": true,
