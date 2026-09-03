@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:conserto-tv-4k-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-03",
+      "languageCode": "pt-BR",
+      "summary": "Conserto de TV 4K em Santos: imagem, HDMI e Smart TV. Veja sintomas frequentes em TV 4K: imagem, HDMI e Smart TV e saiba como um serviço independente pode avaliar o reparo em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/conserto-tv-4k-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/conserto-tv-4k-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:transformador-microondas-defeito",
       "source": "blog",
       "active": true,
