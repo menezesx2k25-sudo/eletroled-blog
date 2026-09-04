@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-com-som-baixo-ou-falhando",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-04",
+      "languageCode": "pt-BR",
+      "summary": "TV com som baixo ou falhando: alto-falante ou placa. Entenda possíveis causas para tv com som baixo ou falhando: alto-falante ou placa, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-com-som-baixo-ou-falhando/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-com-som-baixo-ou-falhando.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-tv-4k-santos",
       "source": "blog",
       "active": true,
