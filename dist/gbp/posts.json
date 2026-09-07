@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:capacitor-microondas-alta-tensao",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-07",
+      "languageCode": "pt-BR",
+      "summary": "Capacitor de micro-ondas: por que exige técnico. Entenda possíveis causas para capacitor de micro-ondas: por que exige técnico em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/capacitor-microondas-alta-tensao/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/capacitor-microondas-alta-tensao.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tv-com-som-baixo-ou-falhando",
       "source": "blog",
       "active": true,
