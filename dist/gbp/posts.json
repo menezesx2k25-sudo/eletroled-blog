@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-nao-encontra-canais",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-09",
+      "languageCode": "pt-BR",
+      "summary": "TV não encontra canais: antena, sintonia ou entrada RF. Entenda possíveis causas para tv não encontra canais: antena, sintonia ou entrada rf, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-nao-encontra-canais/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-nao-encontra-canais.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:conserto-tv-led-santos",
       "source": "blog",
       "active": true,
