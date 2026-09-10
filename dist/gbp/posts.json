@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:magnetron-microondas-defeito",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-10",
+      "languageCode": "pt-BR",
+      "summary": "Magnetron do micro-ondas com defeito: sinais comuns. Entenda possíveis causas para magnetron do micro-ondas com defeito: sinais comuns em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/magnetron-microondas-defeito/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/magnetron-microondas-defeito.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tv-nao-encontra-canais",
       "source": "blog",
       "active": true,
