@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:conserto-tv-lcd-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-11",
+      "languageCode": "pt-BR",
+      "summary": "Conserto de TV LCD em Santos: ainda vale reparar. Veja sintomas frequentes em TV LCD: ainda vale reparar e saiba como um serviço independente pode avaliar o reparo em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/conserto-tv-lcd-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/conserto-tv-lcd-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:magnetron-microondas-defeito",
       "source": "blog",
       "active": true,
