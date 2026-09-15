@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:placa-mica-microondas-queimada",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-15",
+      "languageCode": "pt-BR",
+      "summary": "Placa mica queimada no micro-ondas: o que fazer. Entenda possíveis causas para placa mica queimada no micro-ondas: o que fazer em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/placa-mica-microondas-queimada/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/placa-mica-microondas-queimada.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tv-metade-da-tela-escura",
       "source": "blog",
       "active": true,
