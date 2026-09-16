@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-oled-marca-na-tela",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-16",
+      "languageCode": "pt-BR",
+      "summary": "TV OLED com marca na tela: o que pode ser feito. Entenda possíveis causas para tv oled com marca na tela: o que pode ser feito, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-oled-marca-na-tela/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-oled-marca-na-tela.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:placa-mica-microondas-queimada",
       "source": "blog",
       "active": true,
