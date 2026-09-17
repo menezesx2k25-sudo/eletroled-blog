@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:ventilador-microondas-nao-gira",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-17",
+      "languageCode": "pt-BR",
+      "summary": "Ventilador do micro-ondas não gira: atenção ao aquecimento. Entenda possíveis causas para ventilador do micro-ondas não gira: atenção ao aquecimento em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/ventilador-microondas-nao-gira/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/ventilador-microondas-nao-gira.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tv-oled-marca-na-tela",
       "source": "blog",
       "active": true,
