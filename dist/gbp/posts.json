@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-qled-sem-imagem",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-18",
+      "languageCode": "pt-BR",
+      "summary": "TV QLED sem imagem: diagnóstico antes de trocar peça. Entenda possíveis causas para tv qled sem imagem: diagnóstico antes de trocar peça, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-qled-sem-imagem/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-qled-sem-imagem.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:ventilador-microondas-nao-gira",
       "source": "blog",
       "active": true,
