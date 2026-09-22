@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-lcd-imagem-negativa",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-22",
+      "languageCode": "pt-BR",
+      "summary": "TV LCD com imagem negativa ou cores estranhas. Entenda possíveis causas para tv lcd com imagem negativa ou cores estranhas, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-lcd-imagem-negativa/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-lcd-imagem-negativa.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:microondas-consul-nao-esquenta-santos",
       "source": "blog",
       "active": true,
