@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:microondas-brastemp-nao-esquenta-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-23",
+      "languageCode": "pt-BR",
+      "summary": "Micro-ondas Brastemp não esquenta: causas prováveis. Entenda possíveis causas para micro-ondas brastemp não esquenta: causas prováveis em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/microondas-brastemp-nao-esquenta-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/microondas-brastemp-nao-esquenta-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tv-lcd-imagem-negativa",
       "source": "blog",
       "active": true,
