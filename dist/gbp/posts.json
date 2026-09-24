@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:backlight-queimado-tv-led-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-24",
+      "languageCode": "pt-BR",
+      "summary": "Backlight queimado em TV LED: sintomas e orçamento. Entenda possíveis causas para backlight queimado em tv led: sintomas e orçamento, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/backlight-queimado-tv-led-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/backlight-queimado-tv-led-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:microondas-brastemp-nao-esquenta-santos",
       "source": "blog",
       "active": true,
