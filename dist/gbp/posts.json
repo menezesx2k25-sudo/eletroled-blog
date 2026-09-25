@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:microondas-electrolux-nao-esquenta-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-25",
+      "languageCode": "pt-BR",
+      "summary": "Micro-ondas Electrolux não esquenta: quando chamar assistência. Entenda possíveis causas para micro-ondas electrolux não esquenta: quando chamar assistência em micro-ondas, cuidados de segurança e quando procurar avaliação técnica. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/microondas-electrolux-nao-esquenta-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/microondas-electrolux-nao-esquenta-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:backlight-queimado-tv-led-santos",
       "source": "blog",
       "active": true,
