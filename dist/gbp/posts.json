@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:led-standby-piscando-tv",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-28",
+      "languageCode": "pt-BR",
+      "summary": "LED de standby piscando na TV: o que significa. Entenda possíveis causas para led de standby piscando na tv: o que significa, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/led-standby-piscando-tv/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/led-standby-piscando-tv.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:microondas-electrolux-nao-esquenta-santos",
       "source": "blog",
       "active": true,
