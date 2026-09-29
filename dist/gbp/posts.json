@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:entrada-hdmi-queimada-tv",
+      "source": "blog",
+      "active": true,
+      "date": "2026-09-29",
+      "languageCode": "pt-BR",
+      "summary": "Entrada HDMI queimada na TV: tem conserto. Entenda possíveis causas para entrada hdmi queimada na tv: tem conserto, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/entrada-hdmi-queimada-tv/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/entrada-hdmi-queimada-tv.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:led-standby-piscando-tv",
       "source": "blog",
       "active": true,
