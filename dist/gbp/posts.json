@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-molhou-o-que-fazer",
+      "source": "blog",
+      "active": true,
+      "date": "2026-10-01",
+      "languageCode": "pt-BR",
+      "summary": "TV molhou: o que fazer antes de ligar de novo. Entenda possíveis causas para tv molhou: o que fazer antes de ligar de novo, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-molhou-o-que-fazer/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-molhou-o-que-fazer.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:entrada-antena-tv-ruim",
       "source": "blog",
       "active": true,
