@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "id": "blog:tv-caiu-no-chao-santos",
+      "source": "blog",
+      "active": true,
+      "date": "2026-10-02",
+      "languageCode": "pt-BR",
+      "summary": "TV caiu no chão: vale levar para avaliação. Entenda possíveis causas para tv caiu no chão: vale levar para avaliação, sinais de atenção e quando pedir avaliação técnica para TV em Santos. Leia o guia da EletroLED e entenda quando procurar avaliação técnica em Santos.",
+      "callToAction": {
+        "actionType": "LEARN_MORE",
+        "url": "https://blog.consertoeletroled.com/tv-caiu-no-chao-santos/"
+      },
+      "topicType": "STANDARD",
+      "media": [
+        {
+          "mediaFormat": "PHOTO",
+          "sourceUrl": "https://blog.consertoeletroled.com/assets/images/editorial-canva/tv-caiu-no-chao-santos.jpg"
+        }
+      ]
+    },
+    {
       "id": "blog:tv-molhou-o-que-fazer",
       "source": "blog",
       "active": true,
