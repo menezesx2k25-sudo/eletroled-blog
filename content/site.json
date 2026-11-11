@@ -3,7 +3,7 @@
   "businessName": "EletroLED Assistência Técnica",
   "baseUrl": "https://blog.consertoeletroled.com",
   "mainSiteUrl": "https://consertoeletroled.com",
-  "description": "Dicas práticas sobre conserto de TVs e micro-ondas em Santos, com orientação da EletroLED para identificar defeitos, riscos e quando chamar assistência.",
+  "description": "Dicas práticas sobre conserto de TVs e micro-ondas em Santos e Praia Grande, com orientação da EletroLED para identificar defeitos, riscos e quando chamar assistência.",
   "phone": "+5513996816561",
   "whatsapp": "5513996816561",
   "email": "contato@consertoeletroled.com",
@@ -14,7 +14,7 @@
     "postalCode": "11015-300",
     "addressCountry": "BR"
   },
-  "hours": "Segunda a sexta, 09:00 às 17:30. Sábado, 09:00 às 14:00.",
+  "hours": "Segunda a sexta, 08:30 às 17:30. Sábado, 08:30 às 13:30. Domingo fechado.",
   "logo": "/assets/images/eletroled-logo.webp",
   "defaultImage": "/assets/images/eletroled-workbench.webp",
   "media": {
@@ -52,5 +52,12 @@
   "sameAs": [
     "https://www.facebook.com/LEDASSISTENCIATECNICA",
     "https://www.instagram.com/assistencia_tecnia_eletroled"
-  ]
+  ],
+  "address2": {
+    "streetAddress": "Rua das Antilhas, 1060 - Guilhermina",
+    "addressLocality": "Praia Grande",
+    "addressRegion": "SP",
+    "postalCode": "11702-160",
+    "addressCountry": "BR"
+  }
 }

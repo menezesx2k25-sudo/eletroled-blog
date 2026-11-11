@@ -30,7 +30,7 @@
       },
       {
         "heading": "O que é verificado antes de indicar a troca",
-        "body": "A avaliação separa a falha de iluminação de problemas de fonte, placa principal, conexões e painel. Também observa se há escurecimento localizado, LEDs degradados, sinais de aquecimento ou comportamento intermitente. A proposta é confirmar a causa antes de transformar uma hipótese comum em orçamento definitivo."
+        "body": "A avaliação separa a falha de iluminação de problemas de fonte, placa principal, conexões e painel. Também observa se há escurecimento localizado, LEDs degradados, sinais de aquecimento ou comportamento intermitente. A proposta é confirmar a causa antes de transformar uma hipótese comum em diagnóstico definitivo."
       },
       {
         "heading": "Trocar um LED ou o conjunto inteiro?",
@@ -60,7 +60,7 @@
       },
       {
         "question": "Dá para saber o preço da troca só pelo modelo?",
-        "answer": "O modelo ajuda a identificar o aparelho e a disponibilidade de peças, mas o orçamento depende de confirmar a causa e o conjunto realmente usado naquela TV."
+        "answer": "O modelo ajuda a identificar o aparelho e a disponibilidade de peças, mas o diagnóstico depende de confirmar a causa e o conjunto realmente usado naquela TV."
       },
       {
         "question": "Posso continuar usando a TV com a tela piscando ou apagando?",
@@ -73,15 +73,27 @@
     ],
     "cta": {
       "title": "Sua TV está com som e tela escura?",
-      "text": "Envie marca, modelo, polegadas e um vídeo curto do defeito para a EletroLED orientar o próximo passo antes do orçamento.",
+      "text": "Envie marca, modelo, polegadas e um vídeo curto do defeito para a EletroLED orientar o próximo passo antes do diagnóstico.",
       "button": "Enviar dados da TV no WhatsApp",
       "whatsappText": "Olá, encontrei a página sobre barramento LED. Minha TV está com problema de iluminação. Marca/modelo/polegadas:"
     },
     "links": [
-      { "label": "TV com som mas sem imagem", "url": "/tv-com-som-sem-imagem/" },
-      { "label": "TV LED pisca e não liga", "url": "/tv-led-pisca-e-nao-liga/" },
-      { "label": "Quanto custa consertar uma TV", "url": "/quanto-custa-consertar-tv-santos/" },
-      { "label": "Site principal da EletroLED", "url": "https://consertoeletroled.com" }
+      {
+        "label": "TV com som mas sem imagem",
+        "url": "/tv-com-som-sem-imagem/"
+      },
+      {
+        "label": "TV LED pisca e não liga",
+        "url": "/tv-led-pisca-e-nao-liga/"
+      },
+      {
+        "label": "Quanto custa consertar uma TV",
+        "url": "/quanto-custa-consertar-tv-santos/"
+      },
+      {
+        "label": "Site principal da EletroLED",
+        "url": "https://consertoeletroled.com"
+      }
     ]
   }
 ]
