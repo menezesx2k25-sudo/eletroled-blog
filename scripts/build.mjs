@@ -56,7 +56,7 @@ function minifyCss(css) {
     .trim();
 }
 
-function seoTitle(title, suffix = 'EletroLED', maxLength = 65) {
+function seoTitle(title, suffix = 'EletroLED', maxLength = 60) {
   const shorteners = [
     [/^TV não liga em Santos:.+$/i, 'TV não liga em Santos: causas comuns'],
     [/^Micro-ondas não esquenta:.+$/i, 'Micro-ondas não esquenta: o que pode ser'],
@@ -82,18 +82,19 @@ function seoTitle(title, suffix = 'EletroLED', maxLength = 65) {
     }
   }
 
-  const maxBaseLength = maxLength - suffix.length - 3;
-  if (`${baseTitle} | ${suffix}`.length > maxLength) {
-    const candidate = baseTitle.slice(0, maxBaseLength - 3).trim();
-    const separators = [': ', ' - ', ', ', ' '];
-    const cutAt = Math.max(...separators.map((separator) => candidate.lastIndexOf(separator)));
-    const truncatedTitle = cutAt >= Math.floor(maxBaseLength * 0.65)
-      ? candidate.slice(0, cutAt).trim()
-      : candidate;
-    baseTitle = `${truncatedTitle}...`;
+  if (`${baseTitle} | ${suffix}`.length <= maxLength) return `${baseTitle} | ${suffix}`;
+  if (baseTitle.length <= maxLength) return baseTitle;
+  for (const separator of [': ', ' - ', ', ']) {
+    const cutAt = baseTitle.lastIndexOf(separator, maxLength);
+    if (cutAt >= 25) {
+      const head = baseTitle.slice(0, cutAt).trim();
+      return `${head} | ${suffix}`.length <= maxLength ? `${head} | ${suffix}` : head;
+    }
   }
-
-  return `${baseTitle} | ${suffix}`;
+  const words = baseTitle.slice(0, maxLength + 1).split(' ');
+  words.pop();
+  while (words.length && /^(de|da|do|das|dos|e|em|no|na|com|para|o|a|ou|sem)$/i.test(words[words.length - 1])) words.pop();
+  return words.join(' ');
 }
 
 function layout({ title, description, canonical, body, schema = [], keywords = [], image = site.defaultImage, ogType = 'website' }) {
@@ -115,6 +116,8 @@ ${keywordMeta ? `  ${keywordMeta}\n` : ''}  <link rel="canonical" href="${escape
   <meta property="og:image" content="${escapeHtml(metaImage)}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="${escapeHtml(metaImage)}">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17474620190"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17474620190');</script>
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="apple-touch-icon" href="${escapeHtml(site.logo)}">
   <link rel="alternate" type="application/rss+xml" title="${escapeHtml(site.siteName)}" href="${escapeHtml(absoluteUrl('feed.xml'))}">
@@ -143,8 +146,10 @@ ${keywordMeta ? `  ${keywordMeta}\n` : ''}  <link rel="canonical" href="${escape
   <footer class="site-footer">
     <div>
       <strong>${escapeHtml(site.businessName)}</strong>
-      <p>${escapeHtml(site.address.streetAddress)}, ${escapeHtml(site.address.addressLocality)} - ${escapeHtml(site.address.addressRegion)}, ${escapeHtml(site.address.postalCode)}</p>
+      <p>Oficina Santos: ${escapeHtml(site.address.streetAddress)}, ${escapeHtml(site.address.addressLocality)} - ${escapeHtml(site.address.addressRegion)}, CEP ${escapeHtml(site.address.postalCode)}</p>
+      <p>Oficina Praia Grande: ${escapeHtml(site.address2.streetAddress)}, ${escapeHtml(site.address2.addressLocality)} - ${escapeHtml(site.address2.addressRegion)}, CEP ${escapeHtml(site.address2.postalCode)}</p>
       <p>${escapeHtml(site.hours)}</p>
+      <p>Conserto feito na oficina. Não fazemos atendimento a domicílio.</p>
     </div>
     <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl('Olá, vim pelo blog da EletroLED e preciso de assistência técnica.'))}">Chamar no WhatsApp</a>
   </footer>
@@ -176,18 +181,34 @@ const organizationSchema = {
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
+      opens: '08:30',
       closes: '17:30'
     },
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: 'Saturday',
-      opens: '09:00',
-      closes: '14:00'
+      opens: '08:30',
+      closes: '13:30'
     }
   ],
   sameAs: site.sameAs,
-  areaServed: ['Santos', 'Macuco', 'Gonzaga', 'Boqueirão', 'Embaré', 'Aparecida', 'Ponta da Praia', 'Vila Mathias']
+  areaServed: ['Santos', 'Macuco', 'Gonzaga', 'Boqueirão', 'Embaré', 'Aparecida', 'Ponta da Praia', 'Vila Mathias', 'Praia Grande', 'Guilhermina'],
+  department: [
+    {
+      '@type': ['LocalBusiness', 'ProfessionalService'],
+      '@id': `${site.mainSiteUrl}/#oficina-praia-grande`,
+      name: `${site.businessName} - Praia Grande`,
+      url: `${site.mainSiteUrl}/conserto-de-tv-praia-grande`,
+      telephone: site.phone,
+      email: site.email,
+      image: absoluteAssetUrl(site.defaultImage),
+      address: { '@type': 'PostalAddress', ...site.address2 },
+      openingHoursSpecification: [
+        { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:30', closes: '17:30' },
+        { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:30', closes: '13:30' }
+      ]
+    }
+  ]
 };
 
 const webSiteSchema = {
@@ -386,6 +407,33 @@ function renderArticleSections(post) {
   }).join('\n');
 }
 
+const SERVICE_PAGES = {
+  tvSantos: { url: 'https://consertoeletroled.com/conserto-de-tv-santos', label: 'Conserto de TV em Santos (Macuco)' },
+  tvPg: { url: 'https://consertoeletroled.com/conserto-de-tv-praia-grande', label: 'Conserto de TV em Praia Grande (Guilhermina)' },
+  mwSantos: { url: 'https://consertoeletroled.com/conserto-de-micro-ondas-santos', label: 'Conserto de micro-ondas em Santos (Macuco)' },
+  mwPg: { url: 'https://consertoeletroled.com/conserto-de-micro-ondas-praia-grande', label: 'Conserto de micro-ondas em Praia Grande (Guilhermina)' }
+};
+
+function serviceLinksFor(post) {
+  const text = `${post.slug} ${post.title} ${post.category}`.toLowerCase();
+  const isMw = /micro-?ondas|microondas/.test(text);
+  const isTv = /\btv\b|televis|backlight|barramento|hdmi|antena|smart|oled|qled|lcd|led/.test(text);
+  if (isMw && !isTv) return [SERVICE_PAGES.mwSantos, SERVICE_PAGES.mwPg];
+  if (isTv && !isMw) return [SERVICE_PAGES.tvSantos, SERVICE_PAGES.tvPg];
+  return [SERVICE_PAGES.tvSantos, SERVICE_PAGES.mwSantos, SERVICE_PAGES.tvPg, SERVICE_PAGES.mwPg];
+}
+
+function renderServiceLinks(post) {
+  const links = serviceLinksFor(post);
+  return `<section class="editorial-links service-links" aria-labelledby="oficina-links-title">
+          <h2 id="oficina-links-title">Conserto na oficina</h2>
+          <p>O conserto é feito na oficina da EletroLED, em Santos ou em Praia Grande. Fale no WhatsApp antes de levar o aparelho.</p>
+          <ul>
+            ${links.map((link) => `<li><a href="${escapeHtml(link.url)}">${escapeHtml(link.label)}</a></li>`).join('\n')}
+          </ul>
+        </section>`;
+}
+
 function renderEditorialLinks(post) {
   const links = editorialLinksFor(post);
   if (!links.length) return '';
@@ -459,7 +507,7 @@ const home = layout({
         <img class="hero-logo" src="${escapeHtml(site.logo)}" alt="EletroLED Assistência Técnica" width="140" height="140">
         <p class="eyebrow">Assistência técnica em Santos</p>
         <h1>Dicas úteis para cuidar da sua TV e do seu micro-ondas</h1>
-        <p>Guias simples para identificar defeitos comuns, evitar riscos e saber quando chamar a EletroLED Assistência Técnica no Macuco, em Santos.</p>
+        <p>Guias simples para identificar defeitos comuns, evitar riscos e saber quando chamar a EletroLED Assistência Técnica: oficinas no Macuco, em Santos, e na Guilhermina, em Praia Grande.</p>
         <div class="hero-actions">
           <a class="button button-whatsapp" href="${escapeHtml(whatsappUrl('Olá, vim pelo blog e preciso de ajuda com TV ou micro-ondas.'))}">Chamar no WhatsApp</a>
           <a class="button button-secondary" href="/troca-barramento-led-tv-santos/">TV com tela escura</a>
@@ -538,9 +586,10 @@ for (const post of sortedPosts) {
       </figure>
       <section class="article-body">
         <p class="lead">${escapeHtml(post.intro)}</p>
-        <p class="service-link">Para atendimento técnico, orçamento e orientação presencial, acesse o site da <a href="${escapeHtml(site.mainSiteUrl)}">EletroLED Assistência Técnica em Santos</a> ou chame direto no WhatsApp.</p>
+        <p class="service-link">Para avaliação técnica e orientação presencial, acesse o site da <a href="${escapeHtml(site.mainSiteUrl)}">EletroLED Assistência Técnica em Santos</a> ou chame direto no WhatsApp.</p>
         ${renderArticleSections(post)}
         ${renderEditorialLinks(post)}
+        ${renderServiceLinks(post)}
       </section>
       <aside class="cta-panel">
         <div>
@@ -626,6 +675,7 @@ for (const page of servicePages) {
           <h2 id="service-links-title">Guias relacionados</h2>
           <ul>${page.links.map((link) => `<li><a href="${escapeHtml(link.url)}">${escapeHtml(link.label)}</a></li>`).join('\n')}</ul>
         </section>
+        ${renderServiceLinks(page)}
       </section>
       <aside class="cta-panel">
         <div><h2>${escapeHtml(page.cta.title)}</h2><p>${escapeHtml(page.cta.text)}</p></div>
@@ -1208,7 +1258,10 @@ ${sortedPosts.map((post) => `- [${post.title}](${absoluteUrl(`${post.slug}/`)}):
 ## Contato comercial
 - WhatsApp: https://wa.me/${site.whatsapp}
 - E-mail: ${site.email}
-- Endereço: ${site.address.streetAddress}, ${site.address.addressLocality} - ${site.address.addressRegion}
+- Oficina Santos: ${site.address.streetAddress}, ${site.address.addressLocality} - ${site.address.addressRegion}, CEP ${site.address.postalCode}
+- Oficina Praia Grande: ${site.address2.streetAddress}, ${site.address2.addressLocality} - ${site.address2.addressRegion}, CEP ${site.address2.postalCode}
+- Horário: ${site.hours}
+- Conserto somente na oficina, sem atendimento a domicílio.
 `;
 
 await writeFile(path.join(dist, 'llms.txt'), llms);
