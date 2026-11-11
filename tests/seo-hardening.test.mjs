@@ -62,12 +62,15 @@ test('legacy queue item remains publishable in dry-run', async () => {
 });
 test('future draft is blocked unless explicitly approved', async () => {
   const originalDrafts = await readFile(draftsPath, 'utf8');
+  const approvalsPath = path.join(root, 'content', 'publishing-approvals.json');
+  const originalApprovals = await readFile(approvalsPath, 'utf8');
   const future = JSON.parse(await readFile(futurePath, 'utf8'));
   const candidate = future.find((post) => post.slug === 'tv-led-aceso-nao-acende-tela');
   assert.ok(candidate);
 
   try {
     await writeFile(draftsPath, `${JSON.stringify([candidate], null, 2)}\n`, 'utf8');
+    await writeFile(approvalsPath, `${JSON.stringify({ approvedFutureSlugs: [] }, null, 2)}\n`, 'utf8');
     const result = runNode('scripts/publish-scheduled.mjs', ['--dry-run', '--once-per-day', '--force'], {
       PUBLISH_DATE: '2099-01-06',
     });
@@ -76,6 +79,7 @@ test('future draft is blocked unless explicitly approved', async () => {
     assert.doesNotMatch(result.stdout, /Publicaria 1 artigo/i);
   } finally {
     await writeFile(draftsPath, originalDrafts, 'utf8');
+    await writeFile(approvalsPath, originalApprovals, 'utf8');
   }
 });
 test('publisher refuses batch publication larger than one article', () => {
@@ -102,14 +106,29 @@ test('validator rejects mojibake in generated HTML', async () => {
 
 test('generic future draft cannot be approved without structural rewrite', async () => {
   const approvalsPath = path.join(root, 'content', 'publishing-approvals.json');
-  const original = await readFile(approvalsPath, 'utf8');
+  const originalApprovals = await readFile(approvalsPath, 'utf8');
+  const originalDrafts = await readFile(draftsPath, 'utf8');
+  const drafts = JSON.parse(originalDrafts);
+  const slug = 'tv-led-aceso-nao-acende-tela';
+  const primary = drafts.find((post) => post.slug === slug);
+  const other = drafts.find((post) => post.slug !== slug);
+  assert.ok(primary && other);
+  const shared = primary.sections.map((section, index) => ({
+    ...section,
+    heading: `Estrutura genérica compartilhada ${index + 1}`,
+  }));
+  primary.sections = shared.map((section) => ({ ...section }));
+  other.sections = shared.map((section) => ({ ...section }));
+
   try {
-    await writeFile(approvalsPath, JSON.stringify({ approvedFutureSlugs: ['tv-led-aceso-nao-acende-tela'] }, null, 2));
+    await writeFile(draftsPath, `${JSON.stringify(drafts, null, 2)}\n`, 'utf8');
+    await writeFile(approvalsPath, JSON.stringify({ approvedFutureSlugs: [slug] }, null, 2));
     const result = runNode('scripts/validate.mjs');
     assert.notEqual(result.status, 0, result.stdout || result.stderr);
     assert.match(`${result.stdout}\n${result.stderr}`, /repet|estrutura|genéric/i);
   } finally {
-    await writeFile(approvalsPath, original, 'utf8');
+    await writeFile(draftsPath, originalDrafts, 'utf8');
+    await writeFile(approvalsPath, originalApprovals, 'utf8');
   }
 });
 test('validator checks service-page source quality', async () => {
@@ -234,7 +253,14 @@ test('publisher rejects an approved future draft while its queued structure is s
   const drafts = JSON.parse(originalDrafts);
   const slug = 'tv-led-aceso-nao-acende-tela';
   const candidate = drafts.find((post) => post.slug === slug);
-  assert.ok(candidate);
+  const other = drafts.find((post) => post.slug !== slug);
+  assert.ok(candidate && other);
+  const shared = candidate.sections.map((section, index) => ({
+    ...section,
+    heading: `Estrutura genérica de fila ${index + 1}`,
+  }));
+  candidate.sections = shared.map((section) => ({ ...section }));
+  other.sections = shared.map((section) => ({ ...section }));
   const reordered = [candidate, ...drafts.filter((post) => post.slug !== slug)];
 
   try {
